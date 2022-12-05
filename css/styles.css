@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
    /* delete */
    background-color: rgb(175, 214, 175);
 }
+.item:not(:last-child) {
+   margin-right: 34px;
+}
 .visually-hidden {
    position: absolute;
    width: 1px;
@@ -150,18 +153,22 @@ body {
 }
 .advantages .list {
    display: flex;
+   justify-content: space-between;
    margin-bottom: 120px;
 }
 .advantages .sub-title{
    margin-bottom: 8px;
 }
-.advantages .item:not(:last-child) {
+/* .advantages .item:not(:last-child) {
    margin-right: 24px;
-}
+} */
 .goals .list{
    display: flex;
    justify-content: space-between;
 }
+/* .goals .item:not(:last-child){
+   margin-right: 24px;
+} */
 /* ----------------------> */
 .radio-button .button {
    background-color: #F4F4FD;
