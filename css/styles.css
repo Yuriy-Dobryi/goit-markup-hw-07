@@ -31,7 +31,7 @@ body{
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin: 5px;
+   margin: 1px;
    padding-top: 24px;
    padding-bottom: 24px;
 }
@@ -47,11 +47,14 @@ body{
 .page-header .logo .studio{ 
    color: var(--primary-text-color);}
 /* ----------------------> */
-.nav{
-   
-}
 .nav .list {
    display: flex;
+}
+.nav .list li{
+   outline: 1px solid red;
+}
+.nav .item:not(:last-child){
+   margin-right: 40px;
 }
 .nav .link{
    font-weight: 500;
