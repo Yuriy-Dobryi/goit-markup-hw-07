@@ -4,7 +4,6 @@
    --primary-brand-color: #4D5AE5;}
 /* ----------------------> */
 body{
-   margin: 0;
    color: var(--primary-text-color);
    background-color: #fff;
    font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
@@ -35,7 +34,7 @@ li{
    outline: 2px solid red;
 }
 ul{
-   padding-inline-start: 0;
+   /* padding-inline-start: 0; */
 }
    /* ------------->------------->-------------> */
 .page-header{
