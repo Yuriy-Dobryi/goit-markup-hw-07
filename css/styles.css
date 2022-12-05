@@ -28,7 +28,6 @@ body{
    margin-left: auto;
    margin-right: auto;
    width: 1200px;
-   /* outline: 1px solid red; */
    background-color: rgb(177, 192, 177);
 }
 li{
@@ -89,6 +88,10 @@ li{
    color: var(--primary-brand-color);}
 /* ------------->------------->-------------> */
 .hero{
+   display: flex;
+   
+   width: 100%;
+   min-height: 603px;
    background: var(--primary-text-color);
    text-align: center;}
 .hero-title{
