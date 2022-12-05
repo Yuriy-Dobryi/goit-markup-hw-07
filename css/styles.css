@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
 .container {
    margin-left: auto;
    margin-right: auto;
-   width: 1200px;
+   width: 1128px;
    /* Fix */
    background-color: rgb(175, 214, 175);
 }
@@ -150,6 +150,10 @@ body {
 }
 .advantages .list {
    display: flex;
+   justify-content: space-between;
+}
+.advantages .sub-title{
+   margin-bottom: 8px;
 }
 .advantages .item:not(:last-child) {
    margin-right: 24px;
