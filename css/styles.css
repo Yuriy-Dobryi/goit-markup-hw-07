@@ -28,16 +28,18 @@ body{
    margin-left: auto;
    margin-right: auto;
    width: 1200px;
-   outline: 2px solid red;
+   /* outline: 1px solid red; */
+   background-color: rgb(177, 192, 177);
 }
 li{
-   outline: 2px solid red;
+   background-color: rgb(132, 136, 83);
 }
 /* ul{padding-inline-start: 0;} */
    /* ------------->------------->-------------> */
 .page-header{
    display: flex;
    align-items: center;
+   padding: 24px 0;
 }
 /* ----------------------> */
 .logo{
@@ -78,7 +80,6 @@ li{
 }
 .contacts .item:not(:last-child){
    margin-right: 40px;
-   color:red;
 }
 .contacts .link{
    color: var(--primary-secondary-color);
