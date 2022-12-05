@@ -111,6 +111,7 @@ body {
    flex-direction: column;
    justify-content: center;
    min-height: 603px;
+   margin-bottom: 120px;
 
    background: var(--primary-text-color);
    text-align: center;
@@ -146,6 +147,12 @@ body {
 }
 .hero .button:active {
    background-color: #404BBF;
+}
+.advantages .list {
+   display: flex;
+}
+.advantages .item:not(:last-child) {
+   margin-right: 24px;
 }
 /* ----------------------> */
 .radio-button .button {
