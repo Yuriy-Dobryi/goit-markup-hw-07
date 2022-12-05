@@ -27,23 +27,22 @@ body{
 .container {
    margin-left: auto;
    margin-right: auto;
-   width: 1440px;
+   width: 1200px;
    outline: 2px solid red;
 }
 li{
    outline: 2px solid red;
 }
-ul{
-   /* padding-inline-start: 0; */
-}
+/* ul{padding-inline-start: 0;} */
    /* ------------->------------->-------------> */
 .page-header{
    display: flex;
-   justify-content: space-around;
    align-items: center;
 }
 /* ----------------------> */
 .logo{
+   margin-right: 77px;
+
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 18px;
@@ -75,6 +74,7 @@ ul{
 /* ----------------------> */
 .contacts {
    display: flex;
+   margin-left: auto;
 }
 .contacts .item:not(:last-child){
    margin-right: 40px;
