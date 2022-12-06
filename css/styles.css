@@ -36,6 +36,9 @@ body {
    letter-spacing: 0.02em;
 }
 /* Sections */
+.section:not(:nth-child(2)) {
+   text-align: center;
+}
 .hero,
 .advantages,
 .goals {
@@ -128,7 +131,6 @@ body {
 
    font-size: 36px;
    line-height: 1.1;
-   /* text-align: center; */
 }
 .sub-title {
    margin-bottom: 8px;
@@ -154,7 +156,6 @@ body {
    padding-bottom: 192px; 
    
    background: var(--primary-text-color);
-   text-align: center;
 }
 .hero .title {
    margin-bottom: 48px;
