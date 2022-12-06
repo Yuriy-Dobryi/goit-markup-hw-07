@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, button, img {
    list-style: none;
    text-decoration: none;
 }
+img {
+   display: block;
+}
 /* ----------- BG COLOR FOR CHECK: -----------> */
 h1, h2, h3 {
    background-color: rgb(137, 169, 31);
@@ -32,16 +35,21 @@ body {
    font-size: 16px;
    letter-spacing: 0.02em;
 }
+/* Sections */
+.hero,
+.advantages,
+.goals {
+   margin-bottom: 120px;
+}
 .container {
    width: 1158px;
    margin-left: auto;
    margin-right: auto;
    background-color: rgb(55, 222, 199); /* delete */
 }
-.hero,
-.advantages,
-.goals {
-   margin-bottom: 120px;
+/* Every list inside body is 'flex' */
+.container .list {
+   display: flex;
 }
 .logo {
    color: var(--primary-brand-color);
@@ -60,7 +68,6 @@ body {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
-
 /* ----------- HEADER -----------> */
 .page-header .container {
    display: flex;
@@ -111,13 +118,17 @@ body {
 .contacts .link:focus {
    color: var(--primary-brand-color);
 }
+
 /* ----------- MAIN -----------> */
+.item:not(:last-child) {
+   margin-right: 24px;
+}
 .title {
-   text-align: center;
    margin-bottom: 72px;
 
    font-size: 36px;
    line-height: 1.1;
+   /* text-align: center; */
 }
 .sub-title {
    margin-bottom: 8px;
@@ -126,8 +137,16 @@ body {
 .sub-title {
    font-weight: 500;
 }
-.item:not(:last-child) {
-   margin-right: 24px;
+.portfolio .card-title .sub-title {
+   font-size: 20px;
+   line-height: 1.2;
+}
+.portfolio .card-title {
+   color: var(--primary-text-color);
+   font-weight: 500;
+}
+.portfolio .type {
+   color: var(--secondary-text-color);
 }
 /* ---- HERO ----> */
 .hero {
@@ -169,12 +188,11 @@ body {
 /* ---- ADVANTAGES ----> */
 .advantages .list {
    display: flex;
-   justify-content: space-between; 
+   justify-content: space-between;
    /*Взагалі ніяк не реагує */
 }
 /* ---- GOALS ----> */
 .goals .list{
-   display: flex;
    justify-content: space-between;
 }
 /* ---- TEAM ----> */
@@ -195,22 +213,6 @@ body {
 .radio-button .button:focus {
    background-color: var(--primary-brand-color);
    color: #fff;
-}
-.portfolio .card-title
-.sub-title {
-   font-size: 20px;
-   line-height: 1.2;
-}
-.portfolio .card-title {
-   color: var(--primary-text-color);
-   font-weight: 500;
-}
-.portfolio .type {
-   color: var(--secondary-text-color);
-}
-.container .list{
-   display: flex;
-   justify-content: center;
 }
 /* ------------->------------->-------------> */
 .page-footer {
