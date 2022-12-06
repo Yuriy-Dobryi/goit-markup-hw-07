@@ -166,17 +166,23 @@ body {
 .hero .button:active {
    background-color: #404BBF;
 }
+/* ---- ADVANTAGES ----> */
 .advantages .list {
    display: flex;
    justify-content: space-between; 
    /*Взагалі ніяк не реагує */
 }
+/* ---- GOALS ----> */
 .goals .list{
    display: flex;
    justify-content: space-between;
 }
+/* ---- TEAM ----> */
+.team {
+   background-color: #F4F4FD;
+}
 /* ----------------------> */
-.radio-button .button {
+.portfolio .radio-button .button {
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
    font-family: inherit;
@@ -190,8 +196,8 @@ body {
    background-color: var(--primary-brand-color);
    color: #fff;
 }
-.sub-title,
-.portfolio .card-title {
+.portfolio .card-title
+.sub-title {
    font-size: 20px;
    line-height: 1.2;
 }
@@ -201,10 +207,6 @@ body {
 }
 .portfolio .type {
    color: var(--secondary-text-color);
-}
-/* ----------------------> */
-.team {
-   background-color: #F4F4FD;
 }
 .container .list{
    display: flex;
