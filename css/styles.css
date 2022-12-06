@@ -24,6 +24,9 @@ p {
 a {
    background-color: rgb(106, 101, 191);
 }
+.container {
+   background-color: rgb(55, 222, 199);
+}
 /* ----------- DEFAULT SETTINGS: -----------> */
 body {
    background-color: #fff;
@@ -46,7 +49,6 @@ body {
    width: 1158px;
    margin-left: auto;
    margin-right: auto;
-   background-color: rgb(55, 222, 199); /* delete */
 }
 /* Every list inside body is 'flex' */
 .container .list {
