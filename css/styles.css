@@ -111,8 +111,18 @@ body {
 .contacts .link:focus {
    color: var(--primary-brand-color);
 }
-
 /* ----------- MAIN -----------> */
+.title {
+   text-align: center;
+   margin-bottom: 72px;
+
+   font-size: 36px;
+   line-height: 1.1;
+}
+.title,
+.sub-title {
+   font-weight: 500;
+}
 .item:not(:last-child) {
    margin-right: 24px;
 }
@@ -124,7 +134,7 @@ body {
    background: var(--primary-text-color);
    text-align: center;
 }
-.hero-title {
+.hero .title {
    margin-bottom: 48px;
    
    color: #fff;
@@ -134,7 +144,7 @@ body {
 }
 .hero .button {
    padding: 16px 32px;
-
+   
    background: var(--primary-brand-color);
    color: #fff;
    font-family: inherit;
@@ -155,21 +165,13 @@ body {
 }
 .advantages .list {
    display: flex;
-   justify-content: space-between; /*Взагалі ніяк не реагує */
+   justify-content: space-between; 
+   /*Взагалі ніяк не реагує */
 }
-.sub-title{
-   margin-bottom: 8px;
-}
-/* .advantages .item:not(:last-child) {
-   margin-right: 24px;
-} */
 .goals .list{
    display: flex;
    justify-content: space-between;
 }
-/* .goals .item:not(:last-child){
-   margin-right: 24px;
-} */
 /* ----------------------> */
 .radio-button .button {
    background-color: #F4F4FD;
@@ -184,17 +186,6 @@ body {
 .radio-button .button:focus {
    background-color: var(--primary-brand-color);
    color: #fff;
-}
-.title,
-.sub-title {
-   font-weight: 500;
-}
-.title {
-   text-align: center;
-   margin-bottom: 72px;
-
-   font-size: 36px;
-   line-height: 1.1;
 }
 .sub-title,
 .portfolio .card-title {
@@ -211,7 +202,6 @@ body {
 /* ----------------------> */
 .team {
    background-color: #F4F4FD;
-   text-align: center;
 }
 .container .list{
    display: flex;
