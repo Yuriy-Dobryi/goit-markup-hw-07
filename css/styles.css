@@ -24,9 +24,6 @@ p {
 a {
    background-color: rgb(106, 101, 191);
 }
-img{
-   background-color: rgb(204, 49, 163);
-}
 /* ----------- DEFAULT SETTINGS: -----------> */
 body {
    background-color: #fff;
@@ -73,7 +70,7 @@ body {
    overflow: hidden;
 }
 img:not(.goals img){
-   padding-bottom: 32px;
+   margin-bottom: 32px;
 }
 /* ----------- HEADER -----------> */
 .page-header .container {
