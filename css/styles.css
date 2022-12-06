@@ -22,7 +22,7 @@ p {
    background-color: rgb(162, 76, 30);
 }
 a {
-   background-color: rgb(106, 100, 191);
+   background-color: rgb(106, 101, 191);
 }
 img{
    background-color: rgb(204, 49, 163);
@@ -221,11 +221,13 @@ img:not(.goals img){
 }
 /* ------------->------------->-------------> */
 .page-footer {
-   padding: 100px 1020px 100px 156px;
+   padding-top: 100px;
+   padding-bottom: 100px;
    background-color: var(--primary-text-color);
 }
 /* ----------------------> */
 .page-footer .logo {
+   display: block;
    margin-bottom: 16px;
    line-height: 1.17;
 }
