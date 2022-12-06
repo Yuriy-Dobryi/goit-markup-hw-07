@@ -35,8 +35,8 @@ body {
    font-size: 16px;
    letter-spacing: 0.02em;
 }
-/* Sections */
-.section:not(:nth-child(2)) {
+/* Sections: */
+.section:not(.advantages) {
    text-align: center;
 }
 .hero,
@@ -44,6 +44,7 @@ body {
 .goals {
    margin-bottom: 120px;
 }
+/* ----------- */
 .container {
    width: 1158px;
    margin-left: auto;
@@ -70,6 +71,9 @@ body {
    padding: 0;
    clip: rect(0 0 0 0);
    overflow: hidden;
+}
+img:not(.goals img){
+   padding-bottom: 32px;
 }
 /* ----------- HEADER -----------> */
 .page-header .container {
@@ -128,7 +132,6 @@ body {
 }
 .title {
    margin-bottom: 72px;
-
    font-size: 36px;
    line-height: 1.1;
 }
@@ -154,7 +157,6 @@ body {
 .hero {
    padding-top: 192px;
    padding-bottom: 192px; 
-   
    background: var(--primary-text-color);
 }
 .hero .title {
@@ -198,6 +200,8 @@ body {
 }
 /* ---- TEAM ----> */
 .team {
+   padding-top: 120px;
+   padding-bottom: 120px;
    background-color: #F4F4FD;
 }
 /* ----------------------> */
