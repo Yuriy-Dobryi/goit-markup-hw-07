@@ -72,9 +72,6 @@ body {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
-img:not(.goals img){
-   margin-bottom: 32px;
-}
 /* ----------- HEADER -----------> */
 .page-header .container {
    display: flex;
@@ -203,6 +200,9 @@ img:not(.goals img){
 /* ---- TEAM ----> */
 .team {
    background-color: #F4F4FD;
+}
+.card-content{
+   padding: 32px 16px;
 }
 /* ----------- PORTFOLIO MAIN -----------> */
 .radio-btn{
