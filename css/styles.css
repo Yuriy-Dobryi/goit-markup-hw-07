@@ -182,18 +182,19 @@ img:not(.goals img){
 .hero .button:active {
    background-color: #404BBF;
 }
-/* -----------> */
-.portfolio .radio-button .button {
+/* ---- PORTFOLIO ----> */
+.portfolio .radio-btn .button {
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
+   border: none;
    font-family: inherit;
    font-size: inherit;
    font-weight: 500;
    letter-spacing: 0.04em;
    cursor: pointer;
 }
-.radio-button .button:hover,
-.radio-button .button:focus {
+.portfolio .radio-btn .button:hover,
+.portfolio .radio-btn .button:focus {
    background-color: var(--primary-brand-color);
    color: #fff;
 }
