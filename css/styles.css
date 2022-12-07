@@ -4,15 +4,18 @@
    --primary-brand-color: #4D5AE5;
 }
 /* ----------- RESET SETTINGS -----------> */
-h1, h2, h3, h4, h5, h6, p, ul, li, a, button, img {
+h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
    padding: 0;
-
-   list-style: none;
-   text-decoration: none;
 }
 img {
    display: block;
+}
+.list{
+   list-style: none;
+}
+.link{
+   text-decoration: none;
 }
 /* ----------- BG COLOR FOR CHECK: -----------> */
 h1, h2, h3 {
@@ -35,16 +38,15 @@ body {
    font-size: 16px;
    letter-spacing: 0.02em;
 }
-/* Sections: */
-.section:not(.advantages) {
-   text-align: center;
-}
+/* Sections */
 .hero,
 .advantages,
 .goals {
    margin-bottom: 120px;
 }
-/* ----------- */
+.section:not(.advantages) {
+   text-align: center;
+}
 .container {
    width: 1158px;
    margin-left: auto;
@@ -76,7 +78,6 @@ img:not(.goals img){
 }
 /* ----------- HEADER -----------> */
 .page-header .container {
-   display: flex;
    align-items: center;
 }
 /* Link click area */
@@ -93,10 +94,7 @@ img:not(.goals img){
    color: var(--primary-text-color);
 }
 /* ---- NAVIGATION ----> */
-.nav .list {
-   display: flex;
-}
-/* for Nav and Contacts */
+/* for 'nav' and 'contacts' (li) */
 .page-header .item:not(:last-child) {
    margin-right: 40px;
 }
@@ -113,7 +111,6 @@ img:not(.goals img){
 }
 /* ---- CONTACTS ----> */
 .contacts {
-   display: flex;
    margin-left: auto;
 }
 .contacts .link {
@@ -124,7 +121,6 @@ img:not(.goals img){
 .contacts .link:focus {
    color: var(--primary-brand-color);
 }
-
 /* ----------- MAIN -----------> */
 .item:not(:last-child) {
    margin-right: 24px;
@@ -189,9 +185,8 @@ img:not(.goals img){
 }
 /* ---- ADVANTAGES ----> */
 .advantages .list {
-   display: flex;
-   justify-content: space-between;
    /*Взагалі ніяк не реагує */
+   justify-content: space-between;
 }
 /* ---- GOALS ----> */
 .goals .list{
@@ -218,13 +213,12 @@ img:not(.goals img){
    background-color: var(--primary-brand-color);
    color: #fff;
 }
-/* ------------->------------->-------------> */
+/* ----------- FOOTER -----------> */
 .page-footer {
    padding-top: 100px;
    padding-bottom: 100px;
    background-color: var(--primary-text-color);
 }
-/* ----------------------> */
 .page-footer .logo {
    display: block;
    margin-bottom: 16px;
@@ -233,7 +227,6 @@ img:not(.goals img){
 .page-footer .logo .studio {
    color: #F4F4FD;
 }
-/* ----------------------> */
 .slogan {
    color: #E7E9FC;
 }
