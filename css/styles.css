@@ -135,7 +135,8 @@ img:not(.goals img){
 .sub-title {
    font-weight: 500;
 }
-.portfolio .card-title .sub-title {
+.sub-title,
+.portfolio .card-title {
    font-size: 20px;
    line-height: 1.2;
 }
@@ -182,22 +183,6 @@ img:not(.goals img){
 .hero .button:active {
    background-color: #404BBF;
 }
-/* ---- PORTFOLIO ----> */
-.portfolio .radio-btn .button {
-   background-color: #F4F4FD;
-   color: var(--primary-brand-color);
-   border: none;
-   font-family: inherit;
-   font-size: inherit;
-   font-weight: 500;
-   letter-spacing: 0.04em;
-   cursor: pointer;
-}
-.portfolio .radio-btn .button:hover,
-.portfolio .radio-btn .button:focus {
-   background-color: var(--primary-brand-color);
-   color: #fff;
-}
 /* -----------> */
 .advantages,
 .team {
@@ -215,6 +200,22 @@ img:not(.goals img){
 /* ---- TEAM ----> */
 .team {
    background-color: #F4F4FD;
+}
+/* ----------- PORTFOLIO MAIN -----------> */
+.portfolio .radio-btn .button {
+   background-color: #F4F4FD;
+   color: var(--primary-brand-color);
+   border: none;
+   font-family: inherit;
+   font-size: inherit;
+   font-weight: 500;
+   letter-spacing: 0.04em;
+   cursor: pointer;
+}
+.portfolio .radio-btn .button:hover,
+.portfolio .radio-btn .button:focus {
+   background-color: var(--primary-brand-color);
+   color: #fff;
 }
 /* ----------- FOOTER -----------> */
 .page-footer {
