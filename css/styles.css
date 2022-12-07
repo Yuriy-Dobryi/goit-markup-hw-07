@@ -13,10 +13,10 @@ img {
    max-width: 100%;
    height: auto;
 }
-.list{
+.list {
    list-style: none;
 }
-.link{
+.link {
    text-decoration: none;
 }
 /* ----------- BG COLOR FOR CHECK VIEW: -----------> */
@@ -194,22 +194,24 @@ body {
    justify-content: space-between;
 }
 /* ---- GOALS ----> */
-.goals .list{
+.goals .list {
    justify-content: space-between;
 }
 /* ---- TEAM ----> */
 .team {
    background-color: #F4F4FD;
 }
-.card-content{
+.card-content {
    padding: 32px 16px;
 }
 /* ----------- PORTFOLIO MAIN -----------> */
-.radio-btn{
+.radio-btn {
    justify-content: center;
-   flex-wrap: wrap;
    padding-top: 96px;
    padding-bottom: 72px;
+}
+.cards {
+   flex-wrap: wrap;
 }
 .portfolio .radio-btn .button {
    padding: 8px 16px;
