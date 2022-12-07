@@ -44,15 +44,13 @@ body {
 .hero,
 .advantages,
 .goals {
-   margin-bottom: 120px;
+   padding-bottom: 120px;
 }
 .section:not(.advantages) {
    text-align: center;
 }
 .container {
    width: 1158px;
-   padding-top: 15px;
-   padding-bottom: 15px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -199,8 +197,6 @@ img:not(.goals img){
 }
 /* ---- TEAM ----> */
 .team {
-   padding-top: 120px;
-   padding-bottom: 120px;
    background-color: #F4F4FD;
 }
 /* ----------------------> */
