@@ -19,7 +19,7 @@ img {
 .link{
    text-decoration: none;
 }
-/* ----------- BG COLOR FOR CHECK: -----------> */
+/* ----------- BG COLOR FOR CHECK VIEW: -----------> */
 h1, h2, h3 {
    background-color: rgb(137, 169, 31);
 }
@@ -31,6 +31,9 @@ a {
 }
 .container {
    background-color: rgb(55, 222, 199);
+}
+.portfolio .container {
+   background-color: rgb(222, 55, 158);
 }
 /* ----------- DEFAULT SETTINGS: -----------> */
 body {
@@ -204,9 +207,9 @@ img:not(.goals img){
 /* ----------- PORTFOLIO MAIN -----------> */
 .radio-btn{
    justify-content: center;
+   flex-wrap: wrap;
    padding-top: 96px;
    padding-bottom: 72px;
-
 }
 .portfolio .radio-btn .button {
    padding: 8px 16px;
