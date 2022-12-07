@@ -78,6 +78,7 @@ img:not(.goals img){
 }
 /* ----------- HEADER -----------> */
 .page-header .container {
+   display: flex;
    align-items: center;
 }
 /* Link click area */
