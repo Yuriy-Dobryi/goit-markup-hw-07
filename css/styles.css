@@ -229,6 +229,8 @@ body {
 .cards {
    flex-wrap: wrap;
    justify-content: space-between;
+   /* 120px - (.cards .item 'margin-bottom: 48px') */
+   padding-bottom: 72px;
 }
 .cards .item{
    margin-bottom: 48px;
