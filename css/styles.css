@@ -40,12 +40,6 @@ body {
    font-size: 16px;
    letter-spacing: 0.02em;
 }
-/* Sections */
-.hero,
-.advantages,
-.goals {
-   padding-bottom: 120px;
-}
 .section:not(.advantages) {
    text-align: center;
 }
@@ -125,6 +119,7 @@ img:not(.goals img){
    color: var(--primary-brand-color);
 }
 /* ----------- MAIN -----------> */
+
 .item:not(:last-child) {
    margin-right: 24px;
 }
@@ -154,7 +149,7 @@ img:not(.goals img){
 /* ---- HERO ----> */
 .hero {
    padding-top: 192px;
-   padding-bottom: 192px; 
+   padding-bottom: 192px;
    background: var(--primary-text-color);
 }
 .hero .title {
@@ -170,6 +165,7 @@ img:not(.goals img){
    
    background: var(--primary-brand-color);
    color: #fff;
+   border: none;
    font-family: inherit;
    font-weight: 500;
    font-size: inherit;
@@ -186,20 +182,7 @@ img:not(.goals img){
 .hero .button:active {
    background-color: #404BBF;
 }
-/* ---- ADVANTAGES ----> */
-.advantages .list {
-   /*Взагалі ніяк не реагує */
-   justify-content: space-between;
-}
-/* ---- GOALS ----> */
-.goals .list{
-   justify-content: space-between;
-}
-/* ---- TEAM ----> */
-.team {
-   background-color: #F4F4FD;
-}
-/* ----------------------> */
+/* -----------> */
 .portfolio .radio-button .button {
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
@@ -213,6 +196,24 @@ img:not(.goals img){
 .radio-button .button:focus {
    background-color: var(--primary-brand-color);
    color: #fff;
+}
+/* -----------> */
+.advantages,
+.team {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+.advantages .list {
+   /*Взагалі ніяк не реагує */
+   justify-content: space-between;
+}
+/* ---- GOALS ----> */
+.goals .list{
+   justify-content: space-between;
+}
+/* ---- TEAM ----> */
+.team {
+   background-color: #F4F4FD;
 }
 /* ----------- FOOTER -----------> */
 .page-footer {
