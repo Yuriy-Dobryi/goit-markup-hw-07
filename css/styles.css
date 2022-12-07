@@ -203,10 +203,13 @@ img:not(.goals img){
 }
 /* ----------- PORTFOLIO MAIN -----------> */
 .radio-btn{
-   display: flex;
+   justify-content: center;
+   padding-top: 96px;
+   padding-bottom: 72px;
+
 }
-.portfolio
 .portfolio .radio-btn .button {
+   padding: 8px 16px;
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
    border: none;
