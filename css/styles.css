@@ -119,9 +119,6 @@ body {
    color: var(--primary-brand-color);
 }
 /* ----------- MAIN -----------> */
-/* .item:not(:last-child) {
-   margin-right: 24px;
-} */
 .title {
    margin-bottom: 72px;
    font-size: 36px;
@@ -183,23 +180,24 @@ body {
 .hero .button:active {
    background-color: #404BBF;
 }
-/* -----------> */
+/* ---- SECTIONS: ----> */
+.advantages .item:not(:last-child) {
+   margin-right: 24px;
+}
+/* В цій секції потрібно робити відступ між 'li' так як внизу написав, чи через margin-right? */
+.goals .list {
+   justify-content: space-between;
+}
 .advantages,
 .team {
    padding-top: 120px;
    padding-bottom: 120px;
 }
-.advantages .list {
-   /*Взагалі ніяк не реагує */
-   justify-content: space-between;
-}
-/* ---- GOALS ----> */
-.goals .list {
-   justify-content: space-between;
-}
-/* ---- TEAM ----> */
 .team {
    background-color: #F4F4FD;
+}
+.team .list{
+   justify-content: space-between;
 }
 .card-content {
    padding: 32px 16px;
