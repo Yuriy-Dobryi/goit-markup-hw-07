@@ -120,28 +120,6 @@ body {
    color: var(--primary-brand-color);
 }
 /* -------- MAIN --------> */
-/* default settings: */
-.section-title {
-   margin-bottom: 72px;
-   font-weight: 500;
-   font-size: 36px;
-   line-height: 1.1;
-}
-.sub-title {
-   margin-bottom: 8px;
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-}
-.portfolio .card-title {
-   color: var(--primary-text-color);
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-}
-.portfolio .card-type {
-   color: var(--secondary-text-color);
-}
 /* ---- HERO SECTION: ----> */
 .hero-container {
    display: flex;
@@ -185,9 +163,6 @@ body {
    padding-top: 120px;
    padding-bottom: 120px;
 }
-/* .priorities-item:not(:last-child) {
-   margin-right: 24px;
-} */
 .priorities-list{
    display: flex;
    justify-content: space-between;
@@ -199,31 +174,51 @@ body {
    line-height: 1.2;
 }
 /* ---- WORKS SECTION: ----> */
+.works-title{
+   margin-bottom: 72px;
+   font-weight: 500;
+   font-size: 36px;
+   line-height: 1.1;
+}
 .works-list {
    display: flex;
    justify-content: space-between;
 }
-/* .works-item:not(:last-child) {
-   margin-right: 24px;
-} */
 /* ---- TEAM SECTION: ----> */
 .team-container {
    padding-top: 120px;
    padding-bottom: 120px;
    background-color: #F4F4FD;
 }
+.team-title{
+   margin-bottom: 72px;
+   font-weight: 500;
+   font-size: 36px;
+   line-height: 1.1;
+}
 .team-list{
    display: flex;
    justify-content: space-between;
 }
-/* .team-item:not(:last-child){
-   margin-right: 24px;
-} */
 
 
-
+.portfolio .card-title {
+   color: var(--primary-text-color);
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+}
+.portfolio .card-type {
+   color: var(--secondary-text-color);
+}
 .card-title {
    margin-bottom: 8px;
+}
+.sub-title {
+   margin-bottom: 8px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
 }
 .cards .item{
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
