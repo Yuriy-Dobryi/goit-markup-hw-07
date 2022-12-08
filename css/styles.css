@@ -44,19 +44,12 @@ body {
    font-size: 16px;
    letter-spacing: 0.02em;
 }
-/* .section:not(.priorities) {
-   text-align: center;
-} */
 .container {
    width: 1158px;
    margin-left: auto;
    margin-right: auto;
    padding: 0 15px;
 }
-/* Every list inside all pages is 'flex' */
-/* .container .list {
-   display: flex;
-} */
 .logo {
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
