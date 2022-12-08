@@ -165,8 +165,7 @@ body {
    padding-bottom: 120px;
 }
 .priorities-list{
-   display: flex;
-   justify-content: space-between;
+   display: flex; 
 }
 .priorities-title{
    margin-bottom: 8px;
@@ -174,6 +173,7 @@ body {
    font-size: 20px;
    line-height: 1.2;
 }
+/* item (li) width by calc*/
 .priorities-item{
    width: calc((100%-24px)/3);
 }
