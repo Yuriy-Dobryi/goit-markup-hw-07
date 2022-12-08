@@ -225,10 +225,13 @@ body{
 }
 
 /* -------- MAIN PORTFOLIO.HTML --------> */
+.portfolio-section{
+   padding-top: 96px;
+   padding-bottom: 120px;
+}
 .radio-btn{
    display: flex;
    justify-content: center;
-   padding-top: 96px;
    padding-bottom: 72px;
 }
 .radio-btn .button{
@@ -248,11 +251,10 @@ body{
    background-color: var(--primary-brand-color);
    color: #fff;
 }
-.cards{
+.portfolio-cards{
+   display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   /* 120px - (.cards .item 'margin-bottom: 48px') */
-   padding-bottom: 72px;
 }
 /* Чому не працює ? */
 .portfolio .cards .item:not(nth-last-child(-n + 3)){
