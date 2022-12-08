@@ -42,6 +42,7 @@ body {
    color: var(--primary-text-color);
    font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 16px;
+   color: var(--primary-secondary-color);
    letter-spacing: 0.02em;
 }
 .container {
@@ -173,12 +174,17 @@ body {
    font-size: 20px;
    line-height: 1.2;
 }
+.priorities-item-text{
+   color: var(--secondary-text-color);
+   line-height: 1.5;
+}
 /* ---- WORKS SECTION: ----> */
 .works-title{
    margin-bottom: 72px;
    font-weight: 500;
    font-size: 36px;
    line-height: 1.1;
+   text-align: center;
 }
 .works-list {
    display: flex;
@@ -195,10 +201,16 @@ body {
    font-weight: 500;
    font-size: 36px;
    line-height: 1.1;
+   text-align: center;
 }
 .team-list{
    display: flex;
    justify-content: space-between;
+   text-align: center;
+}
+.team-item-text{
+   color: var(--secondary-text-color);
+   line-height: 1.5;
 }
 
 
