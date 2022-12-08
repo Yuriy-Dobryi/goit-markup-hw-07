@@ -1,8 +1,3 @@
-:root{
-   --primary-text-color: #2E2F42;
-   --secondary-text-color: #434455;
-   --primary-brand-color: #4D5AE5;
-}
 /* <<<<BG COLOR FOR CHECK VIEW>>>> */
 h1, h2, h3 {
    background-color: rgb(137, 169, 31);
@@ -19,6 +14,11 @@ a{
    background-color: rgb(222, 55, 158);
 }
 /* <--------<DEFAULT SETTINGS>--------> */
+:root {
+   --primary-text-color: #2E2F42;
+   --secondary-text-color: #434455;
+   --primary-brand-color: #4D5AE5;
+}
 h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
    padding: 0;
@@ -310,5 +310,7 @@ body{
 .footer-slogan{
    margin-top: 16px;
    width: 264px;
+   
    color: #E7E9FC;
+   line-height: 1.5;
 }
