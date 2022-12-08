@@ -224,7 +224,7 @@ body{
    line-height: 1.5;
 }
 /* -------- MAIN PORTFOLIO.HTML --------> */
-.radio{
+.radio-btn{
    display: flex;
    justify-content: center;
    padding-top: 96px;
@@ -232,14 +232,17 @@ body{
 }
 .radio-btn .button{
    padding: 8px 16px;
+   border: 1px solid #E7E9FC;
+   border-radius: 4px;
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
-   border: none;
    font-family: inherit;
    font-size: inherit;
    font-weight: 500;
    letter-spacing: 0.04em;
    cursor: pointer;
+   
+   
 }
 .radio-btn .button:hover,
 .radio-btn .button:focus{
