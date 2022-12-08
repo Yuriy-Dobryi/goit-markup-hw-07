@@ -185,13 +185,14 @@ body {
    padding-top: 120px;
    padding-bottom: 120px;
 }
+/* .priorities-item:not(:last-child) {
+   margin-right: 24px;
+} */
 .priorities-list{
    display: flex;
    justify-content: space-between;
 }
-/* .priorities-item:not(:last-child) {
-   margin-right: 24px;
-} */
+.pri
 /* ---- WORKS SECTION: ----> */
 .works-list {
    display: flex;
