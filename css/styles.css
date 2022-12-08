@@ -256,6 +256,16 @@ body{
    flex-wrap: wrap;
    justify-content: space-between;
 }
+.portfolio-card,
+.portfolio-card:hover,
+.portfolio-card:focus{
+   background-color: #fff;
+   border: 0.5px solid #F4F4FD;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+   border: 0.5px solid #F4F4FD;
+}
+
+
 /* Чому не працює ? */
 .portfolio .cards .item:not(nth-last-child(-n + 3)){
    margin-bottom: 48px;
