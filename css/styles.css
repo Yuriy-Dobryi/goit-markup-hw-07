@@ -209,12 +209,12 @@ body {
    line-height: 1.1;
    text-align: center;
 }
-.team-list{
+.team-cards{
    display: flex;
    justify-content: space-between;
    text-align: center;
 }
-.team-item-text{
+.team-card .position{
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
