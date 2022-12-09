@@ -34,27 +34,27 @@ body{
    letter-spacing: 0.02em;
 }
 .container{
+   display: flex;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
    width: 1158px;
 }
-.list{
+.list {
+   display: flex;
    column-gap: 24px;
+   list-style: none;
 }
-.logo{
+.link {
+   text-decoration: none;
+}
+.logo {
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 18px;
    letter-spacing: 0.03em;
    text-transform: uppercase;
-}
-.list {
-   list-style: none;
-}
-.link {
-   text-decoration: none;
 }
 .visually-hidden{
    position: absolute;
@@ -72,7 +72,6 @@ body{
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container{
-   display: flex;
    align-items: center;
 }
 /* Link click area */
@@ -90,7 +89,6 @@ body{
 }
 /* <----<NAVIGATION>----> */
 .header-nav{
-   display: flex;
    column-gap: 40px;
 }
 .nav-link{
@@ -106,7 +104,6 @@ body{
 }
 /* <----<CONTACTS>----> */
 .header-contacts{
-   display: flex;
    margin-left: auto;
    column-gap: 40px;
 }
@@ -127,7 +124,6 @@ body{
    padding-bottom: 192px;
 }
 .hero-container{
-   display: flex;
    flex-direction: column;
    align-items: center;
 }
@@ -166,10 +162,6 @@ body{
    padding-top: 120px;
    padding-bottom: 120px;
 }
-.priorities-list{
-   display: flex;
-   column-gap: 24px;
-}
 .priorities-title{
    margin-bottom: 8px;
    font-weight: 500;
@@ -196,10 +188,6 @@ body{
    line-height: 1.1;
    text-align: center;
 }
-.works-list{
-   display: flex;
-   justify-content: space-between;
-}
 .works-item{
    border: 1px solid #E7E9FC;
 }
@@ -217,8 +205,6 @@ body{
    text-align: center;
 }
 .team-cards{
-   display: flex;
-   justify-content: space-between;
    text-align: center;
 }
 .team-card-content{
@@ -243,12 +229,9 @@ body{
    padding-bottom: 120px;
 }
 .radio-btn{
-   display: flex;
    justify-content: center;
    margin-bottom: 72px;
-}
-.radio-btn-item:not(:last-child){
-   margin-right: 24px;
+   row-gap: 24px;
 }
 .radio-btn .button{
    padding: 8px 16px;
@@ -268,7 +251,6 @@ body{
    color: #fff;
 }
 .portfolio-cards{
-   display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 }
