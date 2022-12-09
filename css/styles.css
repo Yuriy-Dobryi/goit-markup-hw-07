@@ -1,13 +1,9 @@
 /* <<<<BG COLOR FOR CHECK VIEW>>>> */
-h1, h2, h3 {
-   background-color: rgb(137, 169, 31);
-}
-p{
-   background-color: rgb(213, 151, 118);
-}
-a{
-   background-color: rgb(149, 147, 203);}
-.header-container{
+h1, h2, h3 {background-color: rgb(137, 169, 31);}
+p{background-color: rgb(213, 151, 118);}
+a{background-color: rgb(149, 147, 203);}
+.header-container, .priorities-container,
+.works-container, .team-container, .portfolio-container{
    background-color: rgb(55, 222, 199);
 }
 /* <--------<DEFAULT SETTINGS>--------> */
@@ -119,10 +115,10 @@ body{
 /* <--------<INDEX-MAIN>--------> */
 /* <----<HERO SECTION>----> */
 .hero-section{
-   padding: 192px 0;
    background: var(--primary-text-color);
 }
 .hero-container{
+   padding: 192px 0;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -158,8 +154,9 @@ body{
    background-color: #404BBF;
 }
 /* <----<PRIORITIES SECTION>----> */
-.priorities-section{
-   padding: 120px 0;
+.priorities-container{
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 .priorities-list{
    display: flex; 
@@ -182,8 +179,8 @@ body{
    line-height: 1.5;
 }
 /* <----<WORKS SECTION>----> */
-.works-section{
-   /* this section has only 'padding-bottom' */
+.works-container{
+   /* has only 'padding-bottom' */
    padding-bottom: 120px;
 }
 .works-title{
@@ -202,8 +199,11 @@ body{
 }
 /* <----<TEAM SECTION>----> */
 .team-section{
-   padding: 120px 0;
    background-color: #F4F4FD;
+}
+.team-container{
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 .team-title{
    margin-bottom: 72px;
@@ -234,7 +234,7 @@ body{
 }
 
 /* <--------<PORTFOLIO MAIN>--------> */
-.portfolio-section{
+.portfolio-container{
    padding-top: 96px;
    padding-bottom: 120px;
 }
@@ -295,8 +295,10 @@ body{
 }
 /* <--------<FOOTER>--------> */
 .footer{
-   padding: 100px 0;
    background-color: var(--primary-text-color);
+}
+.footer-container{
+   padding: 100px 0;
 }
 .footer .logo{
    line-height: 1.17;
