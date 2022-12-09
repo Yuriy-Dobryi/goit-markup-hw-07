@@ -29,21 +29,6 @@ img {
    max-width: 100%;
    height: auto;
 }
-<<<<<<< HEAD
-.list{
-   list-style: none;
-}
-.link{
-   text-decoration: none;
-}
-/* -------- BG COLOR FOR CHECK VIEW: --------> */
-h1, h2, h3 {background-color: rgb(137, 169, 31);}
-p{background-color: rgb(213, 151, 118);}
-a{background-color: rgb(149, 147, 203);}
-.header-container,.priorities-container,.works-container,.team-container{background-color: rgb(55, 222, 199);}
-/* -------- DEFAULT SETTINGS: --------> */
-=======
->>>>>>> 00ac435c938068e5c955cb9a88aef091ffc46861
 body{
    background-color: #fff;
    color: var(--primary-text-color);
@@ -134,27 +119,16 @@ body{
 .contacts-link:focus{
    color: var(--primary-brand-color);
 }
-<<<<<<< HEAD
-/* -------- MAIN INDEX.HTML --------> */
-/* ---- HERO SECTION: ----> */
-.hero-section{
-=======
 /* <--------<INDEX-MAIN>--------> */
 /* <----<HERO SECTION>----> */
 .hero-section{
    padding: 192px 0;
->>>>>>> 00ac435c938068e5c955cb9a88aef091ffc46861
    background: var(--primary-text-color);
 }
 .hero-container{
    display: flex;
    flex-direction: column;
    align-items: center;
-<<<<<<< HEAD
-   padding-top: 192px;
-   padding-bottom: 192px;
-=======
->>>>>>> 00ac435c938068e5c955cb9a88aef091ffc46861
 }
 .hero-title{
    margin-bottom: 48px;
@@ -229,20 +203,10 @@ body{
 .works-item{
    border: 1px solid #E7E9FC;
 }
-<<<<<<< HEAD
-/* ---- TEAM SECTION: ----> */
-.team-section{
-   background-color: #F4F4FD;
-}
-.team-container{
-   padding-top: 120px;
-   padding-bottom: 120px;
-=======
 /* <----<TEAM SECTION>----> */
 .team-section{
    padding: 120px 0;
    background-color: #F4F4FD;
->>>>>>> 00ac435c938068e5c955cb9a88aef091ffc46861
 }
 .team-title{
    margin-bottom: 72px;
@@ -332,17 +296,10 @@ body{
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
-<<<<<<< HEAD
-/* -------- FOOTER --------> */
-.footer{
-   background-color: var(--primary-text-color);
-}
-.footer-container{
-=======
 /* <--------<FOOTER>--------> */
 .footer{
->>>>>>> 00ac435c938068e5c955cb9a88aef091ffc46861
    padding: 100px 0;
+   background-color: var(--primary-text-color);
 }
 .footer .logo{
    line-height: 1.17;
