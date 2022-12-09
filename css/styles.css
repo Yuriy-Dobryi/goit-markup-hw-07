@@ -36,7 +36,8 @@ body{
 .container{
    margin-left: auto;
    margin-right: auto;
-   padding: 0 15px;
+   padding-left: 15px;
+   padding-right: 15px;
    width: 1158px;
 }
 .logo{
@@ -125,7 +126,8 @@ body{
    background: var(--primary-text-color);
 }
 .hero-container{
-   padding: 192px 0;
+   padding-top: 192px;
+   padding-bottom: 192px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -309,7 +311,8 @@ body{
    background-color: var(--primary-text-color);
 }
 .footer-container{
-   padding: 100px 0;
+   padding-top: 100px;
+   padding-bottom: 100px;
 }
 .footer .logo{
    line-height: 1.17;
