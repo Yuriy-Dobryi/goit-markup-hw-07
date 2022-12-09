@@ -228,6 +228,9 @@ body{
    padding-top: 96px;
    padding-bottom: 120px;
 }
+.portfolio-container{
+   display: block;
+}
 .radio-btn{
    justify-content: center;
    margin-bottom: 72px;
