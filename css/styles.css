@@ -7,11 +7,8 @@ p{
 }
 a{
    background-color: rgb(149, 147, 203);}
-.container{
-   background-color: rgb(55, 222, 199);
-}
 .header-container{
-   background-color: rgb(222, 55, 158);
+   background-color: rgb(55, 222, 199);
 }
 /* <--------<DEFAULT SETTINGS>--------> */
 :root {
