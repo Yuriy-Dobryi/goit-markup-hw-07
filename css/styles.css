@@ -24,8 +24,7 @@ img{
 h1, h2, h3 {background-color: rgb(137, 169, 31);}
 p{background-color: rgb(213, 151, 118);}
 a{background-color: rgb(149, 147, 203);}
-.container{background-color: rgb(55, 222, 199);}
-.header-container{background-color: rgb(222, 55, 158);}
+.header-container,.priorities-container,.works-container,.team-container{background-color: rgb(55, 222, 199);}
 /* -------- DEFAULT SETTINGS: --------> */
 body{
    background-color: #fff;
@@ -111,13 +110,15 @@ body{
 }
 /* -------- MAIN INDEX.HTML --------> */
 /* ---- HERO SECTION: ----> */
+.hero-section{
+   background: var(--primary-text-color);
+}
 .hero-container{
    display: flex;
    flex-direction: column;
    align-items: center;
    padding-top: 192px;
    padding-bottom: 192px;
-   background: var(--primary-text-color);
 }
 .hero-title{
    margin-bottom: 48px;
@@ -190,10 +191,12 @@ body{
    border: 1px solid #E7E9FC;
 }
 /* ---- TEAM SECTION: ----> */
+.team-section{
+   background-color: #F4F4FD;
+}
 .team-container{
    padding-top: 120px;
    padding-bottom: 120px;
-   background-color: #F4F4FD;
 }
 .team-title{
    margin-bottom: 72px;
@@ -283,9 +286,11 @@ body{
    line-height: 1.5;
 }
 /* -------- FOOTER --------> */
+.footer{
+   background-color: var(--primary-text-color);
+}
 .footer-container{
    padding: 100px 0;
-   background-color: var(--primary-text-color);
 }
 .footer .logo{
    line-height: 1.17;
