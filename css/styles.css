@@ -124,10 +124,10 @@ body{
 /* <----<HERO SECTION>----> */
 .hero-section{
    background: var(--primary-text-color);
-}
-.hero-container{
    padding-top: 192px;
    padding-bottom: 192px;
+}
+.hero-container{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -163,7 +163,7 @@ body{
    background-color: #404BBF;
 }
 /* <----<PRIORITIES SECTION>----> */
-.priorities-container{
+.priorities-section{
    padding-top: 120px;
    padding-bottom: 120px;
 }
@@ -188,7 +188,7 @@ body{
    line-height: 1.5;
 }
 /* <----<WORKS SECTION>----> */
-.works-container{
+.works-section{
    /* has only 'padding-bottom' */
    padding-bottom: 120px;
 }
@@ -209,8 +209,6 @@ body{
 /* <----<TEAM SECTION>----> */
 .team-section{
    background-color: #F4F4FD;
-}
-.team-container{
    padding-top: 120px;
    padding-bottom: 120px;
 }
@@ -243,7 +241,7 @@ body{
 }
 
 /* <--------<PORTFOLIO MAIN>--------> */
-.portfolio-container{
+.portfolio-section{
    padding-top: 96px;
    padding-bottom: 120px;
 }
@@ -309,8 +307,6 @@ body{
 /* <--------<FOOTER>--------> */
 .footer{
    background-color: var(--primary-text-color);
-}
-.footer-container{
    padding-top: 100px;
    padding-bottom: 100px;
 }
