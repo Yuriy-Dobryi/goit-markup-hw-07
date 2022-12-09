@@ -36,7 +36,6 @@ body{
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   align-items: center;
    row-gap: 72px;
    margin-left: auto;
    margin-right: auto;
@@ -131,6 +130,7 @@ body{
    padding-bottom: 192px;
 }
 .hero-container{
+   align-items: center;
    flex-direction: column;
 }
 .hero-title{
