@@ -173,13 +173,14 @@ body{
 .priorities-item{
    flex-basis: calc((100% - (24px * 3))/4);
 }
-.container-icon{
+.icon-container{
    padding: 24px 100px;
    width: 264px;
    height: 112px;
    background-color: #F4F4FD;
 }
 .priorities-title {
+   margin-top: 8px;
    margin-bottom: 8px;
    font-weight: 500;
    font-size: 20px;
