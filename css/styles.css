@@ -237,15 +237,15 @@ body{
    line-height: 1.5;
 }
 .team-icons{
-}
-.team-icon-container{
    padding-top: 4px;
    padding-bottom: 4px;
+}
+.team-icon-container{
+   padding: 12px;
    width: 40px;
    height: 40px;
    background-color: #000;
    border-radius: 50%;
-   
 }
 
 /* <--------<PORTFOLIO MAIN>--------> */
