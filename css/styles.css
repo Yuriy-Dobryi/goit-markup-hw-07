@@ -170,28 +170,22 @@ body{
    padding-top: 120px;
    padding-bottom: 120px;
 }
-.priorities-title{
+.priorities-item{
+   flex-basis: calc((100% - (24px * 3))/4);
+}
+.container-icon{
+   padding: 24px 100px;
+   width: 264px;
+   height: 112px;
+   background-color: #F4F4FD;
+}
+.priorities-title {
    margin-bottom: 8px;
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
 }
-.priorities-item{
-   flex-basis: calc((100% - (24px * 3))/4);
-}
-.box-icon{
-   /* display: flex;
-   justify-content: center;
-   align-items: center; */
-   padding: 24px 100px;
-   background-color: #F4F4FD;
-   width: 264px;
-   height: 112px;
-}
-.antenna-icon{
-   
-}
-.priorities-item-text{
+.priorities-desctiption{
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
