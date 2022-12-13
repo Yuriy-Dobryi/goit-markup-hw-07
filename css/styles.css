@@ -255,6 +255,19 @@ body {
    padding-top: 120px;
    padding-bottom: 120px;
 }
+.customers-icon-container{
+   padding: 16px 32px;
+   width: 168px;
+   height: 88px;
+   border: 1px solid #8E8F99;
+   border-radius: 4px;
+}
+.customers-title{
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+}
 
 /* <--------<PORTFOLIO MAIN>--------> */
 .portfolio-section {
