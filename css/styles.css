@@ -1,5 +1,5 @@
 /* <<!!--BG COLORS FOR CHECK VIEW!!-->> */
-/* .container:hover {
+.container:hover {
    background-color: rgb(55, 222, 199);
 }
 .card-content:hover {
@@ -8,7 +8,7 @@
 h1:hover, h2:hover, h3:hover,
 p:hover, a:hover {
    background-color: rgb(149, 147, 203);
-} */
+}
 /* <--------<DEFAULT SETTINGS>--------> */
 :root {
    --primary-text-color: #2E2F42;
@@ -41,8 +41,8 @@ body {
 }
 .container-flex-properties {
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
+   flex-wrap: wrap;
    row-gap: 72px;
 }
 .list-flex-properties {
@@ -170,8 +170,8 @@ body {
 }
 .priorities-icon-container{
    padding: 24px 100px;
-   width: 264px;
-   height: 112px;
+   /* width: 264px;
+   height: 112px; */
    background-color: #F4F4FD;
 }
 .priorities-title {
@@ -216,11 +216,11 @@ body {
 }
 .team-card {
    flex-basis: calc((100% - (24px * 3))/4);
+   background-color: #fff;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-card-content{
    padding: 32px 16px;
-   background-color: #fff;
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-card-name {
    margin-bottom: 8px;
@@ -238,11 +238,17 @@ body {
    padding-bottom: 4px;
 }
 .team-icon-container {
+   display: inline-block;
    padding: 12px;
    width: 40px;
    height: 40px;
-   background-color: #000;
+   background-color: var(--primary-brand-color);
    border-radius: 50%;
+}
+.team-icon{
+   width: 16px;
+   height: 16px;
+   fill: #F4F4FD;
 }
 
 /* <--------<PORTFOLIO MAIN>--------> */
@@ -301,11 +307,17 @@ body {
    padding-bottom: 100px;
 }
 .footer-container {
-   flex-direction: column;
-   align-items: flex-start;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
    row-gap: 16px;
 }
+.wtf{
+   margin-right: 120px;
+}
 .footer .logo {
+   display: inline-block;
+   margin-bottom: 16px;
    line-height: 1.17;
 }
 .footer-logo-studio {
@@ -315,4 +327,29 @@ body {
    width: 264px;
    color: #E7E9FC;
    line-height: 1.5;
+}
+.footer-title {
+   margin-bottom: 16px;
+   color: #fff;
+   font-weight: 500;
+}
+.footer-icons{
+   column-gap: 16px;
+}
+.footer-icon-container{
+   display: inline-block;
+   padding: 8px;
+   width: 40px;
+   height: 40px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+}
+.footer-icon-container:hover,
+.footer-icon-container:focus{
+   background-color: #31D0AA;
+}
+.footer-icon{
+   width: 24px;
+   height: 24px;
+   fill: #F4F4FD;
 }
