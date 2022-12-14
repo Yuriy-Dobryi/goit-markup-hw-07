@@ -273,7 +273,7 @@ body {
    height: 88px;
    border: 1px solid #8E8F99;
    border-radius: 4px;
-   color: #F4F4FD;
+   fill: #8E8F99;
 }
 .customer-icon-container:hover,
 .customer-icon-container:focus{
