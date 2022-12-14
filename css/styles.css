@@ -42,6 +42,7 @@ body {
 .container-flex-properties {
    display: flex;
    justify-content: center;
+   align-items: center;
    flex-wrap: wrap;
    row-gap: 72px;
 }
@@ -75,9 +76,6 @@ body {
 /* <--------<HEADER>--------> */
 .header {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.header-container {
-   align-items: center;
 }
 /* Link click area */
 .header .link {
@@ -123,14 +121,13 @@ body {
 
 /* <--------<INDEX-MAIN>--------> */
 /* <----<HERO>----> */
-.hero-section {
+.hero {
    padding-top: 192px;
    padding-bottom: 192px;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-size: 1600px, cover;
 }
 .hero-container {
-   align-items: center;
    flex-direction: column;
 }
 .hero-title {
@@ -162,7 +159,7 @@ body {
    background-color: #404BBF;
 }
 /* <----<PRIORITIES>----> */
-.priorities-section {
+.priorities {
    padding-top: 120px;
    padding-bottom: 120px;
 }
@@ -170,15 +167,13 @@ body {
    flex-basis: calc((100% - (24px * 3))/4);
 }
 .priorities-icon-container{
-   padding: 24px 100px;
-   /* width: 264px;
-   height: 112px; */
+   width: 264px;
+   height: 112px;
    background-color: #F4F4FD;
 }
 .priorities-icon{
    width: 64px;
    height: 64px;
-   fill: #F4F4FD;
 }
 .priorities-title {
    margin-top: 8px;
@@ -192,7 +187,7 @@ body {
    line-height: 1.5;
 }
 /* <----<WORKS>----> */
-.works-section {
+.works {
    padding-bottom: 120px;
 }
 .works-title {
@@ -206,7 +201,7 @@ body {
    border: 1px solid #E7E9FC;
 }
 /* <----<TEAM>----> */
-.team-section {
+.team {
    background-color: #F4F4FD;
    padding-top: 120px;
    padding-bottom: 120px;
@@ -244,8 +239,6 @@ body {
    padding-bottom: 4px;
 }
 .team-icon-container {
-   display: inline-block;
-   padding: 12px;
    width: 40px;
    height: 40px;
    background-color: var(--primary-brand-color);
@@ -254,7 +247,6 @@ body {
 .team-icon{
    width: 16px;
    height: 16px;
-   fill: #F4F4FD;
 }
 /* <----<CUSTOMERS>----> */
 .customers-section{
@@ -280,20 +272,18 @@ body {
    fill: var(--primary-brand-color);
    border-color: var(--primary-brand-color);
 }
-
 .customer-icon{
    width: 104px;
    height: 56px;
    fill: inherit;
 }
-
 /* <--------<PORTFOLIO MAIN>--------> */
 .portfolio-section {
    padding-top: 96px;
    padding-bottom: 120px;
 }
 .radio-btn .button {
-   padding: 8px 16px;
+   padding: 12px 24px;
    border: 1px solid #E7E9FC;
    border-radius: 4px;
    background-color: #F4F4FD;
@@ -388,5 +378,4 @@ body {
 .footer-icon{
    width: 24px;
    height: 24px;
-   fill: #F4F4FD;
 }
