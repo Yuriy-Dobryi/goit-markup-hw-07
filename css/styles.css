@@ -263,7 +263,7 @@ body {
 .customer-icon-box:focus{
    fill: var(--primary-brand-color);
    border: transparent;
-   outline-color: var(--primary-brand-color);
+   outline: 1px solid var(--primary-brand-color);
 }
 .customer-icon{
    width: 104px;
