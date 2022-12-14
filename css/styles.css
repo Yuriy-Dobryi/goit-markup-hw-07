@@ -262,9 +262,8 @@ body {
 .customer-icon-box:hover,
 .customer-icon-box:focus{
    fill: var(--primary-brand-color);
-   border-color: transparent;
-   outline: 1px solid #4D5AE5;
-   /* outline: 1px solid var(-primary-brand-color); не працює */
+   border: transparent;
+   outline: 1px solid var(--primary-brand-color);
 }
 .customer-icon{
    width: 104px;
