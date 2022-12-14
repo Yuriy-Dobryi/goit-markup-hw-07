@@ -252,7 +252,6 @@ body {
    letter-spacing: 0.03em;
 }
 .customer-icon-box {
-   padding: 16px 32px;
    width: 168px;
    height: 88px;
    border: 1px solid #8E8F99;
@@ -360,8 +359,6 @@ body {
    column-gap: 16px;
 }
 .footer-icon-box{
-   display: inline-block;
-   padding: 8px;
    width: 40px;
    height: 40px;
    background: rgba(255, 255, 255, 0.1);
