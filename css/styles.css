@@ -267,17 +267,24 @@ body {
    line-height: 1.17;
    letter-spacing: 0.03em;
 }
-.customers-icon-container {
+.customer-icon-container {
    padding: 16px 32px;
    width: 168px;
    height: 88px;
    border: 1px solid #8E8F99;
    border-radius: 4px;
+   color: #F4F4FD;
 }
-.customers-icon{
+.customer-icon-container:hover,
+.customer-icon-container:focus{
+   fill: var(--primary-brand-color);
+   border-color: var(--primary-brand-color);
+}
+
+.customer-icon{
    width: 104px;
    height: 56px;
-   fill: #F4F4FD;
+   fill: inherit;
 }
 
 /* <--------<PORTFOLIO MAIN>--------> */
