@@ -186,7 +186,7 @@ body {
 }
 /* <----<WORKS>----> */
 .works {
-   padding-bottom: 120px;
+   padding-top: 0;
 }
 .works-title {
    font-weight: 500;
@@ -272,7 +272,6 @@ body {
 /* <--------<PORTFOLIO MAIN>--------> */
 .portfolio {
    padding-top: 96px;
-   padding-bottom: 120px;
 }
 .radio-btn .button {
    padding: 12px 24px;
@@ -321,9 +320,9 @@ body {
 
 /* <--------<FOOTER>--------> */
 .footer {
-   background-color: var(--primary-text-color);
    padding-top: 100px;
    padding-bottom: 100px;
+   background-color: var(--primary-text-color);
 }
 .footer-container {
    display: flex;
