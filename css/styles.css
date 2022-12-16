@@ -125,10 +125,11 @@ body {
 /* <--------<INDEX-MAIN>--------> */
 /* <----<HERO>----> */
 .hero {
+   max-width: 1440px;
    padding-top: 192px;
    padding-bottom: 192px;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-   background-size: 1440px, cover;
+   background-size: cover;
 }
 .hero-container {
    flex-direction: column;
@@ -262,8 +263,8 @@ body {
 .customer-icon-box:hover,
 .customer-icon-box:focus{
    fill: var(--primary-brand-color);
-   border: transparent;
-   outline: 1px solid var(--primary-brand-color);
+   outline-color: transparent;
+   border-color: var(--primary-brand-color);
 }
 .customer-icon{
    width: 104px;
