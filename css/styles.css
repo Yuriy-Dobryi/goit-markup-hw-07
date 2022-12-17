@@ -263,7 +263,7 @@ body {
 .customer-icon-box:hover,
 .customer-icon-box:focus{
    fill: var(--primary-brand-color);
-   outline-color: transparent;
+   outline: none;
    border-color: var(--primary-brand-color);
 }
 .customer-icon{
