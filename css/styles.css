@@ -254,8 +254,8 @@ img {
    border: 1px solid #8E8F99;
    border-radius: 4px;
 
-   transition: outline 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-   transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-box:hover,
 .customer-icon-box:focus{
@@ -268,7 +268,7 @@ img {
    height: 56px;
    fill: inherit;
 
-   transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* <--------<PORTFOLIO MAIN>--------> */
 .portfolio {
@@ -285,6 +285,10 @@ img {
    border: 1px solid #E7E9FC;
    border-radius: 4px;
    cursor: pointer;
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .radio-nav-btn:hover,
 .radio-nav-btn:focus {
@@ -300,6 +304,8 @@ img {
    background-color: #fff;
    border-bottom: 0.5px solid #F4F4FD;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover,
 .portfolio-card:focus {
@@ -365,6 +371,8 @@ img {
    height: 40px;
    background: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-box:hover,
 .footer-icon-box:focus{
