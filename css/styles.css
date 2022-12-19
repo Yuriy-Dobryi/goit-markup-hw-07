@@ -1,19 +1,14 @@
-/* <<!!--BG COLORS FOR CHECK VIEW!!-->> */
-/* .container:hover {
-   background-color: rgb(55, 222, 199);
-}
-.card-content:hover {
-   background-color: rgb(235, 183, 222);
-}
-h1:hover, h2:hover, h3:hover,
-p:hover, a:hover {
-   background-color: rgb(149, 147, 203);
-} */
-/* <--------<DEFAULT SETTINGS>--------> */
 :root {
    --primary-text-color: #2E2F42;
    --secondary-text-color: #434455;
    --primary-brand-color: #4D5AE5;
+}
+body {
+   background-color: #fff;
+   color: var(--primary-text-color);
+   font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
+   font-size: 16px;
+   letter-spacing: 0.02em;
 }
 h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
@@ -25,13 +20,7 @@ img {
    max-width: 100%;
    height: auto;
 }
-body {
-   background-color: #fff;
-   color: var(--primary-text-color);
-   font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
-   font-size: 16px;
-   letter-spacing: 0.02em;
-}
+/* <--------<DEFAULT CLASSES>--------> */
 .container {
    margin-left: auto;
    margin-right: auto;
