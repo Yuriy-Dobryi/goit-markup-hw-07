@@ -27,7 +27,7 @@ img {
    padding-right: 15px;
    width: 1158px;
 }
-.section{
+.section {
    padding-top: 120px;
    padding-bottom: 120px;
 }
@@ -173,12 +173,12 @@ img {
 .priorities-item {
    flex-basis: calc((100% - (24px * 3))/4);
 }
-.priorities-icon-box{
+.priorities-icon-box {
    width: 264px;
    height: 112px;
    background-color: #F4F4FD;
 }
-.priorities-icon{
+.priorities-icon {
    width: 64px;
    height: 64px;
 }
@@ -225,7 +225,7 @@ img {
    background-color: #fff;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.team-card-content{
+.team-card-content {
    padding: 32px 16px;
 }
 .team-card-name {
@@ -249,12 +249,12 @@ img {
    background-color: var(--primary-brand-color);
    border-radius: 50%;
 }
-.team-icon{
+.team-icon {
    width: 16px;
    height: 16px;
 }
 /* <----<CUSTOMERS>----> */
-.customers-title{
+.customers-title {
    font-weight: 700;
    font-size: 36px;
    line-height: 1.17;
@@ -270,12 +270,12 @@ img {
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-box:hover,
-.customer-icon-box:focus{
+.customer-icon-box:focus {
    fill: var(--primary-brand-color);
    outline: none;
    border-color: var(--primary-brand-color);
 }
-.customer-icon{
+.customer-icon {
    width: 104px;
    height: 56px;
    fill: inherit;
@@ -286,7 +286,7 @@ img {
 .portfolio {
    padding-top: 96px;
 }
-.radio-nav-btn{
+.radio-nav-btn {
    padding: 12px 24px;
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
@@ -309,7 +309,7 @@ img {
    color: #fff;
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-cards{
+.portfolio-cards {
    flex-wrap: wrap;
 }
 .portfolio-card {
@@ -322,13 +322,11 @@ img {
 
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay{
+.overlay {
    position: relative;
-   content: '';
-   display: block;
    /* overflow: hidden; */
 }
-.overlay::after{
+.overlay::after {
    content: '';
    position: absolute;
    display: block;
@@ -397,10 +395,10 @@ img {
    font-weight: 500;
    line-height: 1.5;
 }
-.footer-icons{
+.footer-icons {
    column-gap: 16px;
 }
-.footer-icon-box{
+.footer-icon-box {
    width: 40px;
    height: 40px;
    background: rgba(255, 255, 255, 0.1);
@@ -409,10 +407,10 @@ img {
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-box:hover,
-.footer-icon-box:focus{
+.footer-icon-box:focus {
    background-color: #31D0AA;
 }
-.footer-icon{
+.footer-icon {
    width: 24px;
    height: 24px;
 }
