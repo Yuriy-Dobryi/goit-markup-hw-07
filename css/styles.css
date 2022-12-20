@@ -99,7 +99,7 @@ img {
 .nav-link:active {
    color: var(--primary-brand-color);
 }
-.current-nav-link::after {
+.current-page::after {
    content: '';
    position: absolute;
    display: inline-block;
@@ -108,7 +108,7 @@ img {
    left: 0;
    top: 48px;
    background-color: #404BBF;
-   border-radius: 2%;
+   border-radius: 2px;
 }
 /* <----<CONTACTS>----> */
 .header-contacts {
