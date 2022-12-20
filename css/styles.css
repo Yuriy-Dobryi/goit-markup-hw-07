@@ -313,6 +313,8 @@ img {
    flex-wrap: wrap;
 }
 .portfolio-card {
+   position: relative;
+   content: '';
    flex-basis: calc((100% - (24px * 2))/3);
    background-color: #fff;
    border-bottom: 0.5px solid #F4F4FD;
@@ -323,16 +325,16 @@ img {
 .overlay{
    position: relative;
    content: '';
+   display: block;
    /* overflow: hidden; */
 }
 .overlay::after{
    content: '';
    position: absolute;
    display: block;
-   width: 360px;
-   height: 300px;
-   left: 0;
-   bottom: 0;
+   width: 100%;
+   height: 100%;
+   bottom: -100%;
    background-color: rgba(77, 90, 229, 1);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
