@@ -56,23 +56,19 @@
 .btn:hover::after{
    transform: translateY(calc(-250% + 25px));
 }
+
 /* ///////////Все що вище зробив display: none, так що не звертайте увагу на код зверху////////////////////////////// */
 .image{
    position: relative;
-   display: block;
-   margin: 200px auto;
    width: 300px;
    height: 300px;
 }
 .image::after{
    content: '';
    position: absolute;
-   
    width: 500px;
    height: 500px;
-
    left: 0;
    bottom: -500px;
-
    background-color: rgb(192, 41, 41);
 }
