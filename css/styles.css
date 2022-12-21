@@ -382,7 +382,7 @@ img {
 }
 .portfolio-card:hover .portfolio-card-overlay::after,
 .portfolio-card:focus .portfolio-card-overlay::after {
-   /* піднімаємо overlay вгору по вертикалі (на картинку)*/
+   /* піднімаємо overlay вгору по вертикалі (на саму картинку)*/
    transform: translateY(-100%);
 }
 .portfolio-card-content {
