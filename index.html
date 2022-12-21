@@ -40,15 +40,14 @@
       <section class="hero">
          <div class="hero-container container basic-flex  ">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button" type="button" data-modal-open>Order Service</button>
-            <div class="backdrop is-hidden data-modal">
+            <button class="hero-button-open" data-modal-open>Order Service</button>
+            <div class="backdrop is-hidden" data-modal>
                <div class="modal">
-                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse beatae perspiciatis, aperiam
-                     explicabo recusandae rerum quod incidunt eum consequuntur cum architecto veniam nostrum animi et
-                     ratione, dicta voluptatem alias minima?
-                  </p>
-                  <button data-modal-close>Закрыть модальное окно</button>
+                  <button type="button" class="hero-button-close basic-flex" data-modal-close>
+                     <svg class="hero-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                     </svg>
+                  </button>
                </div>
             </div>
          </div>
