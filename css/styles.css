@@ -237,13 +237,13 @@ img, svg {
 .priorities-item {
    flex-basis: calc((100% - (24px * 3))/4);
 }
-.priorities-icons-wrapper {
+.priorities-icon-wrapper {
    width: 264px;
    height: 112px;
 
    background: #F4F4FD;
 }
-.priorities-icons {
+.priorities-icon {
    width: 64px;
    height: 64px;
 }
@@ -302,7 +302,7 @@ img, svg {
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
-.team-icons {
+.team-icons-list {
    padding-top: 4px;
    padding-bottom: 4px;
 }
@@ -313,7 +313,7 @@ img, svg {
    background: var(--primary-brand-color);
    border-radius: 50%;
 }
-.team-icons {
+.team-icon {
    width: 16px;
    height: 16px;
 }
