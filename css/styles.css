@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
    padding: 0;
 }
-img {
+img, svg {
+   /* щоб забрати неадекватний відступ знизу */
    display: block;
    max-width: 100%;
    height: auto;
@@ -126,7 +127,6 @@ img {
 .contacts-link {
    color: var(--secondary-text-color);
    line-height: 1.5;
-
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
@@ -170,8 +170,8 @@ img {
    letter-spacing: 0.04em;
    border-radius: 4px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
    cursor: pointer;
+
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button-open:hover,
@@ -268,10 +268,6 @@ img {
    line-height: 1.1;
    text-align: center;
 }
-.works-item {
-   flex-basis: calc((100% - (24px * 2))/3);
-   border: 1px solid #E7E9FC;
-}
 /* <----<TEAM>----> */
 .team {
    background: #F4F4FD;
@@ -340,7 +336,6 @@ img {
 .customer-icon-box:hover,
 .customer-icon-box:focus {
    outline: none;
-
    fill: var(--primary-brand-color);
    border-color: var(--primary-brand-color);
 }
@@ -366,8 +361,8 @@ img {
    font-weight: 500;
    letter-spacing: 0.04em;
    border-radius: 4px;
-
    cursor: pointer;
+   
    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .radio-nav-btn:hover,
@@ -380,8 +375,6 @@ img {
    flex-wrap: wrap;
 }
 .portfolio-card {
-   /* потрібно вказати inline-block, бо на посилання (inline) не діє box-shadow */
-   display: inline-block;
    flex-basis: calc((100% - (24px * 2))/3);
    border-bottom: 0.5px solid #F4F4FD;
 
@@ -411,8 +404,8 @@ img {
    background: rgba(77, 90, 229, 0.9);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-card:hover .portfolio-card-overlay::after,
-.portfolio-card:focus .portfolio-card-overlay::after {
+.portfolio-card:hover      .portfolio-card-overlay::after,
+.portfolio-card-link:focus .portfolio-card-overlay::after {
    /* піднімаємо overlay вгору по вертикалі (на саму картинку)*/
    transform: translateY(-100%);
 }
