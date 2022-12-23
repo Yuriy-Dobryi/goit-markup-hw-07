@@ -135,7 +135,6 @@ img, svg {
 }
 
 /* <--------<INDEX-MAIN>--------> */
-
 /* <----<HERO>----> */
 .hero {
    max-width: 1440px;
@@ -317,7 +316,7 @@ img, svg {
    width: 16px;
    height: 16px;
 }
-/* <----<customersS>----> */
+/* <----<CUSTOMERS>----> */
 .customers-title {
    font-weight: 700;
    font-size: 36px;
