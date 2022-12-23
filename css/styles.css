@@ -51,12 +51,13 @@ img, svg {
 }
 .visually-hidden {
    position: absolute;
+   
    width: 1px;
    height: 1px;
+   border: 0;
 
    margin: -1px;
    padding: 0;
-   border: 0;
 
    clip: rect(0 0 0 0);
    overflow: hidden;
@@ -406,7 +407,7 @@ img, svg {
 }
 .portfolio-card:hover      .portfolio-card-overlay::after,
 .portfolio-card-link:focus .portfolio-card-overlay::after {
-   /* піднімаємо overlay вгору по вертикалі (на саму картинку)*/
+   /* піднімаємо overlay вгору по вертикалі (на саму картинку) */
    transform: translateY(-100%);
 }
 .portfolio-card-content {
