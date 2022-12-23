@@ -335,7 +335,7 @@ img, svg {
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-wrapper:hover,
-.customer-icon-wrapper.link:focus {
+.customer-icon-wrapper:focus {
    outline: none;
    fill: var(--primary-brand-color);
    border-color: var(--primary-brand-color);
