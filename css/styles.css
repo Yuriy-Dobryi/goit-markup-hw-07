@@ -135,6 +135,7 @@ img, svg {
 }
 
 /* <--------<INDEX-MAIN>--------> */
+
 /* <----<HERO>----> */
 .hero {
    max-width: 1440px;
@@ -334,7 +335,7 @@ img, svg {
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-wrapper:hover,
-.customer-icon-wrapper:focus {
+.customer-icon-link:focus {
    outline: none;
    fill: var(--primary-brand-color);
    border-color: var(--primary-brand-color);
@@ -480,7 +481,7 @@ img, svg {
    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-wrapper:hover,
-.footer-icon-wrapper:focus {
+.footer-icon-link:focus {
    background: #31D0AA;
 }
 .footer-icon {
