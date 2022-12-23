@@ -40,7 +40,7 @@ img, svg {
    flex-wrap: wrap;
    row-gap: 72px;
 }
-.list-flex {
+.flex-list {
    display: flex;
    row-gap: 48px;
    column-gap: 24px;
@@ -302,11 +302,11 @@ img, svg {
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
-.team-icons-list {
+.team-card-icons-list {
    padding-top: 4px;
    padding-bottom: 4px;
 }
-.team-icons-wrapper {
+.team-icon-wrapper {
    width: 40px;
    height: 40px;
 
