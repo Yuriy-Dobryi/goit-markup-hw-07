@@ -69,9 +69,9 @@
    background-color: rgb(60, 160, 99);
 }
 .test-2::after{
-   content: 'test2';
+   content: '1';
    display: block;
-   width: 50px;
-   height: 50px;
+   width: 50%;
+   height: 50%;
    background-color: rgb(52, 50, 197);
 }

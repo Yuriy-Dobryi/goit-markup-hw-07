@@ -4,6 +4,7 @@
    --primary-brand-color: #4D5AE5;
 }
 body {
+   background-color: #fff;
    color: var(--primary-text-color);
    font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 16px;
