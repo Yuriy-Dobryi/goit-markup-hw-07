@@ -12,9 +12,9 @@
 <body>
    <div class="container">
 
-      <form>
-         <fieldset>
-            <legend>Enter your contact details</legend>
+      <form class="form">
+         <div class="form-group" role="group" aria-labelledby="contact-details-head">
+            <p id="contact-details-head">Enter your contact details</p>
             <label>
                Name
                <input type="text" name="username" />
@@ -23,10 +23,10 @@
                Email
                <input type="email" name="email" />
             </label>
-         </fieldset>
+         </div>
 
-         <fieldset>
-            <legend>Your favourite programming language</legend>
+         <div class="form-group" role="group" aria-labelledby="language-head">
+            <p id="language-head">Your favourite programming language</p>
             <label>
                <input type="checkbox" name="language" value="python">
                Python
@@ -39,10 +39,10 @@
                <input type="checkbox" name="language" value="ruby">
                Ruby
             </label>
-         </fieldset>
+         </div>
 
-         <fieldset>
-            <legend>I want to receive</legend>
+         <div class="form-group" role="group" aria-labelledby="newsletter-head">
+            <p id="newsletter-head">I want to receive</p>
             <label>
                <input type="checkbox" name="newsletter" value="weekly">
                The weekly newsletter
@@ -55,7 +55,7 @@
                <input type="checkbox" name="newsletter" value="associated_offers">
                Offers from associated companies
             </label>
-         </fieldset>
+         </div>
 
          <button type="submit">Subscribe</button>
       </form>
