@@ -14,7 +14,7 @@
 
       <form class="form">
          <div class="form-group" role="group" aria-labelledby="contact-details-head">
-            <p id="contact-details-head">Enter your contact details</p>
+            <p id="contact-details-head">Enter your contact details:</p>
             <label>
                Name
                <input type="text" name="username" />
@@ -26,7 +26,7 @@
          </div>
 
          <div class="form-group" role="group" aria-labelledby="language-head">
-            <p id="language-head">Your favourite programming language</p>
+            <p id="language-head">Your favourite programming language:</p>
             <label>
                <input type="checkbox" name="language" value="python">
                Python
@@ -42,9 +42,9 @@
          </div>
 
          <div class="form-group" role="group" aria-labelledby="newsletter-head">
-            <p id="newsletter-head">I want to receive</p>
+            <p id="newsletter-head">I want to receive:</p>
             <label>
-               <input type="checkbox" name="newsletter" value="weekly">
+               <input type="checkbox" id="ss" name="newsletter" value="weekly">
                The weekly newsletter
             </label>
             <label>
@@ -55,6 +55,9 @@
                <input type="checkbox" name="newsletter" value="associated_offers">
                Offers from associated companies
             </label>
+            <label for="wishes">Your wishes</label>
+            <textarea id="wishes" name="client-wishes" maxlength="500" cols="50" rows="10"
+               placeholder="Your wishes:"></textarea>
          </div>
 
          <button type="submit">Subscribe</button>
