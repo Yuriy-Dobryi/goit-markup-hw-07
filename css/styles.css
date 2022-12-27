@@ -254,9 +254,6 @@ img, svg {
 .checkbox-field {
    margin-bottom: 24px;
 }
-.field:placeholder-shown >.input {
-   border-color: 10px solid red;
-}
 
 .field:focus-within>.modal-icon {
    fill: var(--primary-brand-color);
