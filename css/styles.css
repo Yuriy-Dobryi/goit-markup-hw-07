@@ -270,6 +270,9 @@ img, svg {
    padding: 8px 16px;
    resize: none;
 }
+.input-comment::placeholder {
+   color: rgba(117, 117, 117, 0.5);
+}
 
 .modal-icon {
    position: absolute;
@@ -301,9 +304,7 @@ img, svg {
 .checkbox-label-link {
    color: var(--primary-brand-color);
 }
-.input-comment::placeholder {
-   color: rgba(117, 117, 117, 0.5);
-}
+
 
 .send-button {
    width: 169px;
