@@ -204,7 +204,7 @@ img, svg {
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
 
-   /* width: 408px; */
+   width: 408px;
    padding: 24px;
 
    background: #FCFCFC;
@@ -250,7 +250,7 @@ img, svg {
 .field {
    position: relative;
    display: block;
-   margin-bottom: 34px;
+   margin-bottom: 8px;
 }
 .checkbox-field {
    margin-bottom: 24px;
