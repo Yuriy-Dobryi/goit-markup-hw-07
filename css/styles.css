@@ -249,14 +249,29 @@ img, svg {
 .checkbox-field {
    margin-bottom: 24px;
 }
+/* .field:placeholder-shown >.input {
+   border-color: red;
+   outline-color: red;
+} */
+
+.field:focus-within>.modal-icon {
+   fill: var(--primary-brand-color);
+}
+
+.field:focus-within>.label,
+.input:not(:placeholder-shown)+.label {
+   transform: translateY(-50px);
+}
+
+
 
 .input {
    width: 100%;
    padding: 11px 38px;
-   border: 1px solid rgba(33, 33, 33, 0.2);
+   border: 10px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
 }
-.input:placeholder-shown
+
 .comment-input {
    height: 120px;
    padding: 8px 16px;
