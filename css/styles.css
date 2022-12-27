@@ -248,7 +248,7 @@ img, svg {
 .field {
    position: relative;
    display: block;
-   padding-bottom: 8px;
+   margin-bottom: 8px;
 }
 .checkbox-field {
    margin-bottom: 24px;
