@@ -205,7 +205,11 @@ img, svg {
    transform: translate(-50%, -50%) scale(1);
 
    width: 408px;
-   height: 576px;
+   height: 584px;
+
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
 
    background: #FCFCFC;
    border-radius: 4px;
@@ -214,14 +218,17 @@ img, svg {
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-close-button {
-   position: absolute;
+   /* position: absolute;
    right: 24px;
-   top: 24px;
+   top: 24px; */
 
    width: 24px;
    height: 24px;
    border: 2px solid rgba(0, 0, 0, 0.1);
 
+   align-self: flex-end;
+   margin-bottom: 24px;
+   
    background: #E7E9FC;
    border-radius: 50%;
    cursor: pointer;
