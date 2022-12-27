@@ -228,6 +228,11 @@ img, svg {
    border-radius: 50%;
    cursor: pointer;
 }
+.close-button:hover,
+.close-button:focus {
+   background-color: #404BBF;
+   fill: #fff;
+}
 .close-icon {
    width: 8px;
    height: 8px;
@@ -249,10 +254,9 @@ img, svg {
 .checkbox-field {
    margin-bottom: 24px;
 }
-/* .field:placeholder-shown >.input {
-   border-color: red;
-   outline-color: red;
-} */
+.field:placeholder-shown >.input {
+   border-color: 10px solid red;
+}
 
 .field:focus-within>.modal-icon {
    fill: var(--primary-brand-color);
