@@ -205,8 +205,6 @@ img, svg {
    transform: translate(-50%, -50%) scale(1);
 
    width: 408px;
-   height: 584px;
-
    padding: 24px;
    display: flex;
    flex-direction: column;
@@ -239,16 +237,6 @@ img, svg {
    font-weight: 500;
    line-height: 1.5;
    text-align: center;
-}
-.modal-field-list{
-   list-style: none;
-}
-.field-item{
-   
-}
-.modal-field{
-   position: relative;
-   /* margin-bottom: 52px; */
 }
 .modal-input{
    display: block;
