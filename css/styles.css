@@ -206,8 +206,8 @@ img, svg {
 
    width: 408px;
    padding: 24px;
-   /* display: flex;
-   flex-direction: column; */
+   display: flex;
+   flex-direction: column;
 
    background: #FCFCFC;
    border-radius: 4px;
@@ -245,14 +245,13 @@ img, svg {
 }
 .modal-input {
    width: 100%;
-   margin: 0;
-   padding: 8px 16px;
+   padding: 11px 38px;
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
 }
 .modal-label{
    position: absolute;
-   top: -50%;
+   top: -10px;
    left: 0;
    transform: translateY(-50%);
 }
