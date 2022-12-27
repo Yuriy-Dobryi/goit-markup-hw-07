@@ -292,10 +292,16 @@ img, svg {
 
    width: 16px;
    height: 16px;
+   border: 1.25px solid #2E2F42;
+
+   background-color: #F4F4FD;
+   border-radius: 2px;
+}
+.checkbox-field:focus-within .checkbox-icon-wrapper {
+   background-color: #404BBF;
+   border-color: #404BBF;
 }
 .modal-checkbox-icon {
-  
-
    width: 10px;
    height: 7px;
 }
