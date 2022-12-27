@@ -205,7 +205,6 @@ img, svg {
    transform: translate(-50%, -50%) scale(1);
 
    /* width: 408px; */
-
    padding: 24px;
 
    background: #FCFCFC;
@@ -227,6 +226,8 @@ img, svg {
    background: #E7E9FC;
    border-radius: 50%;
    cursor: pointer;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .close-button:hover,
 .close-button:focus {
@@ -253,13 +254,17 @@ img, svg {
 }
 .checkbox-field {
    margin-bottom: 24px;
+   padding-left: 24px;
 }
 
 .input {
    width: 100%;
    padding: 11px 38px;
+
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
+
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus-within > .input {
    outline: none;
@@ -273,6 +278,10 @@ img, svg {
 .comment-input::placeholder {
    color: rgba(117, 117, 117, 0.5);
 }
+/* .checkbox-input {
+   display: block;
+   width: 100%;
+} */
 
 .modal-icon {
    position: absolute;
@@ -281,11 +290,13 @@ img, svg {
    
    width: 18px;
    height: 24px;
+
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus-within>.modal-icon {
    fill: var(--primary-brand-color);
 }
-.checkbox-icon-wrapper {
+.modal-checkbox-icon {
    position: absolute;
    top: 0;
    left: 0;
@@ -296,14 +307,11 @@ img, svg {
 
    background-color: #F4F4FD;
    border-radius: 2px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-field:focus-within .checkbox-icon-wrapper {
+.checkbox-input:checked ~ .modal-checkbox-icon {
    background-color: #404BBF;
    border-color: #404BBF;
-}
-.modal-checkbox-icon {
-   width: 10px;
-   height: 7px;
 }
 
 .label {
