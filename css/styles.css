@@ -285,6 +285,9 @@ img, svg {
 .field:focus-within>.modal-icon {
    fill: var(--primary-brand-color);
 }
+.modal-checkbox-icon {
+   
+}
 
 .label {
    position: absolute;
