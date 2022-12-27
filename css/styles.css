@@ -264,8 +264,6 @@ img, svg {
    border-color: var(--primary-brand-color);
 }
 
-
-
 .input {
    width: 100%;
    padding: 11px 38px;
@@ -311,15 +309,20 @@ img, svg {
 }
 
 .send-button {
-   
+   width: 169px;
+   height: 56px;
    border: none;
+
    padding: 16px 32px;
 
    background-color: var(--primary-brand-color);
    color: #FFFFFF;
+   
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.04em;
+   border-radius: 4px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
