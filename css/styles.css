@@ -258,9 +258,9 @@ img, svg {
    fill: var(--primary-brand-color);
 }
 
-.field:focus-within>.label,
-.input:not(:placeholder-shown)+.label {
-   transform: translateY(-50px);
+.field:focus-within>.input {
+   outline: none;
+   border-color: var(--primary-brand-color);
 }
 
 
@@ -268,7 +268,7 @@ img, svg {
 .input {
    width: 100%;
    padding: 11px 38px;
-   border: 10px solid rgba(33, 33, 33, 0.2);
+   border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
 }
 
