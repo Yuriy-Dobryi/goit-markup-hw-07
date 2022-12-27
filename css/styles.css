@@ -255,10 +255,10 @@ img, svg {
    left: 0;
    transform: translateY(-50%);
 }
-/* .modal-checkbox-field{
-   margin-top: 16px;
-   margin-bottom: 24px;
-} */
+.modal-input-comment {
+   resize: none;
+   height: 120px;
+}
 .modal-send-button{
    border: none;
    padding: 16px 32px;
