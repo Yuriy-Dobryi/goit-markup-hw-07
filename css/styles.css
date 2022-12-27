@@ -249,7 +249,7 @@ img, svg {
    position: relative;
 
    display: block;
-   margin-bottom: 8px;
+   margin-bottom: 8px;  
 
    color: #8E8F99;
    font-size: 12px;
@@ -270,7 +270,7 @@ img, svg {
 
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.field:focus-within > .input {
+.field:focus-within .input {
    outline: none;
    border-color: var(--primary-brand-color);
 }
@@ -291,15 +291,21 @@ img, svg {
 }
 .modal-icon {
    position: absolute;
-   top: 11px;
    left: 16px;
-   
    width: 18px;
-   height: 18px;
 
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.field:focus-within>.modal-icon {
+.modal-person-icon {
+   top: 11px;
+   height: 18px;
+}
+.modal-phone-icon,
+.modal-email-icon {
+   top: 8px;
+   height: 24px;
+}
+.field:focus-within .modal-icon {
    fill: var(--primary-brand-color);
 }
 .modal-checkbox-icon {
