@@ -255,20 +255,15 @@ img, svg {
    margin-bottom: 24px;
 }
 
-.field:focus-within>.modal-icon {
-   fill: var(--primary-brand-color);
-}
-
-.field:focus-within>.input {
-   outline: none;
-   border-color: var(--primary-brand-color);
-}
-
 .input {
    width: 100%;
    padding: 11px 38px;
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
+}
+.field:focus-within > .input {
+   outline: none;
+   border-color: var(--primary-brand-color);
 }
 .comment-input {
    height: 120px;
@@ -283,6 +278,9 @@ img, svg {
    
    width: 18px;
    height: 24px;
+}
+.field:focus-within>.modal-icon {
+   fill: var(--primary-brand-color);
 }
 
 .label {
