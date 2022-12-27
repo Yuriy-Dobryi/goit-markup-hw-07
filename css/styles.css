@@ -241,7 +241,18 @@ img, svg {
    text-align: center;
 }
 .modal-field{
+   position: relative;
    margin-bottom: 8px;
+}
+.modal-input{
+   display: block;
+   padding: 11px 38px;
+}
+.modal-label{
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform:translate()
 }
 .modal-checkbox-field{
    margin-top: 16px;
@@ -256,9 +267,8 @@ img, svg {
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.04em;
-   
-   
 }
+
 
 
 
