@@ -204,10 +204,9 @@ img, svg {
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
 
-   width: 408px;
+   /* width: 408px; */
+
    padding: 24px;
-   display: flex;
-   flex-direction: column;
 
    background: #FCFCFC;
    border-radius: 4px;
@@ -243,13 +242,21 @@ img, svg {
    display: block;
    margin-bottom: 34px;
 }
+.modal-checkbox-field {
+   margin-bottom: 24px;
+}
 .modal-input {
    width: 100%;
    padding: 11px 38px;
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
 }
-.modal-label{
+.modal-comment-input {
+   height: 120px;
+   padding: 8px 16px;
+   resize: none;
+}
+.modal-label {
    position: absolute;
    top: -10px;
    left: 0;
@@ -260,15 +267,17 @@ img, svg {
    line-height: 1.33;
    letter-spacing: 0.01em;
 }
-.modal-input-comment {
-   height: 120px;
-   padding: 8px 16px;
-   resize: none;
+.modal-checkbox-label {
+   width: 360px;
+   color: #757575;
+   letter-spacing: 0.04em;
 }
 .modal-input-comment::placeholder {
    color: rgba(117, 117, 117, 0.5);
 }
-.modal-send-button{
+
+.modal-send-button {
+   display: inline;
    border: none;
    padding: 16px 32px;
 
