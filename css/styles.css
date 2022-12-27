@@ -239,20 +239,16 @@ img, svg {
    height: 8px;
 }
 .title {
-   margin-bottom: 48px;
+   margin-bottom: 16px;
 
    font-weight: 500;
    line-height: 1.5;
    text-align: center;
 }
-.form {
-   padding-top: 16px;
-   padding-bottom: 24px;
-}
 .field {
    position: relative;
    display: block;
-   margin-bottom: 8px;
+   padding-bottom: 8px;
 }
 .checkbox-field {
    margin-bottom: 24px;
@@ -321,6 +317,8 @@ img, svg {
    top: -10px;
    left: 0;
    transform: translateY(-50%);
+
+   display: inline-block;
 
    color: #8E8F99;
    font-size: 12px;
