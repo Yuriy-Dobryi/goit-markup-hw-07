@@ -285,8 +285,19 @@ img, svg {
 .field:focus-within>.modal-icon {
    fill: var(--primary-brand-color);
 }
+.checkbox-icon-wrapper {
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   width: 16px;
+   height: 16px;
+}
 .modal-checkbox-icon {
-   
+  
+
+   width: 10px;
+   height: 7px;
 }
 
 .label {
