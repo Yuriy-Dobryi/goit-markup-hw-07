@@ -638,17 +638,17 @@ img, svg {
    width: 24px;
    height: 24px;
 }
-.footer-form {
-   display: flex;
-   /* align-items: flex-start; */
-   column-gap: 24px;
-}
-.footer-field {
+/* footer-subscribe */
+.footer-subscribe-text {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #FFFFFF;
+}
+.footer-form {
+   display: flex;
+   column-gap: 24px;
 }
 .footer-input {
    display: block;
