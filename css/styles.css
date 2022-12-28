@@ -280,6 +280,7 @@ img, svg {
 .comment-input::placeholder {
    color: rgba(117, 117, 117, 0.5);
 }
+/* щоб форма розтягнулась на всю ширину модалки */
 .checkbox-input {
    display: block;
    width: 100%;
@@ -326,12 +327,13 @@ img, svg {
    position: absolute;
    left: 0;
    top: 0;
-   fill: red;
 
    width: 16px;
    height: 16px;
    border: 1.25px solid #2E2F42;
 
+   /* чому не працює fill? (просто цікаво) */
+   /* fill: red; */
    background-color: #F4F4FD;
    border-radius: 2px;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -350,11 +352,11 @@ img, svg {
 }
 
 .send-button {
+   display: block;
    width: 169px;
    height: 56px;
    border: none;
 
-   display: block;
    margin: 0 auto;
    padding: 16px 32px;
 
