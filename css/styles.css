@@ -254,8 +254,9 @@ img, svg {
    line-height: 1.17;
    letter-spacing: 0.01em;
 }
-
-
+.comment-field {
+   margin-bottom: 16px;
+}
 .checkbox-field {
    position: relative;
 
