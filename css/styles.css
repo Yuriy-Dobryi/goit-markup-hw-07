@@ -246,19 +246,27 @@ img, svg {
    text-align: center;
 }
 .field {
-   position: relative;
-
    display: block;
-   margin-bottom: 8px;  
+   margin-bottom: 8px;
 
    color: #8E8F99;
    font-size: 12px;
-   line-height: 1.33;
+   line-height: 1.17;
    letter-spacing: 0.01em;
 }
+
+
 .checkbox-field {
+   position: relative;
+
+   display: block;
    margin-bottom: 24px;
-   padding-left: 24px;
+   /* padding: 0 24px; */
+
+   color: #757575;
+   font-size: 12px;
+   line-height: 1.33;
+   letter-spacing: 0.04em;
 }
 
 .input {
