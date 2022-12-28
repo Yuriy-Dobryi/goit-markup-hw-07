@@ -57,7 +57,8 @@
                         Name
                         <!-- input-wrapper для того щоб спозиціонувати іконку в input -->
                         <div class="input-wrapper">
-                           <input class="input" type="text" placeholder=" " name="name" autofocus required />
+                           <input class="input" type="text" minlength="3" placeholder=" " name="user-name" autofocus
+                              required />
                            <svg class="modal-icon modal-person-icon">
                               <use href="./images/icons.svg#icon-form-person"></use>
                            </svg>
@@ -84,12 +85,13 @@
                         </div>
                      </label>
 
-                     <label class="field comment-field">
+                     <label class="field comment-field" title="Not required.">
                         Comment
-                        <textarea class="comment-input input" placeholder="Text input" name="comment"></textarea>
+                        <textarea class="comment-input input" title="Not required." placeholder="Text input"
+                           name="comment"></textarea>
                      </label>
 
-                     <label class="checkbox-field">
+                     <label class="checkbox-field" title="Please, read carefully.">
                         <input class="checkbox-input visually-hidden" type="checkbox" placeholder=" " name="checkbox" />
                         I accept the terms and conditions of the
                         <a class="checkbox-label-link"
