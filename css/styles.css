@@ -228,26 +228,27 @@ img, svg {
    background: #E7E9FC;
    border-radius: 50%;
    cursor: pointer;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 .close-button:hover,
 .close-button:focus {
    background-color: #404BBF;
    fill: #fff;
-   /* як змінити border при ховері ? бо він темно-синій на відміну від самого фону */
+   border-color: #404BBF;
 }
 .close-icon {
    width: 8px;
    height: 8px;
 }
-.title {
+.modal-title {
    margin-bottom: 16px;
 
    font-weight: 500;
    line-height: 1.5;
    text-align: center;
 }
+/* загальні класи форми: */
 .field {
    display: block;
    margin-bottom: 8px;
@@ -257,8 +258,8 @@ img, svg {
    line-height: 1.17;
    letter-spacing: 0.01em;
 }
-.comment-field {
-   margin-bottom: 16px;
+.input-wrapper {
+   position: relative;
 }
 .input {
    display: block;
@@ -275,27 +276,12 @@ img, svg {
    outline: none;
    border-color: var(--primary-brand-color);
 }
-.comment-input {
-   height: 120px;
-   padding: 8px 16px;
-   resize: none;
-}
-.comment-input::placeholder {
-   color: rgba(117, 117, 117, 0.5);
-}
-/* щоб форма розтягнулась на всю ширину модалки */
-.checkbox-input {
-   display: block;
-   width: 100%;
-}
-.input-wrapper {
-   position: relative;
-}
 .modal-icon {
    position: absolute;
    fill: var(--primary-text-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* не всі іконки однакові: */
 .modal-person-icon {
    left: 16px;
    top: 11px;
@@ -310,6 +296,26 @@ img, svg {
 
    width: 18px;
    height: 24px;
+}
+
+/* Comment (textarea): */
+.comment-field {
+   margin-bottom: 16px;
+}
+.comment-input {
+   height: 120px;
+   padding: 8px 16px;
+   resize: none;
+}
+.comment-input::placeholder {
+   color: rgba(117, 117, 117, 0.5);
+}
+
+/* Checkbox: */
+.checkbox-input {
+   /* щоб форма розтягнулась на всю ширину модалки */
+   display: block;
+   width: 100%;
 }
 .field:focus-within .modal-icon {
    fill: var(--primary-brand-color);
