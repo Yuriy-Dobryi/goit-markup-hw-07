@@ -179,6 +179,7 @@ img, svg {
 .hero-modal-button:focus {
    background-color: #404BBF;
 }
+/* BACKDROP */
 .backdrop {
    position: fixed;
    left: 0;
@@ -198,6 +199,7 @@ img, svg {
 .backdrop.is-hidden .modal {
    transform: translate(-50%, -50%) scale(4);
 }
+/* MODAL */
 .modal {
    position: absolute;
    left: 50%;
@@ -257,8 +259,6 @@ img, svg {
 .comment-field {
    margin-bottom: 16px;
 }
-
-
 .input {
    width: 100%;
    padding: 11px 38px;
@@ -339,10 +339,9 @@ img, svg {
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked ~ .modal-checkbox-icon {
-   background-color: #404BBF;
    border-color: #404BBF;
+   background-color: #404BBF;
 }
-
 .checkbox-label {
    color: #757575;
    letter-spacing: 0.04em;
@@ -350,7 +349,6 @@ img, svg {
 .checkbox-label-link {
    color: var(--primary-brand-color);
 }
-
 .send-button {
    display: block;
    width: 169px;
@@ -369,7 +367,6 @@ img, svg {
    border-radius: 4px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 /* <----<PRIORITIES>----> */
 .priorities-item {
    flex-basis: calc((100% - (24px * 3))/4);
