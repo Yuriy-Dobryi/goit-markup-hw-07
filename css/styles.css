@@ -584,7 +584,6 @@ img, svg {
 }
 .footer-container { 
    display: flex;
-   row-gap: 16px;
 }
 .footer-logo {
    display: inline-block;
@@ -601,13 +600,16 @@ img, svg {
    color: #F4F4FD;
 }
 .footer-slogan {
+   display: inline-block;
    width: 264px;
+   height: 72px;
 
    color: #E7E9FC;
    line-height: 1.5;
 }
 .social-media-box {
    margin-left: 120px;
+   margin-right: 80px;
 }
 .footer-title {
    margin-bottom: 16px;
@@ -633,6 +635,61 @@ img, svg {
    background: #31D0AA;
 }
 .footer-icon {
+   width: 24px;
+   height: 24px;
+}
+.footer-form {
+   display: flex;
+   /* align-items: flex-start; */
+   column-gap: 24px;
+}
+.footer-field {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.02em;
+   color: #FFFFFF;
+}
+.footer-input {
+   display: block;
+   width: 264px;
+   height: 40px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+
+   margin-top: 16px;
+   padding: 8px 16px;
+
+   background: var(--primary-text-color);
+   color: inherit;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   outline: none;
+}
+.subscribe-button-wrapper {
+   position: relative;
+}
+.footer-subscribe-button {
+   position: relative;
+   width: 165px;
+   height: 40px;
+   border: none;
+
+   padding: 8px 24px;
+   align-self: center;
+   
+   background: var(--primary-brand-color);
+   color: #FFFFFF;
+   line-height: 1.5;
+   font-weight: 500;
+   letter-spacing: 0.04em;
+   text-align: left;
+   border-radius: 4px;
+}
+.footer-send-icon {
+   position: absolute;
+   right: 24px;
+   top: 8px;
+
    width: 24px;
    height: 24px;
 }
