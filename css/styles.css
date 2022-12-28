@@ -281,7 +281,7 @@ img, svg {
    fill: var(--primary-text-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* не всі іконки однакові: */
+/* не всі іконки однаково розміру: */
 .modal-person-icon {
    left: 16px;
    top: 11px;
@@ -297,8 +297,7 @@ img, svg {
    width: 18px;
    height: 24px;
 }
-
-/* Comment (textarea): */
+/* деякі правки для 'Comment': */
 .comment-field {
    margin-bottom: 16px;
 }
@@ -310,7 +309,6 @@ img, svg {
 .comment-input::placeholder {
    color: rgba(117, 117, 117, 0.5);
 }
-
 /* Checkbox: */
 .checkbox-input {
    /* щоб форма розтягнулась на всю ширину модалки */

@@ -42,17 +42,18 @@
          <div class="hero-container container basic-flex  ">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-modal-button" data-modal-open>Order Service</button>
-
             <div class="backdrop is-hidden" data-modal>
                <div class="modal">
+                  <!-- Close-button -->
                   <button class="close-button" data-modal-close>
                      <svg class="close-icon">
                         <use href="./images/icons.svg#icon-close"></use>
                      </svg>
                   </button>
                   <p class="modal-title">Leave your contacts and we will call you back</p>
-
+                  <!-- Form -->
                   <form autocomplete="off">
+                     <!-- Username -->
                      <label class="field">
                         Name
                         <!-- input-wrapper для того щоб спозиціонувати іконку в input -->
@@ -64,7 +65,7 @@
                            </svg>
                         </div>
                      </label>
-
+                     <!-- Phone -->
                      <label class="field">
                         Phone
                         <div class="input-wrapper">
@@ -74,7 +75,7 @@
                            </svg>
                         </div>
                      </label>
-
+                     <!-- Email -->
                      <label class="field">
                         Email
                         <div class="input-wrapper">
@@ -84,15 +85,15 @@
                            </svg>
                         </div>
                      </label>
-
+                     <!-- Comment -->
                      <label class="field comment-field" title="Not required.">
                         Comment
-                        <textarea class="comment-input input" title="Not required." placeholder="Text input"
-                           name="comment"></textarea>
+                        <textarea class="input comment-input" placeholder="Text input" name="comment"
+                           title="Not required."></textarea>
                      </label>
-
+                     <!-- Checkbox -->
                      <label class="checkbox-field" title="Please, read carefully.">
-                        <input class="checkbox-input visually-hidden" type="checkbox" placeholder=" " name="checkbox" />
+                        <input class="visually-hidden checkbox-input" type="checkbox" placeholder=" " name="checkbox" />
                         I accept the terms and conditions of the
                         <a class="checkbox-label-link"
                            href="https://www.apple.com/legal/privacy/pdfs/apple-privacy-policy-en-ww.pdf"
@@ -104,7 +105,6 @@
                      </label>
                      <button class="send-button" type="submit">Send</button>
                   </form>
-
                </div>
             </div>
          </div>
