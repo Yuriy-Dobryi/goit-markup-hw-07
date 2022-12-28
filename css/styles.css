@@ -258,10 +258,12 @@ img, svg {
    letter-spacing: 0.01em;
 }
 .input-wrapper {
+   /* щоб спозиціонувати іконку в input */
    position: relative;
 }
 .input {
    display: block;
+   /* щоб форма розтягнулась на всю ширину модалки */
    width: 100%;
    margin-top: 4px;
    padding: 11px 38px;
@@ -284,7 +286,8 @@ img, svg {
    fill: var(--primary-brand-color);
 }
 
-/* не всі іконки однаково розміру: */
+/* let's started */
+/* іконки в класах .input */
 .modal-person-icon {
    left: 16px;
    top: 11px;
@@ -313,11 +316,6 @@ img, svg {
    color: rgba(117, 117, 117, 0.5);
 }
 /* Checkbox: */
-.checkbox-input {
-   /* щоб форма розтягнулась на всю ширину модалки */
-   display: block;
-   width: 100%;
-}
 .checkbox-field {
    position: relative;
 
