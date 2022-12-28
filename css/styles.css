@@ -646,7 +646,7 @@ img, svg {
 .footer-field {
    font-weight: 500;
    font-size: 16px;
-   line-height: 24px;
+   line-height: 1.5;
    letter-spacing: 0.02em;
    color: #FFFFFF;
 }
@@ -665,8 +665,11 @@ img, svg {
    border-radius: 4px;
    outline: none;
 }
-.subscribe-button-wrapper {
-   position: relative;
+.footer-input:placeholder-shown {
+   color: rgba(255, 255, 255, 0.6);
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 0.04em;
 }
 .footer-subscribe-button {
    position: relative;
