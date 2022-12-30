@@ -470,7 +470,7 @@ img, svg {
    fill: #8E8F99;
    border: 1px solid #8E8F99;
    border-radius: 4px;
-   transition: outline 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
@@ -650,11 +650,10 @@ img, svg {
    border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input:focus-within {
-   border-color: violet;
-   outline: none;
+   outline: 1px solid violet;
 }
 .footer-input:placeholder-shown {
    color: rgba(255, 255, 255, 0.6);
