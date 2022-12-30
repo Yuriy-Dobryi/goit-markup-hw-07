@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
    padding: 0;
 }
 img, svg {
-   /* щоб забрати неадекватний відступ знизу в цих inline-тегах (на svg цей відступ і так забереться у випадку, якщо вказати розміри для посилання в яке воно огорнуте, але якщо забуду це зробити то краще нехай цей відступ забереться тут */
+   /* щоб забрати неадекватний відступ знизу в цих inline-тегах (на svg цей відступ і так забереться у випадку, якщо вказати розміри для посилання в яке воно огорнуте, але якщо забуду це зробити то краще нехай цей відступ забереться тут) */
    display: block;
    max-width: 100%;
    height: auto;
@@ -242,6 +242,7 @@ img, svg {
 }
 /* загальні класи форми: */
 .field {
+   position: relative;
    display: block;
    margin-bottom: 8px;
 
@@ -249,10 +250,6 @@ img, svg {
    font-size: 12px;
    line-height: 1.17;
    letter-spacing: 0.01em;
-}
-.input-wrapper {
-   /* щоб спозиціонувати іконку в input */
-   position: relative;
 }
 .input {
    display: block;
@@ -273,27 +270,22 @@ img, svg {
 }
 .modal-icon {
    position: absolute;
+   left: 16px;
+   top: 12px;
+
    fill: var(--primary-text-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus-within .modal-icon {
    fill: var(--primary-brand-color);
 }
-
-/* let's started */
-/* іконки в класах .input */
+/* іконки в inputax: */
 .modal-person-icon {
-   left: 16px;
-   top: 11px;
-
    width: 18px;
    height: 18px;
 }
 .modal-phone-icon,
 .modal-email-icon {
-   left: 16px;
-   top: 8px;
-
    width: 18px;
    height: 24px;
 }
@@ -667,7 +659,6 @@ img, svg {
    column-gap: 16px;
 
    width: 165px;
-   height: 40px;
    padding: 8px 24px;
    
    background-color: var(--primary-brand-color);
