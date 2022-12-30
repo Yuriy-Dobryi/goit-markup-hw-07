@@ -51,14 +51,11 @@ img, svg {
 }
 .visually-hidden {
    position: absolute;
-   
    width: 1px;
    height: 1px;
-   border: 0;
-
    margin: -1px;
    padding: 0;
-
+   border: 0;
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
@@ -165,8 +162,8 @@ img, svg {
    font-weight: 500;
    line-height: 1.19;
    letter-spacing: 0.04em;
-   border-radius: 4px;
    border: none;
+   border-radius: 4px;
    cursor: pointer;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -223,6 +220,7 @@ img, svg {
    border: 2px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    cursor: pointer;
+
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover,
@@ -264,15 +262,15 @@ img, svg {
    
    margin-top: 4px;
    padding: 11px 38px;
-   border: 1px solid rgba(33, 33, 33, 0.2);
 
    color: var(--primary-text-color);
+   border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus-within .input {
-   outline: none;
    border-color: var(--primary-brand-color);
+   outline: none;
 }
 .modal-icon {
    position: absolute;
@@ -335,10 +333,11 @@ img, svg {
 
    width: 16px;
    height: 16px;
-   border: 1.25px solid #2E2F42;
-
+   
    background-color: #F4F4FD;
+   border: 1.25px solid #2E2F42;
    border-radius: 2px;
+
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked ~ .modal-checkbox-icon {
@@ -355,7 +354,6 @@ img, svg {
 .send-button {
    display: block;
    width: 169px;
-   height: 56px;
    
    margin: 0 auto;
    padding: 16px 32px;
@@ -367,6 +365,7 @@ img, svg {
    letter-spacing: 0.04em;
    border: none;
    border-radius: 4px;
+   cursor: pointer;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* <----<PRIORITIES>----> */
@@ -463,17 +462,17 @@ img, svg {
 .customer-icon-wrapper {
    width: 168px;
    height: 88px;
-   border: 1px solid #8E8F99;
-
+   
    fill: #8E8F99;
+   border: 1px solid #8E8F99;
    border-radius: 4px;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
-   outline: none;
    fill: var(--primary-brand-color);
    border-color: var(--primary-brand-color);
+   outline: none;
 }
 .customer-icon {
    width: 104px;
@@ -512,8 +511,8 @@ img, svg {
 }
 .portfolio-card {
    flex-basis: calc((100% - (24px * 2))/3);
-   border-bottom: 0.5px solid #F4F4FD;
 
+   border-bottom: 0.5px solid #F4F4FD;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -640,19 +639,19 @@ img, svg {
    display: block;
    width: 264px;
    height: 40px;
-   border: 1px solid rgba(255, 255, 255, 0.3);
 
    margin-top: 16px;
    padding: 8px 16px;
 
    background-color: var(--primary-text-color);
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input:focus-within {
-   outline: none;
    border-color: violet;
+   outline: none;
 }
 .footer-input:placeholder-shown {
    color: rgba(255, 255, 255, 0.6);
