@@ -271,7 +271,7 @@ img, svg {
 .modal-icon {
    position: absolute;
    left: 16px;
-   top: 29px;
+   top: 50%;
 
    fill: var(--primary-text-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -360,9 +360,6 @@ img, svg {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* <----<PRIORITIES>----> */
-.priorities-item {
-   flex-basis: calc((100% - (24px * 3))/4);
-}
 .priorities-icon-wrapper {
    width: 264px;
    height: 112px;
@@ -460,15 +457,15 @@ img, svg {
    height: 88px;
    
    fill: #8E8F99;
-   outline: 1px solid #8E8F99;
+   border: 1px solid #8E8F99;
    border-radius: 4px;
-   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
    fill: var(--primary-brand-color);
-   outline-color: var(--primary-brand-color);
-}
+   outline: 1px solid var(--primary-brand-color);
+}  
 .customer-icon {
    width: 104px;
    height: 56px;
@@ -584,6 +581,7 @@ img, svg {
    color: #F4F4FD;
 }
 .footer-slogan {
+   width: 264px;
    color: #E7E9FC;
    line-height: 1.5;
 }
