@@ -273,21 +273,14 @@ img, svg {
    left: 16px;
    top: 50%;
 
+   width: 18px;
+   height: 24px;
+
    fill: var(--primary-text-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus-within .modal-icon {
    fill: var(--primary-brand-color);
-}
-/* іконки в inputax: */
-.modal-person-icon {
-   width: 18px;
-   height: 18px;
-}
-.modal-phone-icon,
-.modal-email-icon {
-   width: 18px;
-   height: 24px;
 }
 /* деякі правки для 'Comment': */
 .comment-field {
