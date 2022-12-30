@@ -173,7 +173,7 @@ img, svg {
 .hero-modal-button:focus {
    background-color: #404BBF;
 }
-/* BACKDROP */
+/* Backdrop */
 .backdrop {
    position: fixed;
    left: 0;
@@ -190,10 +190,7 @@ img, svg {
    visibility: hidden;
    pointer-events: none;
 }
-.backdrop.is-hidden .modal {
-   transform: translate(-50%, -50%) scale(4);
-}
-/* MODAL */
+/* Modal */
 .modal {
    position: absolute;
    left: 50%;
@@ -208,6 +205,10 @@ img, svg {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop.is-hidden .modal {
+   transform: translate(-50%, -50%) scale(4);
+}
+/* Close button */
 .close-button {
    position: absolute;
    top: 24px;
@@ -271,7 +272,7 @@ img, svg {
 .modal-icon {
    position: absolute;
    left: 16px;
-   top: 50%;
+   top: 26px;
 
    width: 18px;
    height: 24px;
