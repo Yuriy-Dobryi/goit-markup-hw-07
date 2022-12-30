@@ -562,6 +562,7 @@ img, svg {
 }
 .footer-container { 
    display: flex;
+   color: red;
 }
 .footer-logo {
    display: inline-block;
@@ -582,7 +583,7 @@ img, svg {
    color: #E7E9FC;
    line-height: 1.5;
 }
-.social-media-box {
+.social-media {
    margin-left: 120px;
    margin-right: 80px;
 }
@@ -618,7 +619,6 @@ img, svg {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.5;
-   letter-spacing: 0.02em;
    color: #fff;
 }
 .footer-form {
