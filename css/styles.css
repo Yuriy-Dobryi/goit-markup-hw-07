@@ -562,7 +562,6 @@ img, svg {
 }
 .footer-container { 
    display: flex;
-   color: red;
 }
 .footer-logo {
    display: inline-block;
