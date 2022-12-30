@@ -460,14 +460,14 @@ img, svg {
    height: 88px;
    
    fill: #8E8F99;
-   border: 1px solid #8E8F99;
+   outline: 1px solid #8E8F99;
    border-radius: 4px;
-   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
    fill: var(--primary-brand-color);
-   outline: 1px solid var(--primary-brand-color);
+   outline-color: var(--primary-brand-color);
 }
 .customer-icon {
    width: 104px;
