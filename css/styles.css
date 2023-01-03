@@ -35,9 +35,11 @@ img, svg {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
-/* <----------------> */
+/* ALL CONTAINERS */
 .container {
    width: 396px;
+   margin-left: auto;
+   margin-right: auto;
    padding-left: 16px;
    padding-right: 16px;
 }
@@ -51,7 +53,8 @@ img, svg {
       width: 1128px;
    }
 }
-/* <--------<HEADER>--------> */
+
+/* MOBILE--HEADER */
 .header-nav,
 .header-contacts {
    display: none;
@@ -67,15 +70,6 @@ img, svg {
    padding-top: 24px;
    padding-bottom: 24px;
 }
-.header-menu-button {
-   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-   .header-menu-button {
-      display: none;
-   }
-}
-/* <----<LOGO>----> */
 .header-logo {
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
@@ -87,13 +81,19 @@ img, svg {
 .header-logo-studio {
    color: var(--primary-text-color);
 }
-/* <----<NAVIGATION>----> */
+.header-menu-button {
+   margin-left: auto;
+}
+
+/* HEADER--TABLET */
 @media screen and (min-width: 768px) {
+   .header-menu-button {
+      display: none;
+   }
    .header-nav {
       display: flex;
       column-gap: 40px;
       margin-left: 120px;
-      margin-right: 120px;
    }
    .nav-link {
       position: relative;
@@ -126,7 +126,10 @@ img, svg {
       border-radius: 2px;
    }
    .header-contacts {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      margin-left: auto;
    }
    .contact-link {
       color: var(--secondary-text-color);
@@ -141,6 +144,21 @@ img, svg {
    }
 }
 
+/* PC--HEADER */
+@media screen and (min-width: 1440px) {
+   .header-nav {
+      margin-left: 76px;
+   }
+   .header-contacts {
+      flex-direction: row;
+      column-gap: 40px;
+      margin-left: auto;
+   }
+   .contact-link {
+      padding-top: 24px;
+      padding-bottom: 24px;
+   }
+}
 /* <--------<INDEX-MAIN>--------> */
 .section {
    padding-top: 120px;
