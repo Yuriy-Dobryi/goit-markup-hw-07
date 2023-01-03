@@ -63,7 +63,7 @@ img, svg {
    align-items: center;
 }
 /* Link click area */
-.header .link {
+.header-logo {
    padding-top: 24px;
    padding-bottom: 24px;
 }
@@ -669,7 +669,6 @@ img, svg {
 @media screen and (min-width: 768px) {
    .container {
       width: 736px;
-
    }
 
    .header-nav {
@@ -679,8 +678,11 @@ img, svg {
    }
 
    .header-contacts {
-      display: block;
+      display: inline-block;
       margin-left: auto;
+   }
+   .contact-link {
+      padding: 0;
    }
 
    .menu-text {
