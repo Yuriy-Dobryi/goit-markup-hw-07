@@ -2,6 +2,10 @@
    --primary-text-color: #2E2F42;
    --secondary-text-color: #434455;
    --primary-brand-color: #4D5AE5;
+
+   --mobile: 428px;
+   --tablet: 768px;
+   --pc: 1440px;
 }
 body {
    background-color: #fff;
@@ -15,20 +19,42 @@ h1, h2, h3, h4, h5, h6, p, ul {
    padding: 0;
 }
 img, svg {
-   /* щоб забрати неадекватний відступ знизу в цих inline-тегах (на svg цей відступ і так забереться у випадку, якщо вказати розміри для посилання в яке воно огорнуте, але якщо забуду це зробити то краще нехай цей відступ забереться тут) */
    display: block;
    max-width: 100%;
    height: auto;
 }
 /* <--------<DEFAULT CLASSES>--------> */
+.header-nav,
+.header-contacts,
+.priorities-icon-wrapper {
+   display: none;
+}
 .container {
    width: 396px;
-
-   margin-left: auto;
-   margin-right: auto;
-
-   padding-left: 15px;
-   padding-right: 15px;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+@media screen and (min-width: 768px) {
+   .container {
+      width: 736px;
+   }
+   .header-nav {
+      display: flex;
+      margin-left: 120px;
+      margin-right: 120px;
+   }
+   .header-contacts {
+      display: block;
+      margin-left: auto;
+   }
+   .menu-text {
+      display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+   .container {
+      width: 1128px;
+   }
 }
 .section {
    margin-bottom: 96px;
@@ -49,19 +75,19 @@ img, svg {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
-
-.header-nav,
-.header-contacts,
-.priorities-icon-wrapper {
-   display: none;
-}
-.section-title {
+.section-title,
+.priorities-title {
    font-size: 36px;
+   font-weight: 700;
    line-height: 1.11;
 }
 /* <--------<HEADER>--------> */
 .header {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.header-container {
+   display: flex;
+   align-items: center;
 }
 /* Link click area */
 .header .link {
@@ -70,8 +96,6 @@ img, svg {
 }
 /* <----<LOGO>----> */
 .header-logo {
-   margin-right: 77px;
-
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 18px;
@@ -113,22 +137,24 @@ img, svg {
 
    background-color: #404BBF;
    border-radius: 2px;
+}  
+.menu-text {
+   width: 32px;
+   height: 22px;
+   margin-left: auto;
 }
 /* <----<CONTACTS>----> */
-.header-contacts {
-   margin-left: auto;
-   column-gap: 40px;
-}
 .contact-link {
    color: var(--secondary-text-color);
-   line-height: 1.5;
+   font-size: 12px;
+   line-height: 1.33;
+   letter-spacing: 0.04em;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
    color: var(--primary-brand-color);
 }
-
 /* <--------<INDEX-MAIN>--------> */
 /* <----<HERO>----> */
 .hero {
@@ -143,6 +169,7 @@ img, svg {
 .hero-title {
    margin-bottom: 72px;
    color: #fff;
+   text-transform: capitalize;
 }
 .hero-modal-button {
    padding: 16px 32px;
