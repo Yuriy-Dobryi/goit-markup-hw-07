@@ -62,13 +62,11 @@ img, svg {
    display: flex;
    align-items: center;
 }
-/* Link click area */
+/* <----<LOGO>----> */
 .header-logo {
    padding-top: 24px;
    padding-bottom: 24px;
-}
-/* <----<LOGO>----> */
-.header-logo {
+
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 18px;
@@ -681,9 +679,11 @@ img, svg {
       display: inline-block;
       margin-left: auto;
    }
-   .contact-link {
-      padding: 0;
-   }
+
+.nav-link {
+   padding-top: 24px;
+   padding-bottom: 24px;
+}
 
    .menu-text {
       display: none;
