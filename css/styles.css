@@ -22,7 +22,7 @@ img, svg {
 }
 /* <--------<DEFAULT CLASSES>--------> */
 .container {
-   width: 1158px;
+   width: 396px;
 
    margin-left: auto;
    margin-right: auto;
@@ -31,19 +31,9 @@ img, svg {
    padding-right: 15px;
 }
 .section {
-   padding-top: 120px;
-   padding-bottom: 120px;
+   margin-bottom: 96px;
 }
-.basic-flex {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   row-gap: 72px;
-}
-.flex-list {
-   display: flex;
-   column-gap: 24px;
+.list {
    list-style: none;
 }
 .link {
@@ -60,6 +50,15 @@ img, svg {
    overflow: hidden;
 }
 
+.header-nav,
+.header-contacts,
+.priorities-icon-wrapper {
+   display: none;
+}
+.section-title {
+   font-size: 36px;
+   line-height: 1.11;
+}
 /* <--------<HEADER>--------> */
 .header {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -133,26 +132,17 @@ img, svg {
 /* <--------<INDEX-MAIN>--------> */
 /* <----<HERO>----> */
 .hero {
-   max-width: 1440px;
-
-   margin: 0 auto;
-   padding-top: 192px;
-   padding-bottom: 192px;
+   max-width: 428px;
+   padding-top: 112px;
+   padding-bottom: 112px;
    
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-size: cover;
-}
-.hero-container {
-   flex-direction: column;
-   row-gap: 48px;
+   text-align: center;
 }
 .hero-title {
-   width: 492px;
-
+   margin-bottom: 72px;
    color: #fff;
-   font-size: 56px;
-   line-height: 1.07;
-   text-align: center;
 }
 .hero-modal-button {
    padding: 16px 32px;
