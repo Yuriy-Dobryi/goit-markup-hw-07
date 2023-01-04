@@ -110,6 +110,8 @@ img, svg {
 }
 /* ---width: 492px; */
 .hero-modal-button {
+   display: block;
+   margin: 0 auto;
    padding: 16px 32px;
    
    background-color: var(--primary-brand-color);
