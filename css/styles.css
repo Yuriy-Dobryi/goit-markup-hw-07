@@ -699,11 +699,11 @@ img, svg {
       padding-bottom: 120px;
    }
    .priorities-list {
-      flex-direction: row;
-      column-gap: 24px;
+      display: flex;
+      flex-wrap: wrap;
    }
    .priorities-item {
-      width: calc((100% - 4 * 5px) / 4);
+      flex-basis: 50%;
    }
    .footer-container {
       width: 552px;
@@ -761,6 +761,13 @@ img, svg {
    .priorities-icon {
       width: 64px;
       height: 64px;
+   }
+   .priorities-list {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .priorities-item {
+      flex-basis: calc(100% / 4);
    }
    .priorities-title {
       font-weight: 500;
