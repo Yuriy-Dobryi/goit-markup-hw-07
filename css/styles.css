@@ -313,8 +313,10 @@ img, svg {
 }
 
 /* <----<PRIORITIES>----> */
-.priorities-item:not(:last-child) {
-   margin-bottom: 72px;
+.priorities-list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 72px;
 }
 .priorities-title {
    margin-top: 8px;
@@ -699,13 +701,12 @@ img, svg {
       padding-bottom: 120px;
    }
    .priorities-list {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      margin: 0 -24px -72px 0;
+      column-gap: 24px;
    }
    .priorities-item {
-      flex-basis: calc((100% - 24px) / 2);
-      margin-right: 24px;
+      flex-basis: calc((100% - 2 * 24px) / 2);
    }
    .footer-container {
       width: 552px;
