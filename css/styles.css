@@ -675,8 +675,11 @@ img, svg {
    .footer-container {
       flex-wrap: nowrap;
       column-gap: 24px;
+      gap: 0;
    }
 }
+
+/* Logo + Slogan */
 .footer-logo {
    display: inline-block;
    margin-bottom: 16px;
@@ -702,9 +705,12 @@ img, svg {
    }
 } */
 
-.social-media {
-   margin-left: 120px;
-   margin-right: 80px;
+/* Social media */
+@media screen and (min-width: 1200px) {
+   .social-media {
+      margin-left: 120px;
+      margin-right: 80px;
+   }
 }
 .footer-title {
    margin-bottom: 16px;
@@ -713,11 +719,10 @@ img, svg {
    font-weight: 500;
    line-height: 1.5;
 }
-
 .footer-icons-list {
+   display: flex;
    column-gap: 16px;
 }
-
 .footer-icon-wrapper {
    width: 40px;
    height: 40px;
@@ -726,18 +731,16 @@ img, svg {
    border-radius: 50%;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-icon-wrapper:hover,
 .footer-icon-wrapper:focus {
    background-color: #31D0AA;
 }
-
 .footer-icon {
    width: 24px;
    height: 24px;
 }
 
-/* Footer-subscribe */
+/* Subscribe */
 .footer-subscribe-text,
 .footer-input {
    font-weight: 500;
@@ -745,10 +748,14 @@ img, svg {
    line-height: 1.5;
    color: #fff;
 }
-
-.footer-form {
-   display: flex;
-   column-gap: 24px;
+.footer-subscribe-text {
+   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+   .footer-form {
+      display: flex;
+      column-gap: 24px;
+   }
 }
 
 .footer-input {
