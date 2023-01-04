@@ -51,6 +51,7 @@ img, svg {
 @media screen and (min-width: 1200px) {
    .container {
       width: 1128px;
+      padding: 0;
    }
 }
 
@@ -730,6 +731,9 @@ img, svg {
    }
    .footer-logo {
       text-align: left;
+   }
+   .footer-slogan {
+      width: 264px;
    }
    .footer-title {
       text-align: left;
