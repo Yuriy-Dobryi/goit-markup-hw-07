@@ -675,6 +675,7 @@ img, svg {
 }
 @media screen and (min-width: 1200px) {
    .footer-container {
+      flex-wrap: nowrap;
       column-gap: 24px;
       gap: 0;
    }
@@ -785,6 +786,11 @@ img, svg {
 @media screen and (min-width: 768px) {
    .footer-form {
       column-gap: 24px;
+   }
+}
+@media screen and (min-width: 1200px) {
+   .footer-form {
+      flex-wrap: nowrap;
    }
 }
 .footer-input {
