@@ -92,8 +92,8 @@ img, svg {
    max-width: 1440px;
 
    margin: 0 auto;
-   padding-top: 192px;
-   padding-bottom: 192px;
+   padding-top: 112px;
+   padding-bottom: 112px;
 
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-size: cover;
