@@ -56,7 +56,9 @@ img, svg {
 
 /* HEADER */
 .header-nav,
-.header-contacts {
+.header-contacts,
+.priorities-icon-wrapper,
+.works {
    display: none;
 }
 .header {
@@ -398,10 +400,10 @@ img, svg {
 }
 
 /* <----<PRIORITIES>----> */
+
 .priorities-icon-wrapper {
    width: 264px;
    height: 112px;
-
    background-color: #F4F4FD;
 }
 .priorities-icon {
