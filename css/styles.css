@@ -724,8 +724,8 @@ img, svg {
 /* LAPTOP-FOOTER */
 @media screen and (min-width: 768px) {
    .footer-container {
+      width: 552px;
       flex-direction: row;
-      justify-content: center;
       flex-wrap: wrap;
       align-items: flex-start;
       column-gap: 24px;
