@@ -653,16 +653,16 @@ img, svg {
 
 /* <--------<FOOTER>--------> */
 .footer {
-   padding-top: 100px;
-   padding-bottom: 100px;
+   padding-top: 96px;
+   padding-bottom: 96px;
 
    background-color: var(--primary-text-color);
 }
-
-.footer-container {
-   display: flex;
+@media screen and (min-width: 768px) {
+   .footer-container {
+      display: flex;
+   }
 }
-
 .footer-logo {
    display: inline-block;
    margin-bottom: 16px;
@@ -674,22 +674,25 @@ img, svg {
    letter-spacing: 0.03em;
    text-transform: uppercase;
 }
-
 .footer-logo-studio {
    color: #F4F4FD;
 }
-
 .footer-slogan {
-   width: 264px;
+   width: 268px;
    color: #E7E9FC;
    line-height: 1.5;
 }
-
+@media screen and (min-width: 768px) {
+   .footer-slogan {
+      width: 268px;
+      color: #E7E9FC;
+      line-height: 1.5;
+   }
+}
 .social-media {
    margin-left: 120px;
    margin-right: 80px;
 }
-
 .footer-title {
    margin-bottom: 16px;
 
