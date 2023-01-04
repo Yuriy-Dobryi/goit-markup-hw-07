@@ -668,6 +668,7 @@ img, svg {
 @media screen and (min-width: 768px) {
    .footer-container {
       flex-direction: row;
+      justify-content: center;
       flex-wrap: wrap;
       align-items: flex-start;
       column-gap: 24px;
@@ -716,7 +717,7 @@ img, svg {
 
 /* Social media */
 @media screen and (min-width: 1200px) {
-   .social-media {
+   .social-media-box {
       margin-left: 120px;
       margin-right: 80px;
    }
@@ -761,6 +762,11 @@ img, svg {
 }
 
 /* Subscribe */
+@media screen and (min-width: 768px) {
+   .subscribe-box {
+      align-self: flex-start;
+   }
+}
 .footer-subscribe-text,
 .footer-input {
    font-weight: 500;
