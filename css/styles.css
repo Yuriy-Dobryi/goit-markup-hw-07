@@ -37,7 +37,7 @@ img, svg {
 }
 /* ALL CONTAINERS */
 .container {
-   width: 396px;
+   width: 428px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 16px;
@@ -45,7 +45,7 @@ img, svg {
 }
 @media screen and (min-width: 768px) {
    .container {
-      width: 736px;
+      width: 768px;
    }
 }
 @media screen and (min-width: 1200px) {
@@ -683,11 +683,6 @@ img, svg {
    flex-wrap: wrap;
    row-gap: 16px;
 }
-@media screen and (min-width: 1200px) {
-   .footer-form {
-      flex-wrap: nowrap;
-   }
-}
 .footer-input {
    width: 100%;
    height: 40px;
@@ -759,5 +754,8 @@ img, svg {
    .social-media-box {
       margin-left: 120px;
       margin-right: 80px;
+   }
+   .footer-form {
+      flex-wrap: nowrap;
    }
 }
