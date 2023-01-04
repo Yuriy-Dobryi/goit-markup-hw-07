@@ -50,7 +50,7 @@ img, svg {
 }
 @media screen and (min-width: 1200px) {
    .container {
-      width: 1128px;
+      width: 1160px;
    }
 }
 
@@ -753,6 +753,7 @@ img, svg {
 /* DESKTOP-FOOTER */
 @media screen and (min-width: 1200px) {
    .footer-container {
+      flex-wrap: nowrap;
       gap: 0;
    }
    .social-media-box {
