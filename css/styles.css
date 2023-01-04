@@ -98,22 +98,20 @@ img, svg {
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-size: cover;
 }
-.hero-container {
-   flex-direction: column;
-   row-gap: 48px;
-}
 .hero-title {
    width: 318px;
-
+   margin: 0 auto 72px;
    color: #fff;
-   font-size: 56px;
-   line-height: 1.07;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   text-transform: capitalize;
    text-align: center;
 }
 /* ---width: 492px; */
 .hero-modal-button {
    padding: 16px 32px;
-
+   
    background-color: var(--primary-brand-color);
    color: #fff;
    font-weight: 500;
