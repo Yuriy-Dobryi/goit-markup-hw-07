@@ -90,8 +90,6 @@ img, svg {
 /* <----<HERO>----> */
 .hero {
    max-width: 1440px;
-
-   margin: 0 auto;
    padding-top: 112px;
    padding-bottom: 112px;
 
@@ -101,7 +99,7 @@ img, svg {
 .hero-title {
    width: 318px;
    margin: 0 auto 72px;
-   
+
    color: #fff;
    font-weight: 700;
    font-size: 36px;
@@ -109,7 +107,6 @@ img, svg {
    text-align: center;
    text-transform: capitalize;
 }
-/* ---width: 492px; */
 .hero-modal-button {
    display: block;
    margin: 0 auto;
@@ -118,13 +115,12 @@ img, svg {
    background-color: var(--primary-brand-color);
    color: #fff;
    font-weight: 500;
-   line-height: 1.19;
+   line-height: 1.5;
    letter-spacing: 0.04em;
    border: none;
    border-radius: 4px;
    cursor: pointer;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-modal-button:hover,
