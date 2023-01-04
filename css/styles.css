@@ -344,6 +344,7 @@ img, svg {
 
 /* <----<TEAM>----> */
 .team {
+   padding-bottom: 128px;
    background-color: #F4F4FD;
 }
 .team-title {
