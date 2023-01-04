@@ -101,19 +101,20 @@ img, svg {
 .hero-title {
    width: 318px;
    margin: 0 auto 72px;
+   
    color: #fff;
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
-   text-transform: capitalize;
    text-align: center;
+   text-transform: capitalize;
 }
 /* ---width: 492px; */
 .hero-modal-button {
    display: block;
    margin: 0 auto;
    padding: 16px 32px;
-   
+
    background-color: var(--primary-brand-color);
    color: #fff;
    font-weight: 500;
