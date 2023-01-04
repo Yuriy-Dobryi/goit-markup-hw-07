@@ -186,13 +186,14 @@ img, svg {
 }
 
 .hero-title {
-   width: 492px;
+   width: 318px;
 
    color: #fff;
    font-size: 56px;
    line-height: 1.07;
    text-align: center;
 }
+/* width: 492px; */
 
 .hero-modal-button {
    padding: 16px 32px;
@@ -681,7 +682,7 @@ img, svg {
 
 /* Logo + Slogan */
 .footer-logo {
-   display: inline-block;
+   display: block;
    margin-bottom: 16px;
 
    color: var(--primary-brand-color);
@@ -690,6 +691,8 @@ img, svg {
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+
+   text-align: center;
 }
 .footer-logo-studio {
    color: #F4F4FD;
@@ -718,12 +721,18 @@ img, svg {
    color: #fff;
    font-weight: 500;
    line-height: 1.5;
+
+   text-align: center;
 }
 .footer-icons-list {
    display: flex;
    column-gap: 16px;
 }
 .footer-icon-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
    width: 40px;
    height: 40px;
 
@@ -751,19 +760,19 @@ img, svg {
 .footer-subscribe-text {
    margin-bottom: 16px;
 }
+.footer-form {
+   display: flex;
+   column-gap: 16px;
+}
 @media screen and (min-width: 768px) {
    .footer-form {
-      display: flex;
       column-gap: 24px;
    }
 }
-
 .footer-input {
-   display: block;
-   width: 264px;
+   /* display: block; */
+   width: 100%;
    height: 40px;
-
-   margin-top: 16px;
    padding: 8px 16px;
 
    background-color: var(--primary-text-color);
@@ -772,21 +781,22 @@ img, svg {
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width: 768px) {
+   .footer-input {
+      width: 264px;
+   }
+}
 .footer-input:focus-within {
    outline: 1px solid violet;
 }
-
 .footer-input:placeholder-shown {
    color: rgba(255, 255, 255, 0.6);
    font-size: 12px;
    line-height: 2;
    letter-spacing: 0.04em;
 }
-
 .footer-button {
    display: flex;
-   align-self: flex-end;
    column-gap: 16px;
 
    width: 165px;
