@@ -676,12 +676,11 @@ img, svg {
 @media screen and (min-width: 1200px) {
    .footer-container {
       flex-wrap: nowrap;
-      column-gap: 24px;
       gap: 0;
    }
 }
 
-/* Logo + Slogan */
+/* (Logo + Slogan) box */
 .footer-logo {
    display: block;
    margin-bottom: 16px;
@@ -709,7 +708,7 @@ img, svg {
    line-height: 1.5;
 }
 
-/* Social media */
+/* Social media box*/
 @media screen and (min-width: 1200px) {
    .social-media-box {
       margin-left: 120px;
@@ -755,7 +754,7 @@ img, svg {
    height: 24px;
 }
 
-/* Subscribe */
+/* Subscribe box*/
 .footer-subscribe-text,
 .footer-input {
    font-weight: 500;
