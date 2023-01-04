@@ -20,12 +20,17 @@ img, svg {
    height: auto;
 }
 .container {
-   width: 428px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 16px;
    padding-right: 16px;
 }
+@media screen and (min-width: 428px) {
+   .container {
+      width: 428px;
+   }
+}
+
 .list {
    list-style: none;
 }
@@ -712,6 +717,9 @@ img, svg {
    .priorities-list {
       flex-direction: row;
       column-gap: 24px;
+   }
+   .priorities-item {
+      width: calc((100% - 4 * 5px) / 4);
    }
 
    .footer-container {
