@@ -324,9 +324,9 @@ img, svg {
    margin-top: 8px;
    margin-bottom: 8px;
 
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
 }
 .priorities-desctiption {
    color: var(--secondary-text-color);
@@ -751,6 +751,12 @@ img, svg {
       
       line-height: 1.5;
       letter-spacing: 0.02em;
+   }
+
+   .priorities-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
    }
 
    .footer-container {
