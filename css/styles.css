@@ -708,11 +708,6 @@ img, svg {
    color: #E7E9FC;
    line-height: 1.5;
 }
-/* @media screen and (min-width: 768px) {
-   .footer-slogan {
-      width: 264px;
-   }
-} */
 
 /* Social media */
 @media screen and (min-width: 1200px) {
