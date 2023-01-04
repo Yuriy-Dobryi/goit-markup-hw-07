@@ -320,6 +320,11 @@ img, svg {
    width: 64px;
    height: 64px;
 }
+.priorities-list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 72px;
+}
 .priorities-title {
    margin-top: 8px;
    margin-bottom: 8px;
@@ -331,6 +336,7 @@ img, svg {
 .priorities-desctiption {
    color: var(--secondary-text-color);
    line-height: 1.5;
+   font-weight: 500;
 }
 
 /* <----<WORKS>----> */
@@ -703,6 +709,10 @@ img, svg {
       padding-top: 120px;
       padding-bottom: 120px;
    }
+   .priorities-list {
+      flex-direction: row;
+      column-gap: 24px;
+   }
 
    .footer-container {
       width: 552px;
@@ -757,6 +767,9 @@ img, svg {
       font-weight: 500;
       font-size: 20px;
       line-height: 1.2;
+   }
+   .priorities-desctiption {
+      font-weight: 400;
    }
    .works {
       padding-top: 0;
