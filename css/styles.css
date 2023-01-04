@@ -51,7 +51,8 @@ img, svg {
 @media screen and (min-width: 1200px) {
    .container {
       width: 1128px;
-      padding: 0;
+      padding-left: 0;
+      padding-right: 0;
    }
 }
 
