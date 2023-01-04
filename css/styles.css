@@ -35,23 +35,12 @@ img, svg {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
-/* ALL CONTAINERS */
 .container {
    width: 428px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 16px;
    padding-right: 16px;
-}
-@media screen and (min-width: 768px) {
-   .container {
-      width: 768px;
-   }
-}
-@media screen and (min-width: 1200px) {
-   .container {
-      width: 1160px;
-   }
 }
 /* DISPLAY: NONE */
 .header-nav,
@@ -88,89 +77,15 @@ img, svg {
    margin-left: auto;
 }
 
-/* HEADER TABLET */
-@media screen and (min-width: 768px) {
-   .header-menu-button {
-      display: none;
-   }
-   .header-nav {
-      display: flex;
-      column-gap: 40px;
-      margin-left: 120px;
-   }
-   .nav-link {
-      position: relative;
-      padding-top: 24px;
-      padding-bottom: 24px;
-
-      color: inherit;
-      font-weight: 500;
-      line-height: 1.5;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-   .nav-link:hover,
-   .nav-link:focus {
-      color: var(--secondary-text-color);
-   }
-   .nav-link:active {
-      color: var(--primary-brand-color);
-   }
-   /* нижнє підкреслення посилання поточної сторінки */
-   .current-page-link::after {
-      content: '';
-   
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 4px;
-
-      background-color: #404BBF;
-      border-radius: 2px;
-   }
-   .header-contacts {
-      display: flex;
-      flex-direction: column;
-      row-gap: 4px;
-      margin-left: auto;
-   }
-   .contact-link {
-      color: var(--secondary-text-color);
-      font-size: 12px;
-      line-height: 1.33;
-      letter-spacing: 0.04em;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-   .contact-link:hover,
-   .contact-link:focus {
-      color: var(--primary-brand-color);
-   }
-}
-
-/* PC--HEADER */
-@media screen and (min-width: 1200px) {
-   .header-nav {
-      margin-left: 76px;
-   }
-   .header-contacts {
-      flex-direction: row;
-      column-gap: 40px;
-      margin-left: auto;
-   }
-   .contact-link {
-      padding-top: 24px;
-      padding-bottom: 24px;
-      font-size: 16px;
-
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-   }
-}
-
 /* <--------<INDEX-MAIN>--------> */
-.section {
+
+/* .section {
    padding-top: 120px;
    padding-bottom: 120px;
+} */
+.section {
+   padding-top: 96px;
+   padding-bottom: 96px;
 }
 /* <----<HERO>----> */
 .hero {
@@ -401,7 +316,6 @@ img, svg {
 }
 
 /* <----<PRIORITIES>----> */
-
 .priorities-icon-wrapper {
    width: 264px;
    height: 112px;
@@ -724,8 +638,75 @@ img, svg {
    cursor: pointer;
 }
 
-/* LAPTOP-FOOTER */
+/* LAPTOP PAGE*/
 @media screen and (min-width: 768px) {
+   .container {
+      width: 768px;
+   }
+   .header-menu-button {
+      display: none;
+   }
+
+   .header-nav {
+      display: flex;
+      column-gap: 40px;
+      margin-left: 120px;
+   }
+
+   .nav-link {
+      position: relative;
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      color: inherit;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .nav-link:hover,
+   .nav-link:focus {
+      color: var(--secondary-text-color);
+   }
+
+   .nav-link:active {
+      color: var(--primary-brand-color);
+   }
+
+   /* нижнє підкреслення посилання поточної сторінки */
+   .current-page-link::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+
+      background-color: #404BBF;
+      border-radius: 2px;
+   }
+
+   .header-contacts {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      margin-left: auto;
+   }
+
+   .contact-link {
+      color: var(--secondary-text-color);
+      font-size: 12px;
+      line-height: 1.33;
+      letter-spacing: 0.04em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .contact-link:hover,
+   .contact-link:focus {
+      color: var(--primary-brand-color);
+   }
+
    .footer-container {
       width: 552px;
       flex-direction: row;
@@ -753,8 +734,30 @@ img, svg {
    }
 }
 
-/* DESKTOP-FOOTER */
+/* DESKTOP-PAGE */
 @media screen and (min-width: 1200px) {
+   .container {
+      width: 1160px;
+   }
+   .header-nav {
+      margin-left: 76px;
+   }
+      
+   .header-contacts {
+      flex-direction: row;
+      column-gap: 40px;
+      margin-left: auto;
+   }
+      
+   .contact-link {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      font-size: 16px;
+      
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+   }
+
    .footer-container {
       flex-wrap: nowrap;
       gap: 0;
