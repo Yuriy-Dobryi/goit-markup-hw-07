@@ -313,11 +313,8 @@ img, svg {
 }
 
 /* <----<PRIORITIES>----> */
-
-.priorities-list {
-   display: flex;
-   flex-direction: column;
-   row-gap: 72px;
+.priorities-item:not(:last-child) {
+   margin-bottom: 72px;
 }
 .priorities-title {
    margin-top: 8px;
@@ -326,6 +323,7 @@ img, svg {
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
+   text-align: center;
 }
 .priorities-desctiption {
    color: var(--secondary-text-color);
@@ -641,10 +639,12 @@ img, svg {
    .header-menu-button {
       display: none;
    }
+   .header-logo {
+      margin-right: 120px;
+   }
    .header-nav {
       display: flex;
       column-gap: 40px;
-      margin-left: 120px;
    }
    .nav-link {
       position: relative;
@@ -736,8 +736,8 @@ img, svg {
    .container {
       width: 1160px;
    }
-   .header-nav {
-      margin-left: 76px;
+   .header-logo {
+      margin-right: 76px;
    }
    .header-contacts {
       flex-direction: row;
