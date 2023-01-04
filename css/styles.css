@@ -48,7 +48,7 @@ img, svg {
       width: 736px;
    }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
    .container {
       width: 1128px;
    }
@@ -145,7 +145,7 @@ img, svg {
 }
 
 /* PC--HEADER */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
    .header-nav {
       margin-left: 76px;
    }
@@ -668,7 +668,6 @@ img, svg {
 @media screen and (min-width: 768px) {
    .footer-container {
       flex-direction: row;
-      justify-content: center;
       flex-wrap: wrap;
       align-items: flex-start;
       column-gap: 24px;
@@ -676,7 +675,6 @@ img, svg {
 }
 @media screen and (min-width: 1200px) {
    .footer-container {
-      flex-wrap: nowrap;
       column-gap: 24px;
       gap: 0;
    }
@@ -762,11 +760,6 @@ img, svg {
 }
 
 /* Subscribe */
-@media screen and (min-width: 768px) {
-   .subscribe-box {
-      align-self: flex-start;
-   }
-}
 .footer-subscribe-text,
 .footer-input {
    font-weight: 500;
