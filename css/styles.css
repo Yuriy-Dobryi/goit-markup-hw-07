@@ -681,14 +681,12 @@ img, svg {
       background-color: #404BBF;
       border-radius: 2px;
    }
-
    .header-contacts {
       display: flex;
       flex-direction: column;
       row-gap: 4px;
       margin-left: auto;
    }
-
    .contact-link {
       color: var(--secondary-text-color);
       font-size: 12px;
@@ -696,15 +694,16 @@ img, svg {
       letter-spacing: 0.04em;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-
    .contact-link:hover,
    .contact-link:focus {
       color: var(--primary-brand-color);
    }
+
    .section {
       padding-top: 120px;
       padding-bottom: 120px;
    }
+
    .footer-container {
       width: 552px;
       flex-direction: row;
@@ -740,13 +739,11 @@ img, svg {
    .header-nav {
       margin-left: 76px;
    }
-      
    .header-contacts {
       flex-direction: row;
       column-gap: 40px;
       margin-left: auto;
    }
-      
    .contact-link {
       padding-top: 24px;
       padding-bottom: 24px;
