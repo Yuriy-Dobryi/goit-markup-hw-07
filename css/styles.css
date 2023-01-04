@@ -701,9 +701,11 @@ img, svg {
    .priorities-list {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 -24px -72px 0;
    }
    .priorities-item {
-      flex-basis: 50%;
+      flex-basis: calc((100% - 24px) / 2);
+      margin-right: 24px;
    }
    .footer-container {
       width: 552px;
