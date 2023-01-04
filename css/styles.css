@@ -758,6 +758,9 @@ img, svg {
       font-size: 20px;
       line-height: 1.2;
    }
+   .works {
+      padding-top: 0;
+   }
 
    .footer-container {
       flex-wrap: nowrap;
