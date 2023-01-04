@@ -54,7 +54,6 @@ img, svg {
    }
 }
 
-/* MOBILE--HEADER */
 .header-nav,
 .header-contacts {
    display: none;
@@ -163,6 +162,7 @@ img, svg {
       letter-spacing: 0.02em;
    }
 }
+
 /* <--------<INDEX-MAIN>--------> */
 .section {
    padding-top: 120px;
@@ -179,12 +179,10 @@ img, svg {
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-size: cover;
 }
-
 .hero-container {
    flex-direction: column;
    row-gap: 48px;
 }
-
 .hero-title {
    width: 318px;
 
@@ -193,8 +191,7 @@ img, svg {
    line-height: 1.07;
    text-align: center;
 }
-/* width: 492px; */
-
+/* ---width: 492px; */
 .hero-modal-button {
    padding: 16px 32px;
 
@@ -210,12 +207,10 @@ img, svg {
 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .hero-modal-button:hover,
 .hero-modal-button:focus {
    background-color: #404BBF;
 }
-
 /* Backdrop */
 .backdrop {
    position: fixed;
@@ -228,13 +223,11 @@ img, svg {
    background-color: rgba(46, 47, 66, 0.4);
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
 }
-
 /* Modal */
 .modal {
    position: absolute;
@@ -250,11 +243,9 @@ img, svg {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden .modal {
    transform: translate(-50%, -50%) scale(4);
 }
-
 /* Close button */
 .close-button {
    position: absolute;
@@ -271,19 +262,16 @@ img, svg {
 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .close-button:hover,
 .close-button:focus {
    background-color: #404BBF;
    fill: #fff;
    border-color: #404BBF;
 }
-
 .close-icon {
    width: 8px;
    height: 8px;
 }
-
 .modal-title {
    margin-bottom: 16px;
 
@@ -291,7 +279,6 @@ img, svg {
    line-height: 1.5;
    text-align: center;
 }
-
 /* загальні класи форми: */
 .field {
    position: relative;
@@ -303,7 +290,6 @@ img, svg {
    line-height: 1.17;
    letter-spacing: 0.01em;
 }
-
 .input {
    display: block;
    /* щоб форма розтягнулась на всю ширину модалки */
@@ -318,11 +304,9 @@ img, svg {
    border-radius: 4px;
    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .field:focus-within .input {
    outline: 1px solid var(--primary-brand-color);
 }
-
 .modal-icon {
    position: absolute;
    left: 16px;
@@ -334,29 +318,24 @@ img, svg {
    fill: var(--primary-text-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .field:focus-within .modal-icon {
    fill: var(--primary-brand-color);
 }
-
 /* деякі правки для 'Comment': */
 .comment-field {
    margin-bottom: 16px;
 }
-
 .comment-input {
    height: 120px;
    padding: 8px 16px;
    resize: none;
 }
-
 .comment-input::placeholder {
    color: rgba(117, 117, 117, 0.5);
    font-size: 12px;
    line-height: 1.3;
    letter-spacing: 0.04em
 }
-
 /* Checkbox: */
 .checkbox-field {
    position: relative;
@@ -370,7 +349,6 @@ img, svg {
    letter-spacing: 0.04em;
    text-align: center;
 }
-
 .modal-checkbox-icon {
    position: absolute;
    left: 0;
@@ -385,21 +363,17 @@ img, svg {
 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .checkbox-input:checked~.modal-checkbox-icon {
    background-color: #404BBF;
    border-color: #404BBF;
 }
-
 .checkbox-label {
    color: #757575;
    letter-spacing: 0.04em;
 }
-
 .checkbox-label-link {
    color: var(--primary-brand-color);
 }
-
 .send-button {
    display: block;
    width: 169px;
@@ -417,7 +391,6 @@ img, svg {
    cursor: pointer;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .send-button:hover,
 .send-button:focus {
    background-color: #404BBF;
@@ -430,12 +403,10 @@ img, svg {
 
    background-color: #F4F4FD;
 }
-
 .priorities-icon {
    width: 64px;
    height: 64px;
 }
-
 .priorities-title {
    margin-top: 8px;
    margin-bottom: 8px;
@@ -444,7 +415,6 @@ img, svg {
    font-size: 20px;
    line-height: 1.2;
 }
-
 .priorities-desctiption {
    color: var(--secondary-text-color);
    line-height: 1.5;
@@ -454,7 +424,6 @@ img, svg {
 .works {
    padding-top: 0;
 }
-
 .works-title {
    font-weight: 500;
    font-size: 36px;
@@ -466,26 +435,21 @@ img, svg {
 .team {
    background-color: #F4F4FD;
 }
-
 .team-title {
    font-weight: 500;
    font-size: 36px;
    line-height: 1.1;
    text-align: center;
 }
-
 .team-cards {
    text-align: center;
 }
-
 .team-card {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 .team-card-content {
    padding: 32px 16px;
 }
-
 .team-card-name {
    margin-bottom: 8px;
 
@@ -493,19 +457,16 @@ img, svg {
    font-size: 20px;
    line-height: 1.2;
 }
-
 .team-card-position {
    margin-bottom: 8px;
 
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
-
 .team-card-icons-list {
    padding-top: 4px;
    padding-bottom: 4px;
 }
-
 .team-icon-wrapper {
    width: 40px;
    height: 40px;
@@ -514,12 +475,10 @@ img, svg {
    border-radius: 50%;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .team-icon-wrapper:hover,
 .team-icon-wrapper:focus {
    background-color: #404BBF;
 }
-
 .team-icon {
    width: 16px;
    height: 16px;
@@ -532,7 +491,6 @@ img, svg {
    line-height: 1.17;
    letter-spacing: 0.03em;
 }
-
 .customer-icon-wrapper {
    width: 168px;
    height: 88px;
@@ -543,7 +501,6 @@ img, svg {
    border-radius: 4px;
    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
    fill: var(--primary-brand-color);
@@ -551,7 +508,6 @@ img, svg {
    outline: 1px solid var(--primary-brand-color);
 
 }
-
 .customer-icon {
    width: 104px;
    height: 56px;
@@ -564,7 +520,6 @@ img, svg {
 .portfolio {
    padding-top: 96px;
 }
-
 .radio-nav-btn {
    padding: 12px 24px;
 
@@ -578,40 +533,33 @@ img, svg {
 
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .radio-nav-btn:hover,
 .radio-nav-btn:focus {
    background-color: var(--primary-brand-color);
    color: #fff;
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .portfolio-cards {
    flex-wrap: wrap;
    row-gap: 48px;
 }
-
 .portfolio-card {
    border-bottom: 0.5px solid #F4F4FD;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-card-link {
    /* для того щоб тінь запрацювала при фокусі на посилання, яке знаходиться в карточці (правда цю тінь взагалі не видно, так як при фокусі карточка обгортається в дефолтний outline від браузера, який його перебиває, і нашо я так заморачувався не знаю)*/
    display: inline-block;
 }
-
 .portfolio-card:hover,
 .portfolio-card-link:focus {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 .portfolio-card-overlay {
    position: relative;
    overflow: hidden;
 }
-
 .portfolio-card-overlay::after {
    content: '';
 
@@ -627,17 +575,14 @@ img, svg {
    background-color: rgba(77, 90, 229, 0.9);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-card:hover .portfolio-card-overlay::after,
 .portfolio-card-link:focus .portfolio-card-overlay::after {
    /* піднімаємо overlay вгору по вертикалі (на саму картинку) */
    transform: translateY(-100%);
 }
-
 .portfolio-card-content {
    padding: 32px 16px;
 }
-
 .portfolio-card-title {
    margin-bottom: 8px;
 
@@ -646,7 +591,6 @@ img, svg {
    font-size: 20px;
    line-height: 1.2;
 }
-
 .portfolio-card-type {
    color: var(--secondary-text-color);
    line-height: 1.5;
