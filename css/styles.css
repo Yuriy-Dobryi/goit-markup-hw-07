@@ -740,6 +740,13 @@ img, svg {
       justify-content: center;
       align-items: center;
    }
+   .customers-container {
+      width: 552px;
+      padding: 0;
+   }
+   .customer-icon-wrapper {
+      width: 168px;
+   }
    .footer-container {
       width: 552px;
       flex-direction: row;
@@ -824,6 +831,9 @@ img, svg {
    }
    .team-cards {
       flex-wrap: nowrap;
+   }
+   .customers-container {
+      padding: 0 16px;
    }
    .footer-container {
       flex-wrap: nowrap;
