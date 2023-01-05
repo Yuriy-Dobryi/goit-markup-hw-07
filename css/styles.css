@@ -759,6 +759,9 @@ img, svg {
       width: 552px;
       padding: 0;
    }
+   .customers-icons {
+      column-gap: 24px;
+   }
    .customer-icon-wrapper {
       width: 168px;
    }
@@ -862,6 +865,9 @@ img, svg {
    }
    .customers-container {
       padding: 0 16px;
+   }
+   .customers-icons {
+      flex-wrap: nowrap;
    }
    .footer-container {
       flex-wrap: nowrap;
