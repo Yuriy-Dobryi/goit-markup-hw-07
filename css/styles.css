@@ -782,6 +782,10 @@ img, svg {
       margin-bottom: 48px;
    }
    .priorities-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
       width: 264px;
       height: 112px;
       background-color: #F4F4FD;
@@ -808,7 +812,6 @@ img, svg {
       padding-top: 0;
    }
    .team-cards {
-      /* Прибираємо зайву властивість (вона ні на що по суті не впливає) */
       flex-wrap: nowrap;
    }
    .footer-container {
