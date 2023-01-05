@@ -378,9 +378,14 @@ img, svg {
    line-height: 1.5;
 }
 .team-card-icons-list {
+   display: flex;
+   column-gap: 24px;
    padding: 4px 0;
 }
 .team-icon-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 40px;
    height: 40px;
 
@@ -801,6 +806,10 @@ img, svg {
    }
    .works {
       padding-top: 0;
+   }
+   .team-cards {
+      /* Прибираємо зайву властивість (вона ні на що по суті не впливає) */
+      flex-wrap: nowrap;
    }
    .footer-container {
       flex-wrap: nowrap;
