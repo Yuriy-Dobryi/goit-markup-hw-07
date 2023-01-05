@@ -20,10 +20,8 @@ img, svg {
    height: auto;
 }
 .container {
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 16px;
-   padding-right: 16px;
+   margin: 0 auto;
+   padding: 0 16px;
 }
 @media screen and (min-width: 428px) {
    .container {
@@ -64,8 +62,7 @@ img, svg {
    align-items: center;
 }
 .header-logo {
-   padding-top: 24px;
-   padding-bottom: 24px;
+   padding: 24px 0;
 }
 .header-logo {
    color: var(--primary-brand-color);
@@ -84,14 +81,12 @@ img, svg {
 
 /* <--------<INDEX-MAIN>--------> */
 .section {
-   padding-top: 96px;
-   padding-bottom: 96px;
+   padding: 96px 0;
 }
 /* <----<HERO>----> */
 .hero {
    max-width: 1440px;
-   padding-top: 112px;
-   padding-bottom: 112px;
+   padding: 112px 0;
 
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-size: cover;
@@ -377,8 +372,7 @@ img, svg {
    line-height: 1.5;
 }
 .team-card-icons-list {
-   padding-top: 4px;
-   padding-bottom: 4px;
+   padding: 4px 0;
 }
 .team-icon-wrapper {
    width: 40px;
@@ -511,9 +505,7 @@ img, svg {
 
 /* <--------<FOOTER>--------> */
 .footer {
-   padding-top: 96px;
-   padding-bottom: 96px;
-
+   padding: 96px 0;
    background-color: var(--primary-text-color);
 }
 .footer-container {
@@ -650,8 +642,7 @@ img, svg {
    }
    .nav-link {
       position: relative;
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding: 24px 0;
 
       color: inherit;
       font-weight: 500;
@@ -696,8 +687,7 @@ img, svg {
       color: var(--primary-brand-color);
    }
    .section {
-      padding-top: 120px;
-      padding-bottom: 120px;
+      padding: 120px 0;
    }
    .hero-title {
       width: 494px;
@@ -759,12 +749,14 @@ img, svg {
       margin-left: auto;
    }
    .contact-link {
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding: 24px 0;
+
       font-size: 16px;
-      
       line-height: 1.5;
       letter-spacing: 0.02em;
+   }
+   .hero {
+      padding: 192px 0;
    }
    .hero-title {
       margin-bottom: 48px;
@@ -800,8 +792,7 @@ img, svg {
       gap: 0;
    }
    .social-media-box {
-      margin-left: 120px;
-      margin-right: 80px;
+      margin: 0 80px 0 120px;
    }
    .footer-form {
       flex-wrap: nowrap;
