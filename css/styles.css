@@ -453,15 +453,15 @@ img, svg {
 }
 
 /* <--------<PORTFOLIO MAIN>--------> */
+.portfolio {
+   padding: 48px 0;
+}
 .radio-nav {
    display: flex;
    flex-wrap: wrap;
    width: 263px;
    gap: 24px 16px;
    margin-bottom: 48px;
-}
-.portfolio {
-   padding: 48px 0;
 }
 .radio-nav-btn {
    padding: 8px 16px;
@@ -484,10 +484,12 @@ img, svg {
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-cards {
+   display: flex;
    flex-wrap: wrap;
    row-gap: 48px;
 }
 .portfolio-card {
+   width: 356px;
    border-bottom: 0.5px solid #F4F4FD;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -495,6 +497,7 @@ img, svg {
 .portfolio-card-link {
    /* для того щоб тінь запрацювала при фокусі на посилання, яке знаходиться в карточці (правда цю тінь взагалі не видно, так як при фокусі карточка обгортається в дефолтний outline від браузера, який його перебиває, і нашо я так заморачувався не знаю)*/
    display: inline-block;
+   width: 100%;
 }
 .portfolio-card:hover,
 .portfolio-card-link:focus {
@@ -785,10 +788,17 @@ img, svg {
       width: 264px;
    }
    /* PORTFOLIO TABLET */
+   .portfolio {
+      padding: 64px 0 96px;
+   }
    .radio-nav {
       width: 100%;
       flex-wrap: nowrap;
       justify-content: center;
+      margin-bottom: 64px;
+   }
+   .portfolio-cards {
+      column-gap: 24px;
    }
 }
 
@@ -862,5 +872,12 @@ img, svg {
    }
    .footer-form {
       flex-wrap: nowrap;
+   }
+   /* PORTFOLIO DESKTOP */
+   .portfolio {
+      padding: 96px 0 120px;
+   }
+   .radio-nav {
+      margin-bottom: 72px;
    }
 }
