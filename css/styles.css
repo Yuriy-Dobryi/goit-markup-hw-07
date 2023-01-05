@@ -768,11 +768,10 @@ img, svg {
       height: 64px;
    }
    .priorities-list {
-      display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
    }
    .priorities-item {
-      flex-basis: calc(100% / 4);
+      flex-basis: calc((100% - 3 * 24px) / 4);
    }
    .priorities-title {
       font-weight: 500;
