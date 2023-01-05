@@ -319,7 +319,6 @@ img, svg {
    row-gap: 72px;
 }
 .priorities-title {
-   margin-top: 8px;
    margin-bottom: 8px;
 
    font-weight: 700;
@@ -706,7 +705,10 @@ img, svg {
       column-gap: 24px;
    }
    .priorities-item {
-      flex-basis: calc((100% - 2 * 24px) / 2);
+      flex-basis: calc((100% - 24px) / 2);
+   }
+   .priorities-title {
+      text-align: left;
    }
    .footer-container {
       width: 552px;
