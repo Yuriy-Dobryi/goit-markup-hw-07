@@ -746,7 +746,6 @@ img, svg {
    .header-contacts {
       flex-direction: row;
       column-gap: 40px;
-      margin-left: auto;
    }
    .contact-link {
       padding: 24px 0;
