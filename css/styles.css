@@ -469,6 +469,7 @@ img, svg {
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
    font-weight: 500;
+   line-height: 1.5;
    letter-spacing: 0.04em;
    border: 1px solid #E7E9FC;
    border-radius: 4px;
@@ -782,6 +783,11 @@ img, svg {
    }
    .footer-input {
       width: 264px;
+   }
+   /* PORTFOLIO TABLET */
+   .radio-nav {
+      width: 100%;
+      flex-wrap: nowrap;
    }
 }
 
