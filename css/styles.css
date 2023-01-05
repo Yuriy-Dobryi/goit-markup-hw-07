@@ -699,6 +699,14 @@ img, svg {
       padding-top: 120px;
       padding-bottom: 120px;
    }
+   .hero-title {
+      width: 494px;
+      margin-bottom: 40px;
+   
+      font-size: 56px;
+      line-height: 1.07;
+      text-transform: none;
+   }
    .priorities-list {
       flex-direction: row;
       flex-wrap: wrap;
@@ -757,6 +765,9 @@ img, svg {
       
       line-height: 1.5;
       letter-spacing: 0.02em;
+   }
+   .hero-title {
+      margin-bottom: 48px;
    }
    .priorities-icon-wrapper {
       width: 264px;
