@@ -332,16 +332,6 @@ img, svg {
 }
 
 /* <----<WORKS>----> */
-.works {
-   padding-top: 0;
-}
-.works-title {
-   font-weight: 500;
-   font-size: 36px;
-   line-height: 1.1;
-   text-align: center;
-}
-
 /* <----<TEAM>----> */
 .team {
    padding-bottom: 128px;
@@ -353,7 +343,7 @@ img, svg {
 .team-title {
    margin-bottom: 72px;
 
-   font-weight: 500;
+   font-weight: 700;
    font-size: 36px;
    line-height: 1.1;
 }
@@ -577,13 +567,12 @@ img, svg {
    line-height: 1.5;
 }
 /* Social media box*/
-.footer-title {
+.footer-titles {
    margin-bottom: 16px;
 
    color: #fff;
    font-weight: 500;
    line-height: 1.5;
-
    text-align: center;
 }
 .footer-icons-list {
@@ -611,17 +600,6 @@ img, svg {
    height: 24px;
 }
 /* Subscribe box*/
-.footer-subscribe-text,
-.footer-input {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.5;
-   color: #fff;
-}
-.footer-subscribe-text {
-   margin-bottom: 16px;
-   text-align: center;
-}
 .footer-form {
    display: flex;
    justify-content: center;
@@ -778,10 +756,7 @@ img, svg {
    .footer-slogan {
       width: 264px;
    }
-   .footer-title {
-      text-align: left;
-   }
-   .footer-subscribe-text {
+   .footer-titles {
       text-align: left;
    }
    .footer-form {
@@ -850,6 +825,8 @@ img, svg {
       flex-basis: calc((100% - 3 * 24px) / 4);
    }
    .priorities-title {
+      margin-top: 8px;
+
       font-weight: 500;
       font-size: 20px;
       line-height: 1.2;
@@ -858,7 +835,19 @@ img, svg {
       font-weight: 400;
    }
    .works {
+      display: block;
       padding-top: 0;
+   }
+   .works-title {
+      margin-bottom: 72px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.1;
+      text-align: center;
+   }
+   .works-list {
+      display: flex;
    }
    .team-cards {
       flex-wrap: nowrap;
