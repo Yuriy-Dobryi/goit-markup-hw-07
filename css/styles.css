@@ -86,6 +86,14 @@ img, svg {
 .section {
    padding: 96px 0;
 }
+.sections-title {
+   margin-bottom: 72px;
+      
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   text-align: center;
+}
 /* <----<HERO>----> */
 .hero {
    max-width: 1440px;
@@ -97,13 +105,9 @@ img, svg {
 }
 .hero-title {
    width: 318px;
-   margin: 0 auto 72px;
+   margin: 0 auto;
 
    color: #fff;
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.11;
-   text-align: center;
    text-transform: capitalize;
 }
 .hero-modal-button {
@@ -317,21 +321,13 @@ img, svg {
    flex-direction: column;
    row-gap: 72px;
 }
-.priorities-title {
-   margin-bottom: 8px;
-
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.11;
-   text-align: center;
-}
 .priorities-desctiption {
+   margin-top: 8px;
    color: var(--secondary-text-color);
    line-height: 1.5;
    font-weight: 500;
 }
 
-/* <----<WORKS>----> */
 /* <----<TEAM>----> */
 .team {
    padding-bottom: 128px;
@@ -339,13 +335,6 @@ img, svg {
 }
 .team-container {
    text-align: center;
-}
-.team-title {
-   margin-bottom: 72px;
-
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.1;
 }
 .team-cards {
    display: flex;
@@ -400,15 +389,6 @@ img, svg {
 }
 
 /* <----<CUSTOMERS>----> */
-.customers-title {
-   margin-bottom: 72px;
-
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.17;
-   letter-spacing: 0.03em;
-   text-align: center;
-}
 .customers-icons {
    display: flex;
    flex-wrap: wrap;
@@ -723,9 +703,6 @@ img, svg {
    .priorities-item {
       flex-basis: calc((100% - 24px) / 2);
    }
-   .priorities-title {
-      text-align: left;
-   }
    .team-cards {
       flex-direction: row;
       column-gap: 24px;
@@ -820,16 +797,10 @@ img, svg {
    }
    .priorities-list {
       flex-wrap: nowrap;
+      margin-bottom: 8px;
    }
    .priorities-item {
       flex-basis: calc((100% - 3 * 24px) / 4);
-   }
-   .priorities-title {
-      margin-top: 8px;
-
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
    }
    .priorities-desctiption {
       font-weight: 400;
