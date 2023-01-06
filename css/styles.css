@@ -90,10 +90,10 @@ img, svg {
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
+   text-align: center;
 }
 .sections-title {
    margin-bottom: 72px;
-   text-align: center;
 }
 /* <----<HERO>----> */
 .hero {
@@ -105,7 +105,7 @@ img, svg {
    background-size: cover;
 }
 .hero-title {
-   width: 318px;
+   max-width: 318px;
    margin-left: auto;
    margin-right: auto;
 
@@ -682,17 +682,16 @@ img, svg {
    .contact-link:focus {
       color: var(--primary-brand-color);
    }
-   .section {
-      padding: 120px 0;
-   }
+
    .hero-title {
-      width: 494px;
+      max-width: 494px;
       margin-bottom: 40px;
    
       font-size: 56px;
       line-height: 1.07;
       text-transform: none;
    }
+
    .priorities-list {
       flex-direction: row;
       flex-wrap: wrap;
@@ -701,13 +700,16 @@ img, svg {
    .priorities-item {
       flex-basis: calc((100% - 24px) / 2);
    }
+   .priorities-title {
+      text-align: left;
+   }
+
    .team-cards {
       flex-direction: row;
-      column-gap: 24px;
-      row-gap: 64px;
-      justify-content: center;
       align-items: center;
+      gap: 64px 24px;
    }
+
    .customers-container {
       width: 552px;
       padding: 0;
@@ -718,6 +720,7 @@ img, svg {
    .customer-icon-wrapper {
       width: 168px;
    }
+
    .footer-container {
       width: 552px;
       flex-direction: row;
@@ -740,7 +743,8 @@ img, svg {
    .footer-input {
       width: 264px;
    }
-   /* PORTFOLIO TABLET */
+
+   /* TABLET PORTFOLIO */
    .portfolio {
       padding: 64px 0 96px;
    }
@@ -755,11 +759,12 @@ img, svg {
    }
 }
 
-/* DESKTOP PAGE */
+/* DESKTOP */
 @media screen and (min-width: 1200px) {
    .container {
       width: 1160px;
    }
+
    .header-logo {
       margin-right: 76px;
    }
@@ -774,12 +779,18 @@ img, svg {
       line-height: 1.5;
       letter-spacing: 0.02em;
    }
+
+   .section {
+      padding: 120px 0;
+   }
+
    .hero {
-      padding: 192px 0;
+      padding: 188px 0;
    }
    .hero-title {
       margin-bottom: 48px;
    }
+
    .priorities-icon-wrapper {
       display: flex;
       justify-content: center;
@@ -808,22 +819,27 @@ img, svg {
    .priorities-desctiption {
       font-weight: 400;
    }
+
    .works {
       display: block;
       padding-top: 0;
    }
    .works-list {
       display: flex;
+      column-gap: 24px;
    }
+
    .team-cards {
       flex-wrap: nowrap;
    }
+
    .customers-container {
       padding: 0 16px;
    }
    .customers-icons {
       flex-wrap: nowrap;
    }
+
    .footer-container {
       flex-wrap: nowrap;
       gap: 0;
@@ -834,7 +850,8 @@ img, svg {
    .footer-form {
       flex-wrap: nowrap;
    }
-   /* PORTFOLIO DESKTOP */
+
+   /* DESKTOP PORTFOLIO */
    .portfolio {
       padding: 96px 0 120px;
    }
