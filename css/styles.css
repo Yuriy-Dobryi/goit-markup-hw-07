@@ -150,11 +150,6 @@ img, svg {
    pointer-events: none;
 }
 /* Modal */
-@media screen and (max-width: 427px) {
-   .modal {
-      width: 90%;
-   }
-}
 .modal {
    position: absolute;
    left: 50%;
@@ -171,6 +166,11 @@ img, svg {
 }
 .backdrop.is-hidden .modal {
    transform: translate(-50%, -50%) scale(4);
+}
+@media screen and (max-width: 427px) {
+   .modal {
+      width: 90%;
+   }
 }
 /* Close button */
 .close-button {
