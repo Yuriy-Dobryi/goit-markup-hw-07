@@ -150,14 +150,19 @@ img, svg {
    pointer-events: none;
 }
 /* Modal */
+@media screen and (max-width: 427px) {
+   .modal {
+      width: 90%;
+   }
+}
 .modal {
    position: absolute;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%) scale(1);
 
-   width: 408px;
-   padding: 72px 24px 24px;
+   width: 392px;
+   padding: 72px 16px 24px;
 
    background-color: #FCFCFC;
    border-radius: 4px;
@@ -690,6 +695,10 @@ img, svg {
       font-size: 56px;
       line-height: 1.07;
       text-transform: none;
+   }
+   .modal {
+      padding-left: 24px;
+      padding-right: 24px;
    }
 
    .priorities-list {
