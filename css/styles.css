@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
    padding: 0;
 }
-img, svg {
+img {
    display: block;
    max-width: 100%;
    height: auto;
@@ -324,10 +324,14 @@ img, svg {
 }
 
 /* <----<PRIORITIES>----> */
-.priorities-list {
-   display: flex;
-   flex-direction: column;
-   row-gap: 72px;
+@media screen and (max-width: 767px){
+   .priorities-item:not(:last-child),
+   .team-card:not(:last-child) {
+      margin-bottom: 72px;
+   }
+   .team-card {
+      display: inline-block;
+   }
 }
 .priorities-desctiption {
    margin-top: 8px;
@@ -342,17 +346,11 @@ img, svg {
    padding-bottom: 128px;
    background-color: #F4F4FD;
 }
-.team-container {
-   text-align: center;
-}
-.team-cards {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   row-gap: 72px;
-}
 .team-card {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.team-cards {
+   text-align: center;
 }
 .team-card-content {
    padding: 32px 16px;
@@ -373,8 +371,13 @@ img, svg {
 .team-card-icons-list {
    display: flex;
    column-gap: 24px;
-   padding: 4px 0;
 }
+/* .team-card-icon {
+   display: inline-block;
+}
+.team-card-icon:not(:last-child) {
+   margin-right: 24px;
+} */
 .team-icon-wrapper {
    display: flex;
    justify-content: center;
@@ -396,15 +399,18 @@ img, svg {
 }
 
 /* <----<CUSTOMERS>----> */
-.customers-icons {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 72px 16px;
+/* ---------------text-align: center;--------------- */
+/* .customers-icons {
+   text-align: center;
+}
+.customers-item:not(:last-child) {
+   margin-bottom: 72px;
 }
 .customer-icon-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   display: inline-block;
+   padding: 16px 0;
+} */
+.customer-icon-wrapper {
    width: 190px;
    height: 88px;
 
@@ -414,12 +420,36 @@ img, svg {
    border-radius: 4px;
    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* ---------------margin-left-right: auto--------------- */
+@media screen and (max-width: 427px) {
+   .customers-item:not(:last-child) {
+      margin-bottom: 72px;
+   }
+   .customer-icon-wrapper {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px 40px;
+   }
+}
+@media screen and (min-width: 428px) {
+   .customers-icons {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 16px;
+      row-gap: 72px;
+   }
+   .customer-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
    fill: var(--primary-brand-color);
    border: none;
    outline: 1px solid var(--primary-brand-color);
-
 }
 .customer-icon {
    width: 104px;
@@ -704,21 +734,16 @@ img, svg {
    }
 
    .priorities-list {
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: flex;
       column-gap: 24px;
-   }
-   .priorities-item {
-      flex-basis: calc((100% - 24px) / 2);
    }
    .priorities-title {
       text-align: left;
    }
 
    .team-cards {
-      flex-direction: row;
-      align-items: center;
-      gap: 64px 24px;
+      display: flex;
+      column-gap: 24px;
    }
 
    .customers-container {
@@ -769,6 +794,21 @@ img, svg {
       column-gap: 24px;
    }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .priorities-list {
+      flex-wrap: wrap;
+      row-gap: 72px;
+   }
+   .priorities-item {
+      flex-basis: calc((100% - 24px) / 2);
+   }
+   .team-cards {
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      row-gap: 64px;
+   }
+}
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
@@ -816,12 +856,6 @@ img, svg {
       width: 64px;
       height: 64px;
    }
-   .priorities-list {
-      flex-wrap: nowrap;
-   }
-   .priorities-item {
-      flex-basis: calc((100% - 3 * 24px) / 4);
-   }
    .priorities-title {
       font-weight: 500;
       font-size: 20px;
@@ -840,15 +874,12 @@ img, svg {
       column-gap: 24px;
    }
 
-   .team-cards {
-      flex-wrap: nowrap;
-   }
-
    .customers-container {
       padding: 0 16px;
    }
    .customers-icons {
       flex-wrap: nowrap;
+      row-gap: 0;
    }
 
    .footer-container {
