@@ -55,7 +55,6 @@ img {
 /* DISPLAY: NONE */
 .header-nav,
 .header-contacts,
-.priorities-icon-wrapper,
 .works {
    display: none;
 }
@@ -349,6 +348,11 @@ img {
 }
 
 /* <-- TEAM and PRIORITIES --> */
+@media screen and (max-width: 1199px) {
+   .priorities-icon-wrapper {
+      display: none;
+   }
+}
 .priorities-desctiption {
    margin-top: 8px;
 
@@ -358,8 +362,13 @@ img {
 }
 
 /* <----<TEAM>----> */
+@media screen and (max-width: 767px) {
+   /* по макету нижній padding на версії планшету відрізняється */
+   .team {
+      padding-bottom: 128px;
+   }
+}
 .team {
-   padding-bottom: 128px;
    background-color: #F4F4FD;
 }
 .team-card {
@@ -822,7 +831,6 @@ img {
       flex-wrap: initial;
    }
    .priorities-icon-wrapper {
-      display: flex;
       width: 264px;
       height: 112px;
       margin-bottom: 8px;
