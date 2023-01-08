@@ -511,7 +511,7 @@ img {
 .portfolio-card-link {
    /* щоб тінь залишалась при фокусі */
    display: inline-block;
-   width: 100%;s
+   width: 100%;
 }
 .portfolio-card:hover,
 .portfolio-card-link:focus {
