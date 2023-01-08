@@ -31,8 +31,35 @@ img {
    }
 }
 .list {
+   display: flex;
    list-style: none;
 }
+
+.priorities-list,
+.team-cards,
+.customers-icons {
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   row-gap: 72px;
+}
+.customers-icons {
+   column-gap: 16px;
+}
+/* --- */
+.icon-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* DISPLAY: NONE */
+.header-nav,
+.header-contacts,
+.priorities-icon-wrapper,
+.works {
+   display: none;
+}
+/* --- */
 .link {
    text-decoration: none;
 }
@@ -45,13 +72,6 @@ img {
    border: 0;
    clip: rect(0 0 0 0);
    overflow: hidden;
-}
-/* DISPLAY: NONE */
-.header-nav,
-.header-contacts,
-.priorities-icon-wrapper,
-.works {
-   display: none;
 }
 
 /* HEADER */
@@ -329,15 +349,6 @@ img {
 }
 
 /* <-- TEAM and PRIORITIES --> */
-@media screen and (max-width: 767px) {
-   .priorities-item:not(:last-child),
-   .team-card:not(:last-child) {
-      margin-bottom: 72px;
-   }
-   .team-card {
-      display: inline-block;
-   }
-}
 .priorities-desctiption {
    margin-top: 8px;
 
@@ -354,12 +365,10 @@ img {
 .team-card {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.team-cards {
-   text-align: center;
-}
 .team-card-content {
    padding: 32px 16px;
    background: #fff;
+   text-align: center;
 }
 .team-card-name {
    margin-bottom: 8px;
@@ -385,9 +394,6 @@ img {
    margin-right: 24px;
 } */
 .team-icon-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    width: 40px;
    height: 40px;
 
@@ -427,31 +433,6 @@ img {
    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 427px) {
-   .customers-item:not(:last-child) {
-      margin-bottom: 72px;
-   }
-   /* центруєм елементи списку за допомогою margin-left-right: auto */
-   .customer-icon-wrapper {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 16px 40px;
-   }
-}
-@media screen and (min-width: 428px) {
-   .customers-icons {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 16px;
-      row-gap: 72px;
-   }
-   .customer-icon-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-}
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
    fill: var(--primary-brand-color);
@@ -561,8 +542,9 @@ img {
 }
 .footer-container {
    display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
    align-items: center;
+   justify-content: center;
    row-gap: 72px;
 }
 /* (Logo + Slogan) box */
@@ -601,10 +583,6 @@ img {
    column-gap: 16px;
 }
 .footer-icon-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
    width: 40px;
    height: 40px;
 
@@ -741,7 +719,8 @@ img {
    }
 
    .priorities-list {
-      display: flex;
+      justify-content: initial;
+      align-items: initial;
       column-gap: 24px;
    }
    .priorities-title {
@@ -765,9 +744,8 @@ img {
    }
 
    .footer-container {
-      width: 552px;
-      flex-direction: row;
-      flex-wrap: wrap;
+      width: 584px;
+      justify-content: flex-start;
       align-items: flex-start;
       column-gap: 24px;
    }
@@ -802,18 +780,8 @@ img {
    }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   .priorities-list {
-      flex-wrap: wrap;
-      row-gap: 72px;
-   }
    .priorities-item {
       flex-basis: calc((100% - 24px) / 2);
-   }
-   .team-cards {
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      row-gap: 64px;
    }
 }
 
@@ -850,11 +818,11 @@ img {
       margin-bottom: 48px;
    }
 
+   .priorities-list {
+      flex-wrap: initial;
+   }
    .priorities-icon-wrapper {
       display: flex;
-      justify-content: center;
-      align-items: center;
-
       width: 264px;
       height: 112px;
       margin-bottom: 8px;
