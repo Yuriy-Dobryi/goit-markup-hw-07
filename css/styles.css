@@ -30,9 +30,13 @@ img {
 }
 .flex-list {
    display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   row-gap: 72px;
+}
+@media screen and (max-width: 1199px) {
+   .flex-list {
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 72px;
+   }
 }
 .link {
    color: inherit;
@@ -401,8 +405,8 @@ img {
 }
 .customer-icon-wrapper:focus{
    fill: var(--primary-brand-color);
-   outline: 1px solid var(--primary-brand-color);
    border: none;
+   outline: 1px solid var(--primary-brand-color);
 }
 .customer-icon {
    width: 104px;
@@ -695,8 +699,6 @@ img {
 
 /* LAPTOP-PRIORITIES */
    .priorities-list {
-      justify-content: initial;
-      align-items: initial;
       column-gap: 24px;
    }
    .priorities-item {
@@ -711,7 +713,6 @@ img {
       padding-bottom: 104px;
    }
    .team-cards {
-      display: flex;
       column-gap: 24px;
    }
 
@@ -748,7 +749,8 @@ img {
 
 /* LAPTOP-PORTFOLIO */
    .portfolio {
-      padding: 64px 0 96px;
+      padding-top: 64px;
+      padding-bottom: 96px;
    }
    .radio-nav {
       width: 100%;
@@ -798,9 +800,6 @@ img {
    }
 
 /* PC PRIORITIES */
-   .priorities-list {
-      flex-wrap: initial;
-   }
    .priorities-item {
       flex-basis: initial;
    }
@@ -836,11 +835,8 @@ img {
 
 /* PC CUSTOMERS */
    .customers-container {
-      padding: 0 16px;
-   }
-   .customers-icons-list {
-      flex-wrap: initial;
-      row-gap: 0;
+      padding-left: 16px;
+      padding-right: 16px;
    }
 
 /* PC FOOTER */
