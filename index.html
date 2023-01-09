@@ -24,15 +24,15 @@
          <!-- NAVIGATION -->
          <nav>
             <ul class="header-nav list">
-               <li><a class="nav-link link current-page-link" href="./index.html">Studio</a></li>
-               <li><a class="nav-link link" href="./portfolio.html">Portfolio</a></li>
-               <li><a class="nav-link link" href="./test/test.html">Contacts</a></li>
+               <li class="nav-item current-page"><a class="nav-item-wrapper link" href="./index.html">Studio</a></li>
+               <li class="nav-item"><a class="nav-item-wrapper link" href="./portfolio.html">Portfolio</a></li>
+               <li class="nav-item"><a class="nav-item-wrapper link" href="./test/test.html">Contacts</a></li>
             </ul>
          </nav>
          <!-- CONTACTS -->
          <ul class="header-contacts list">
-            <li><a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li class="contact-item"><a class="contact-wrapper link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contact-item"><a class="contact-wrapper link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
          </ul>
       </div>
    </header>
@@ -46,7 +46,7 @@
             <div class="backdrop is-hidden" data-modal>
                <div class="modal">
                   <!-- Close button -->
-                  <button class="close-button" data-modal-close>
+                  <button class="close-button icon-wrapper" data-modal-close>
                      <svg class="close-icon">
                         <use href="./images/icons.svg#icon-close"></use>
                      </svg>
@@ -88,7 +88,7 @@
                         <!-- ховаємо дефолтну іконку -->
                         <input class="visually-hidden checkbox-input" type="checkbox" name="checkbox" required>
                         I accept the terms and conditions of the
-                        <a class="checkbox-label-link"
+                        <a class="checkbox-link"
                            href="https://www.apple.com/legal/privacy/pdfs/apple-privacy-policy-en-ww.pdf"
                            target="_blank">Privacy Policy
                         </a>
@@ -106,7 +106,7 @@
       <section class="priorities section">
          <div class="priorities-container container">
             <h2 class="visually-hidden">Priorities</h2>
-            <ul class="priorities-list list">
+            <ul class="priorities-list flex-list list">
                <!-- Strategy -->
                <li class="priorities-item">
                   <div class="priorities-icon-wrapper icon-wrapper">
@@ -176,37 +176,37 @@
       <section class="team section">
          <div class="team-container container">
             <h2 class="sections-title">Our Team</h2>
-            <ul class="team-cards list">
+            <ul class="team-cards flex-list list">
                <!-- Mark -->
                <li class="team-card">
                   <img src="./images/team/mark.jpg" alt="Mark Guerrero" width="264">
                   <div class="team-card-content">
                      <h3 class="team-card-name">Mark Guerrero</h3>
                      <p class="team-card-position">Product Designer</p>
-                     <ul class="team-card__icons-wrappers list">
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.instagram.com/" target="_blank">
+                     <ul class="team-icons-list list">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.instagram.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-instagram"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.twitter.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.twitter.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-twitter"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.facebook.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.facebook.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-facebook"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.linkedin.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.linkedin.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-linkedin"></use>
                               </svg>
@@ -221,30 +221,30 @@
                   <div class="team-card-content">
                      <h3 class="team-card-name">Tom Ford</h3>
                      <p class="team-card-position">Frontend Developer</p>
-                     <ul class="team-card__icons-wrappers list">
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.instagram.com/" target="_blank">
+                     <ul class="team-icons-list list">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.instagram.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-instagram"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.twitter.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.twitter.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-twitter"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.facebook.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.facebook.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-facebook"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.linkedin.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.linkedin.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-linkedin"></use>
                               </svg>
@@ -259,30 +259,30 @@
                   <div class="team-card-content">
                      <h3 class="team-card-name">Camila Garcia</h3>
                      <p class="team-card-position">Marketing</p>
-                     <ul class="team-card__icons-wrappers list">
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.instagram.com/" target="_blank">
+                     <ul class="team-icons-list list">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.instagram.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-instagram"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.twitter.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.twitter.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-twitter"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.facebook.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.facebook.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-facebook"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.linkedin.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.linkedin.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-linkedin"></use>
                               </svg>
@@ -297,30 +297,30 @@
                   <div class="team-card-content">
                      <h3 class="team-card-name">Daniel Wilson</h3>
                      <p class="team-card-position">UI Designer</p>
-                     <ul class="team-card__icons-wrappers list">
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.instagram.com/" target="_blank">
+                     <ul class="team-icons-list list">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.instagram.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-instagram"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.twitter.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.twitter.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-twitter"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.facebook.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.facebook.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-facebook"></use>
                               </svg>
                            </a>
                         </li>
-                        <li class="team-card__icon-wrapper">
-                           <a class="team-card__icon-wrapper-link icon-wrapper-link link" href="https://www.linkedin.com/" target="_blank">
+                        <li class="team-icon-item">
+                           <a class="team-icon-wrapper icon-wrapper link" href="https://www.linkedin.com/" target="_blank">
                               <svg class="team-icon">
                                  <use href="./images/icons.svg#icon-linkedin"></use>
                               </svg>
@@ -336,43 +336,43 @@
       <section class="customers section">
          <div class="customers-container container">
             <h2 class="sections-title">Customers</h2>
-            <ul class="customers-icons list">
-               <li class="customers-item">
+            <ul class="customers-icons-list flex-list list">
+               <li class="customer-item">
                   <a class="customer-icon-wrapper icon-wrapper link" href="">
                      <svg class="customer-icon">
                         <use href="./images/icons.svg#icon-customer-1"></use>
                      </svg>
                   </a>
                </li>
-               <li class="customers-item">
+               <li class="customer-item">
                   <a class="customer-icon-wrapper icon-wrapper link" href="">
                      <svg class="customer-icon">
                         <use href="./images/icons.svg#icon-customer-2"></use>
                      </svg>
                   </a>
                </li>
-               <li class="customers-item">
+               <li class="customer-item">
                   <a class="customer-icon-wrapper icon-wrapper link" href="">
                      <svg class="customer-icon">
                         <use href="./images/icons.svg#icon-customer-3"></use>
                      </svg>
                   </a>
                </li>
-               <li class="customers-item">
+               <li class="customer-item">
                   <a class="customer-icon-wrapper icon-wrapper link" href="">
                      <svg class="customer-icon">
                         <use href="./images/icons.svg#icon-customer-4"></use>
                      </svg>
                   </a>
                </li>
-               <li class="customers-item">
+               <li class="customer-item">
                   <a class="customer-icon-wrapper icon-wrapper link" href="">
                      <svg class="customer-icon">
                         <use href="./images/icons.svg#icon-customer-5"></use>
                      </svg>
                   </a>
                </li>
-               <li class="customers-item">
+               <li class="customer-item">
                   <a class="customer-icon-wrapper icon-wrapper link" href="">
                      <svg class="customer-icon">
                         <use href="./images/icons.svg#icon-customer-6"></use>
@@ -397,28 +397,28 @@
          <div class="social-media-box">
             <h3 class="footer-titles">Social media</h3>
             <ul class="footer-icons-list list">
-               <li>
+               <li class="footer-icon-item">
                   <a class="footer-icon-wrapper icon-wrapper link" href="https://www.instagram.com/" target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                      </svg>
                   </a>
                </li>
-               <li>
+               <li class="footer-icon-item">
                   <a class="footer-icon-wrapper icon-wrapper link" href="https://www.twitter.com/" target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                      </svg>
                   </a>
                </li>
-               <li>
+               <li class="footer-icon-item">
                   <a class="footer-icon-wrapper icon-wrapper link" href="https://www.facebook.com/" target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                      </svg>
                   </a>
                </li>
-               <li>
+               <li class="footer-icon-item">
                   <a class="footer-icon-wrapper icon-wrapper link" href="https://www.linkedin.com/" target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>

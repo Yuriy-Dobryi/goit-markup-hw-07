@@ -25,44 +25,25 @@ img {
    padding-left: 16px;
    padding-right: 16px;
 }
-@media screen and (min-width: 428px) {
-   .container {
-      width: 428px;
-   }
-}
 .list {
-   display: flex;
    list-style: none;
 }
-
-.priorities-list,
-.team-cards,
-.customers-icons {
-   flex-wrap: wrap;
+.flex-list {
+   display: flex;
    justify-content: center;
-   align-items: center;
+   flex-wrap: wrap;
    row-gap: 72px;
 }
-.customers-icons {
-   column-gap: 16px;
+.link {
+   color: inherit;
+   text-decoration: none;
 }
-/* --- */
-.icon-wrapper-link {
+.icon-wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
    width: 100%;
    height: 100%;
-}
-/* DISPLAY: NONE */
-.header-nav,
-.header-contacts,
-.works {
-   display: none;
-}
-/* --- */
-.link {
-   text-decoration: none;
 }
 .visually-hidden {
    position: absolute;
@@ -74,8 +55,15 @@ img {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
+/* DELETED ELEMENTS */
+.header-nav,
+.header-contacts,
+.works,
+.priorities-icon-wrapper {
+   display: none;
+}
 
-/* HEADER */
+/* <-- MOBILE HEADER --> */
 .header {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -105,7 +93,7 @@ img {
    cursor: pointer;
 }
 
-/* <--------<INDEX-MAIN>--------> */
+/* <-- MOBILE MAIN --> */
 .section {
    padding-top: 96px;
    padding-bottom: 96px;
@@ -120,7 +108,8 @@ img {
 .sections-title {
    margin-bottom: 72px;
 }
-/* <----<HERO>----> */
+
+/* HERO */
 .hero {
    max-width: 1440px;
    margin-left: auto;
@@ -160,12 +149,12 @@ img {
 .hero-modal-button:focus {
    background-color: #404BBF;
 }
+
 /* Backdrop */
 .backdrop {
    position: fixed;
    left: 0;
    top: 0;
-
    width: 100%;
    height: 100%;
 
@@ -200,13 +189,11 @@ img {
 .backdrop.is-hidden .modal {
    transform: translate(-50%, -50%) scale(4);
 }
-
 /* Close button */
 .close-button {
    position: absolute;
-   top: 24px;
    right: 24px;
-
+   top: 24px;
    width: 24px;
    height: 24px;
 
@@ -214,8 +201,7 @@ img {
    border: 2px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    cursor: pointer;
-
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover,
 .close-button:focus {
@@ -229,12 +215,10 @@ img {
 }
 .modal-title {
    margin-bottom: 16px;
-
    font-weight: 500;
    line-height: 1.5;
    text-align: center;
 }
-/* загальні класи форми: */
 .field {
    position: relative;
    display: block;
@@ -247,10 +231,8 @@ img {
 }
 .input {
    display: block;
-   /* щоб форма розтягнулась на всю ширину модалки */
    width: 100%;
    height: 40px;
-
    margin-top: 4px;
    padding: 11px 38px;
 
@@ -262,6 +244,7 @@ img {
 .field:focus-within .input {
    outline: 1px solid var(--primary-brand-color);
 }
+/* Modal icons */
 .modal-icon {
    position: absolute;
    left: 16px;
@@ -276,7 +259,7 @@ img {
 .field:focus-within .modal-icon {
    fill: var(--primary-brand-color);
 }
-/* деякі правки для 'Comment': */
+/* Comment */
 .comment-field {
    margin-bottom: 16px;
 }
@@ -294,7 +277,6 @@ img {
 /* Checkbox: */
 .checkbox-field {
    position: relative;
-
    display: block;
    margin-bottom: 24px;
 
@@ -308,27 +290,22 @@ img {
    position: absolute;
    left: 0;
    top: 0;
-
    width: 16px;
    height: 16px;
 
    background-color: #F4F4FD;
    border: 1.25px solid #2E2F42;
    border-radius: 2px;
-
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input:checked~.modal-checkbox-icon {
+.checkbox-input:checked ~ .modal-checkbox-icon {
    background-color: #404BBF;
    border-color: #404BBF;
 }
-.checkbox-label {
-   color: #757575;
-   letter-spacing: 0.04em;
-}
-.checkbox-label-link {
+.checkbox-link {
    color: var(--primary-brand-color);
 }
+/* Send button */
 .send-button {
    display: block;
    width: 169px;
@@ -351,28 +328,17 @@ img {
    background-color: #404BBF;
 }
 
-/* <-- TEAM and PRIORITIES --> */
-@media screen and (max-width: 1199px) {
-   .priorities-icon-wrapper {
-      display: none;
-   }
-}
+/* PRIORITIES */
 .priorities-desctiption {
    margin-top: 8px;
-
    color: var(--secondary-text-color);
-   line-height: 1.5;
    font-weight: 500;
+   line-height: 1.5;
 }
 
-/* <----<TEAM>----> */
-@media screen and (max-width: 767px) {
-   /* по макету нижній padding на версії планшету відрізняється */
-   .team {
-      padding-bottom: 128px;
-   }
-}
+/* TEAM */
 .team {
+   padding-bottom: 128px;
    background-color: #F4F4FD;
 }
 .team-card {
@@ -385,7 +351,6 @@ img {
 }
 .team-card-name {
    margin-bottom: 8px;
-
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
@@ -395,18 +360,11 @@ img {
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
-.team-card__icons-wrappers {
+.team-icons-list {
    display: flex;
    column-gap: 24px;
 }
-/* Ширина списку іконок в карточці стає із-за margin іншою, але чому ? */
-/* .team-card-icon {
-   display: inline-block;
-}
-.team-card-icon:not(:last-child) {
-   margin-right: 24px;
-} */
-.team-card__icon-wrapper {
+.team-icon-item {
    width: 40px;
    height: 40px;
 
@@ -414,8 +372,8 @@ img {
    border-radius: 50%;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-card__icon-wrapper:hover,
-.team-card__icon-wrapper-link:focus .team-card__icon-wrapper {
+.team-icon-item:hover,
+.team-icon-wrapper:focus .team-icon-item {
    background-color: #404BBF;
 }
 .team-icon {
@@ -423,46 +381,47 @@ img {
    height: 16px;
 }
 
-/* <----<CUSTOMERS>----> */
-/* ---------------text-align: center;--------------- */
-/* .customers-icons {
-   text-align: center;
+/* CUSTOMERS */
+.customers-icons-list {
+   column-gap: 16px;
 }
-.customers-item:not(:last-child) {
-   margin-bottom: 72px;
-}
-.customer-icon-wrapper {
-   display: inline-block;
-   padding: 16px 0;
-} */
-.customer-icon-wrapper {
+.customer-item {
    width: 190px;
    height: 88px;
-
+}
+.customer-icon-wrapper {
    fill: #8E8F99;
    border: 1px solid #8E8F99;
-
    border-radius: 4px;
-   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: outline 950ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customer-icon-wrapper:hover,
 .customer-icon-wrapper:focus {
    fill: var(--primary-brand-color);
-   border: none;
    outline: 1px solid var(--primary-brand-color);
+   border-color: transparent;
 }
+/* .customer-icon-wrapper:hover {
+   fill: var(--primary-brand-color);
+   border-color: var(--primary-brand-color);
+}
+.customer-icon-wrapper:focus{
+   border: none;
+   fill: var(--primary-brand-color);
+   outline: 1px solid var(--primary-brand-color);
+} */
 .customer-icon {
    width: 104px;
    height: 56px;
 
    fill: inherit;
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill 950ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* <--------<PORTFOLIO MAIN>--------> */
+/* <-- PORTFOLIO MAIN --> */
 .portfolio {
-   padding: 48px 0;
+   padding-top: 48px;
+   padding-bottom: 48px;
 }
 .radio-nav {
    display: flex;
@@ -550,14 +509,14 @@ img {
 
 /* <--------<FOOTER>--------> */
 .footer {
-   padding: 96px 0;
+   padding-top: 96px;
+   padding-bottom: 96px;
    background-color: var(--primary-text-color);
 }
 .footer-container {
    display: flex;
-   flex-wrap: wrap;
-   align-items: center;
    justify-content: center;
+   flex-wrap: wrap;
    row-gap: 72px;
 }
 /* (Logo + Slogan) box */
@@ -595,7 +554,7 @@ img {
    display: flex;
    column-gap: 16px;
 }
-.footer-icon-wrapper {
+.footer-icon-item {
    width: 40px;
    height: 40px;
 
@@ -603,8 +562,8 @@ img {
    border-radius: 50%;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon-wrapper:hover,
-.footer-icon-wrapper:focus {
+.footer-icon-item:hover,
+.footer-icon-wrapper:focus .footer-icon-item {
    background-color: #31D0AA;
 }
 .footer-icon {
@@ -641,7 +600,6 @@ img {
 .footer-button {
    display: flex;
    column-gap: 16px;
-
    width: 165px;
    padding: 8px 24px;
 
@@ -655,11 +613,19 @@ img {
    cursor: pointer;
 }
 
-/* LAPTOP PAGE*/
+@media screen and (min-width: 428px) {
+   .container {
+      width: 428px;
+   }
+}
+
+/* <-- LAPTOP VERSION --> */
 @media screen and (min-width: 768px) {
    .container {
       width: 768px;
    }
+
+/* LAPTOP-HEADER */
    .header-hamburger {
       display: none;
    }
@@ -670,24 +636,25 @@ img {
       display: flex;
       column-gap: 40px;
    }
-   .nav-link {
+   .nav-item {
       position: relative;
-      padding: 24px 0;
+      padding-top: 24px;
+      padding-bottom: 24px;
 
       color: inherit;
       font-weight: 500;
       line-height: 1.5;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .nav-link:hover,
-   .nav-link:focus {
+   .nav-item:hover,
+   .nav-item-wrapper:focus .nav-item {
       color: var(--secondary-text-color);
    }
-   .nav-link:active {
+   .nav-item:active {
       color: var(--primary-brand-color);
    }
    /* нижнє підкреслення посилання поточної сторінки */
-   .current-page-link::after {
+   .current-page::after {
       content: '';
 
       position: absolute;
@@ -705,18 +672,19 @@ img {
       row-gap: 4px;
       margin-left: auto;
    }
-   .contact-link {
+   .contact-item {
       color: var(--secondary-text-color);
       font-size: 12px;
       line-height: 1.33;
       letter-spacing: 0.04em;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .contact-link:hover,
-   .contact-link:focus {
+   .contact-item:hover,
+   .contact-wrapper:focus {
       color: var(--primary-brand-color);
    }
 
+/* LAPTOP-HERO */
    .hero-title {
       max-width: 494px;
       margin-bottom: 40px;
@@ -731,35 +699,41 @@ img {
       padding-right: 24px;
    }
 
+/* LAPTOP-PRIORITIES */
    .priorities-list {
       justify-content: initial;
       align-items: initial;
       column-gap: 24px;
    }
+   .priorities-item {
+      flex-basis: calc((100% - 24px) / 2);
+   }
    .priorities-title {
       text-align: left;
    }
 
+/* LAPTOP-TEAM */
+   .team {
+      padding-bottom: 104px;
+   }
    .team-cards {
       display: flex;
       column-gap: 24px;
    }
 
-   .customers-container {
-      width: 552px;
-      padding: 0;
-   }
-   .customers-icons {
+/* LAPTOP-CUSTOMERS */
+   .customers-icons-list {
       column-gap: 24px;
    }
-   .customer-icon-wrapper {
+   .customer-item {
       width: 168px;
    }
 
+/* LAPTOP-FOOTER */
    .footer-container {
       width: 584px;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: initial;
+      align-items: initial;
       column-gap: 24px;
    }
    .footer-logo {
@@ -778,32 +752,32 @@ img {
       width: 264px;
    }
 
-   /* TABLET PORTFOLIO */
+/* LAPTOP-PORTFOLIO */
    .portfolio {
       padding: 64px 0 96px;
    }
    .radio-nav {
       width: 100%;
-      flex-wrap: nowrap;
       justify-content: center;
+      flex-wrap: nowrap;
       margin-bottom: 64px;
    }
    .portfolio-cards {
       column-gap: 24px;
    }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-   .priorities-item {
-      flex-basis: calc((100% - 24px) / 2);
-   }
-}
 
-/* DESKTOP */
+/* <PC VERSION> */
 @media screen and (min-width: 1200px) {
    .container {
       width: 1160px;
    }
+   .section {
+      padding-top: 120px;
+      padding-bottom: 120px;
+   }
 
+/* PC HEADER */
    .header-logo {
       margin-right: 76px;
    }
@@ -811,18 +785,16 @@ img {
       flex-direction: row;
       column-gap: 40px;
    }
-   .contact-link {
-      padding: 24px 0;
+   .contact-item {
+      padding-top: 24px;
+      padding-bottom: 24px;
 
       font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.02em;
    }
 
-   .section {
-      padding: 120px 0;
-   }
-
+/* PC HERO */
    .hero {
       padding-top: 188px;
       padding-bottom: 188px;
@@ -831,10 +803,15 @@ img {
       margin-bottom: 48px;
    }
 
+/* PC PRIORITIES */
    .priorities-list {
       flex-wrap: initial;
    }
+   .priorities-item {
+      flex-basis: initial;
+   }
    .priorities-icon-wrapper {
+      display: flex;
       width: 264px;
       height: 112px;
       margin-bottom: 8px;
@@ -853,6 +830,7 @@ img {
       font-weight: 400;
    }
 
+/* PC WORKS */
    .works {
       display: block;
       padding-top: 0;
@@ -862,16 +840,18 @@ img {
       column-gap: 24px;
    }
 
+/* PC CUSTOMERS */
    .customers-container {
       padding: 0 16px;
    }
-   .customers-icons {
-      flex-wrap: nowrap;
+   .customers-icons-list {
+      flex-wrap: initial;
       row-gap: 0;
    }
 
+/* PC FOOTER */
    .footer-container {
-      flex-wrap: nowrap;
+      flex-wrap: initial;
       gap: 0;
    }
    .social-media-box {
@@ -879,12 +859,13 @@ img {
       margin-right: 80px;
    }
    .footer-form {
-      flex-wrap: nowrap;
+      flex-wrap: initial;
    }
 
-   /* DESKTOP PORTFOLIO */
+/* PC PORTFOLIO */
    .portfolio {
-      padding: 96px 0 120px;
+      padding-top: 96px;
+      padding-bottom: 120px;
    }
    .radio-nav {
       margin-bottom: 72px;
