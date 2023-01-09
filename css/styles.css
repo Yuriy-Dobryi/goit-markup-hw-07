@@ -393,29 +393,23 @@ img {
    fill: #8E8F99;
    border: 1px solid #8E8F99;
    border-radius: 4px;
-   transition: outline 950ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customer-icon-wrapper:hover,
-.customer-icon-wrapper:focus {
-   fill: var(--primary-brand-color);
-   outline: 1px solid var(--primary-brand-color);
-   border-color: transparent;
-}
-/* .customer-icon-wrapper:hover {
+.customer-icon-wrapper:hover {
    fill: var(--primary-brand-color);
    border-color: var(--primary-brand-color);
 }
 .customer-icon-wrapper:focus{
-   border: none;
    fill: var(--primary-brand-color);
    outline: 1px solid var(--primary-brand-color);
-} */
+   border: none;
+}
 .customer-icon {
    width: 104px;
    height: 56px;
 
    fill: inherit;
-   transition: fill 950ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* <-- PORTFOLIO MAIN --> */
