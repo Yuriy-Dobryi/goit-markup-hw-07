@@ -2,6 +2,7 @@
    --primary-text-color: #2E2F42;
    --secondary-text-color: #434455;
    --primary-brand-color: #4D5AE5;
+   --secondary-brand-color: #404BBF;
 }
 body {
    background-color: #fff;
@@ -58,7 +59,7 @@ img {
 }
 .iris-button:hover,
 .iris-button:focus {
-   background-color: #404BBF;
+   background-color: var(--secondary-brand-color);
 }
 .link {
    color: inherit;
@@ -211,9 +212,9 @@ img {
 }
 .close-button:hover,
 .close-button:focus {
-   background-color: #404BBF;
+   background-color: var(--secondary-brand-color);
    fill: #fff;
-   border-color: #404BBF;
+   border-color: var(--secondary-brand-color);
 }
 .close-icon {
    width: 8px;
@@ -305,8 +306,8 @@ img {
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked ~ .modal-checkbox-icon {
-   background-color: #404BBF;
-   border-color: #404BBF;
+   background-color: var(--secondary-brand-color);
+   border-color: var(--secondary-brand-color);
 }
 .checkbox-link {
    color: var(--primary-brand-color);
@@ -359,7 +360,7 @@ img {
 }
 .team-icon-wrapper:hover,
 .team-icon-wrapper:focus {
-   background-color: #404BBF;
+   background-color: var(--secondary-brand-color);
 }
 .team-icon {
    width: 16px;
@@ -608,7 +609,7 @@ img {
       width: 100%;
       height: 4px;
 
-      background-color: #404BBF;
+      background-color: var(--secondary-brand-color);
       border-radius: 2px;
    }
    .nav-wrapper {
@@ -622,10 +623,7 @@ img {
    }
    .nav-wrapper:hover,
    .nav-wrapper:focus {
-      color: var(--secondary-text-color);
-   }
-   .nav-wrapper:active {
-      color: var(--primary-brand-color);
+      color: var(--secondary-brand-color);
    }
 
    .header-contacts {
@@ -643,7 +641,7 @@ img {
    }
    .contact-wrapper:hover,
    .contact-wrapper:focus {
-      color: var(--primary-brand-color);
+      color: var(--secondary-brand-color);
    }
 
 /* LAPTOP-HERO */
