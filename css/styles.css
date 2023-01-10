@@ -406,7 +406,8 @@ img {
    display: flex;
    flex-wrap: wrap;
    max-width: 263px;
-   gap: 24px 16px;
+   column-gap: 24px;
+   row-gap: 16px;
    margin-bottom: 48px;
 }
 .radio-nav-btn {
@@ -723,8 +724,8 @@ img {
    }
    .portfolio-cards {
       justify-content: initial;
-      row-gap: 72px;
       column-gap: 24px;
+      row-gap: 72px;
    }
    .portfolio-card {
       flex-basis: calc((100% - 24px) / 2);
