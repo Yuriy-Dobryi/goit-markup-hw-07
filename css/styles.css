@@ -102,7 +102,7 @@ img {
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-size: 18px;
-   font-weight: 900;
+   font-weight: 800;
    line-height: 1.33;
    letter-spacing: 0.03em;
    text-transform: uppercase;
@@ -406,7 +406,7 @@ img {
 .radio-nav {
    display: flex;
    flex-wrap: wrap;
-   max-width: 263px;
+   width: 263px;
    column-gap: 24px;
    row-gap: 16px;
    margin-bottom: 48px;
@@ -715,7 +715,7 @@ img {
       padding-bottom: 96px;
    }
    .radio-nav {
-      max-width: 100%;
+      width: 100%;
       justify-content: center;
       flex-wrap: inherit;
       margin-bottom: 64px;
