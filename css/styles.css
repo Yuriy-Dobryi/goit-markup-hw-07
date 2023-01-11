@@ -83,13 +83,12 @@ img {
    overflow: hidden;
 }
 /* HIDE ELEMENTS BEFORE BREAK POINTS*/
-.header-nav,
+.header-nav-list,
 .header-contacts,
 .works,
 .priorities-icon-wrapper {
    display: none;
 }
-
 /* <-- MOBILE HEADER --> */
 .header {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -114,11 +113,21 @@ img {
 .header-logo-studio {
    color: var(--primary-text-color);
 }
-.header-hamburger {
+.header-nav {
+   margin-left: auto;
+}
+.hamburger-button {
    width: 32px;
    height: 22px;
-   margin-left: auto;
+   padding: 0;
+   
+   background-color: #fff;
+   border: none;
    cursor: pointer;
+}
+.hamburger-icon {
+   width: 100%;
+   height: 100%;
 }
 
 /* <-- MOBILE MAIN --> */
@@ -590,13 +599,13 @@ img {
    }
 
 /* LAPTOP-HEADER */
-   .header-hamburger {
+   .hamburger-button {
       display: none;
    }
    .header-logo {
       margin-right: 120px;
    }
-   .header-nav {
+   .header-nav-list {
       display: flex;
       column-gap: 40px;
    }
