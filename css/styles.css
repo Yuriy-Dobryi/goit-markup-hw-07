@@ -83,7 +83,7 @@ img {
    overflow: hidden;
 }
 /* HIDE ELEMENTS BEFORE BREAK POINTS*/
-.header-nav-list,
+.nav-menu,
 .header-contacts,
 .works,
 .priorities-icon-wrapper {
@@ -116,7 +116,7 @@ img {
 .header-nav {
    margin-left: auto;
 }
-.hamburger-button {
+.nav-button {
    width: 32px;
    height: 22px;
    padding: 0;
@@ -125,10 +125,17 @@ img {
    border: none;
    cursor: pointer;
 }
-.hamburger-icon {
+.nav-icon {
    width: 100%;
    height: 100%;
 }
+.nav-button .close-icon {
+   display: none;
+}
+.nav-button.is-open .close-icon {
+   display: block;
+}
+
 
 /* <-- MOBILE MAIN --> */
 .section {
@@ -599,7 +606,7 @@ img {
    }
 
 /* LAPTOP-HEADER */
-   .hamburger-button {
+   .nav-button {
       display: none;
    }
    .header-logo {

@@ -15,37 +15,41 @@
 <body>
    <header class="header">
       <div class="header-container container">
-         <!-- LOGO -->
-         <a class="header-logo logo-web link" href="./index.html">web<span class="header-logo-studio">studio</span></a>
-         <!-- NAVIGATION -->
-         <nav class="header-nav">
-            <ul class="header-nav-list list">
-               <li class="current-page">
-                  <a class="nav-wrapper link" href="./index.html">Studio</a>
-               </li>
-               <li>
-                  <a class="nav-wrapper link" href="./portfolio.html">Portfolio</a>
-               </li>
-               <li>
-                  <a class="nav-wrapper link" href="./test/test.html">Contacts</a>
-               </li>
-            </ul>
-            <button class="hamburger-button" type="submit">
-               <svg class="hamburger-icon">
-                  <use href="./images/icons.svg#icon-hamburger"></use>
-                  <use href="./images/icons.svg#icon-close"></use>
+         <nav class="menu">
+            <!-- LOGO -->
+            <a class="menu-logo logo-web link" href="./index.html">
+               web<span class="header-logo-studio">studio</span>
+            </a>
+
+            <button class="menu-button is-open" type="button" aria-expanded="false" aria-controls="menu-container"
+               data-menu-button>
+               <svg class="menu-icon" aria-label="Mobile menu switch">
+                  <use class="menu-icon" href="./images/icons.svg#icon-hamburger"></use>
+                  <use class="close-icon" href="./images/icons.svg#icon-close"></use>
                </svg>
             </button>
+            <!-- MENU -->
+            <ul class="menu-list list">
+               <li class="current-page">
+                  <a class="menu-wrapper link" href="./index.html">Studio</a>
+               </li>
+               <li>
+                  <a class="menu-wrapper link" href="./portfolio.html">Portfolio</a>
+               </li>
+               <li>
+                  <a class="menu-wrapper link" href="./test/test.html">Contacts</a>
+               </li>
+            </ul>
+            <!-- CONTACTS -->
+            <ul class="menu-contacts list">
+               <li>
+                  <a class="contact-wrapper link" href="mailto:info@devstudio com">info@devstudio.com</a>
+               </li>
+               <li>
+                  <a class="contact-wrapper link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+               </li>
+            </ul>
          </nav>
-         <!-- CONTACTS -->
-         <ul class="header-contacts list">
-            <li>
-               <a class="contact-wrapper link" href="mailto:info@devstudio com">info@devstudio.com</a>
-            </li>
-            <li>
-               <a class="contact-wrapper link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-         </ul>
       </div>
    </header>
 
