@@ -182,7 +182,7 @@ img {
    padding-top: 24px;
    padding-bottom: 24px;
    
-   color: inherit;
+   color: var(--primary-text-color);
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
@@ -483,13 +483,6 @@ img {
    color: #fff;
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/* .portfolio-cards {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   row-gap: 48px;
-} */
-/* 2x, 3x */
 .portfolio-card:not(:last-child) {
    margin-bottom: 48px;
 }
@@ -547,9 +540,6 @@ img {
    padding-bottom: 96px;
    background-color: var(--primary-text-color);
 }
-.footer-container {
-   justify-content: center;
-}
 /* (Logo + Slogan) box */
 .footer-logo {
    display: block;
@@ -604,6 +594,9 @@ img {
    padding: 8px 16px;
 
    background-color: var(--primary-text-color);
+   color: rgb(233, 187, 233);
+   font-size: 14px;
+   letter-spacing: 0.05em;
    border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -612,7 +605,7 @@ img {
 .footer-input:focus-within {
    outline: 1px solid violet;
 }
-.footer-input:placeholder-shown {
+.footer-input::placeholder {
    color: rgba(255, 255, 255, 0.6);
    font-size: 12px;
    line-height: 2;
@@ -712,6 +705,9 @@ img {
    }
 
 /* LAPTOP-PRIORITIES */
+   .priorities-list {
+      justify-content: initial;
+   }
    .priorities-item {
       flex-basis: calc((100% - 24px) / 2);
    }
@@ -732,8 +728,6 @@ img {
    .footer-container {
       width: 584px;
       justify-content: initial;
-      align-items: initial;
-      column-gap: 24px;
    }
    .footer-logo {
       text-align: left;
@@ -758,7 +752,7 @@ img {
    }
    .radio-nav {
       justify-content: center;
-      flex-wrap: inherit;
+      flex-wrap: initial;
       margin-bottom: 64px;
    }
    .portfolio-cards {
@@ -849,7 +843,6 @@ img {
 
 /* PC FOOTER */
    .footer-container {
-      flex-wrap: initial;
       gap: 0;
    }
    .social-media-box {
