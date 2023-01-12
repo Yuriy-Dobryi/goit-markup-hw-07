@@ -97,6 +97,7 @@ img {
    display: flex;
    align-items: center;
 }
+/* Logo */
 .logo-web {
    color: var(--primary-brand-color);
    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
@@ -113,6 +114,7 @@ img {
 .nav-logo-studio {
    color: var(--primary-text-color);
 }
+/* Menu button */
 .menu-button {
    width: 32px;
    height: 22px;
@@ -136,6 +138,7 @@ img {
 .menu-button.is-open .menu-icon {
    display: none;
 }
+/* Menu container */
 .menu-container {
    display: none;
    position: absolute;
@@ -143,11 +146,20 @@ img {
    top: 100%;
    width: 100%;
 
-   background-color: palegoldenrod;
+   padding-top: 80px;
+   padding-bottom: 40px;
+
+   background-color: #fff;
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .menu-container.is-open {
    display: block;
 }
+/* Menu list */
+.menu-item:not(:last-child) {
+   margin-bottom: 40px;
+}
+
 
 /* <-- MOBILE MAIN --> */
 .section {

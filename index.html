@@ -20,7 +20,7 @@
             <a class="nav-logo logo-web link" href="./index.html">
                web<span class="nav-logo-studio">studio</span>
             </a>
-            <!-- BUTTON -->
+            <!-- Menu button -->
             <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container"
                data-menu-button>
                <svg class="menu-button-icon" aria-label="Mobile menu switch">
@@ -32,13 +32,13 @@
             <div class="menu-container" id="menu-container" data-menu>
                <!-- Menu list -->
                <ul class="menu-list list">
-                  <li class="current-page">
+                  <li class="menu-item current-page">
                      <a class="menu-wrapper link" href="./index.html">Studio</a>
                   </li>
-                  <li>
+                  <li class="menu-item">
                      <a class="menu-wrapper link" href="./portfolio.html">Portfolio</a>
                   </li>
-                  <li>
+                  <li class="menu-item">
                      <a class="menu-wrapper link" href="./test/test.html">Contacts</a>
                   </li>
                </ul>
@@ -51,6 +51,12 @@
                      <a class="contact-wrapper link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                   </li>
                </ul>
+               <!-- Close button -->
+               <button class="close-button icon-wrapper" aria-expanded="false" data-menu-button>
+                  <svg class="close-icon">
+                     <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+               </button>
             </div>
          </nav>
       </div>
@@ -63,14 +69,10 @@
             <h1 class="hero-title sections-title">Effective Solutions for Your Business</h1>
             <button class="iris-button" data-modal-open>Order Service</button>
             <div class="backdrop is-hidden" data-modal>
+
                <div class="modal">
-                  <!-- Close button -->
-                  <button class="close-button icon-wrapper" data-modal-close>
-                     <svg class="close-icon">
-                        <use href="./images/icons.svg#icon-close"></use>
-                     </svg>
-                  </button>
                   <p class="modal-title">Leave your contacts and we will call you back</p>
+                  <!-- Form -->
                   <form autocomplete="off">
                      <!-- Username -->
                      <label class="field">
@@ -117,6 +119,12 @@
                      </label>
                      <button class="iris-button" type="submit">Send</button>
                   </form>
+                  <!-- Close button -->
+                  <button class="close-button icon-wrapper" data-modal-close>
+                     <svg class="close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                     </svg>
+                  </button>
                </div>
             </div>
          </div>
@@ -478,7 +486,7 @@
          </div>
       </div>
    </footer>
-   <script src="./js/menu.js"></script>
+   <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 
