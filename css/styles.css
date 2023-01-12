@@ -27,10 +27,8 @@ img {
    padding-right: 16px;
 }
 .list {
-   list-style: none;
-}
-.flex-list {
    display: flex;
+   list-style: none;
 }
 @media screen and (max-width: 1199px) {
    .flex-list {
@@ -80,10 +78,6 @@ img {
    background-color: var(--primary-brand-color);
    border-radius: 50%;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.brand-icons-list {
-   display: flex;
-   column-gap: 24px;
 }
 .brand-icon-wrapper:hover,
 .brand-icon-wrapper:focus {
@@ -411,7 +405,9 @@ img {
    color: var(--secondary-text-color);
    line-height: 1.5;
 }
-
+.team-icons-list {
+   column-gap: 24px;
+}
 /* CUSTOMERS */
 .customers-icons-list {
    column-gap: 16px;
@@ -627,6 +623,9 @@ img {
 @media screen and (min-width: 768px) {
    .container {
       width: 768px;
+   }
+   .repeated-flex-list {
+      column-gap: 24px;
    }
 
 /* LAPTOP-HEADER */
