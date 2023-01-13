@@ -265,7 +265,7 @@ img {
    background-size: cover;
 }
 .hero-title {
-   max-width: 318px;
+   width: 318px;
    margin-left: auto;
    margin-right: auto;
 
@@ -740,7 +740,7 @@ img {
 
 /* LAPTOP-HERO */
    .hero-title {
-      max-width: 494px;
+      width: 494px;
       margin-bottom: 40px;
    
       font-size: 56px;
