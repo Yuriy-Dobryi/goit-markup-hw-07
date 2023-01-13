@@ -182,7 +182,7 @@ img {
 .menu-button.is-open .menu-hamburger-icon {
    display: none;
 }
-/* Menu container */
+/* MOBILE MENU CONTAINER */
 @media screen and (max-width: 767px) {
    .menu-container {
       display: none;
@@ -191,48 +191,50 @@ img {
       top: 0;
       width: 100%;
       padding: 80px 40px 40px;
+
+      background-color: rgb(204, 172, 172);
+      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
    }
-}
-.menu-container {
-   background-color: rgb(204, 172, 172);
-   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.menu-container.is-open {
-   display: block;
-}
-/* Menu list */
-.menu-item:not(:last-child) {
-   margin-bottom: 40px;
-}
-.menu-item-wrapper {
-   color: var(--primary-text-color);
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.11;
-}
-/* Menu contacts */
-.menu-contacts {
-   display: flex;
-   flex-direction: column-reverse;
-   row-gap: 40px;
-   margin-top: 284px;
-   margin-bottom: 48px;
-}
-.contact-email {
-   color: var(--secondary-text-color);
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-}
-.contact-number {
-   color: var(--primary-brand-color);
-   font-weight: 600;
-   font-size: 36px;
-   line-height: 1.11;
-}
-.menu-icons-list {
-   display: flex;
-   column-gap: 56px;
+   .menu-container.is-open {
+      display: block;
+   }
+   /* Menu list */
+   .menu-item:not(:last-child) {
+      margin-bottom: 40px;
+   }
+   .menu-item-wrapper {
+      color: var(--primary-text-color);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+   }
+   .current-page {
+      color: var(--secondary-brand-color);
+   }
+   /* Menu contacts */
+   .menu-contacts {
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 40px;
+      margin-top: 284px;
+      margin-bottom: 48px;
+   }
+   .contact-email {
+      color: var(--secondary-text-color);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+   }
+   .contact-number {
+      color: var(--primary-brand-color);
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1.11;
+   }
+   .menu-icons-list {
+      display: flex;
+      column-gap: 56px;
+   }
 }
 
 /* <-- MOBILE MAIN --> */
