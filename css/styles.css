@@ -185,7 +185,8 @@ img {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
+      width: 100vh;
+      height: 100vh;
       padding: 80px 40px 40px;
 
       overflow-y: scroll;
@@ -213,7 +214,7 @@ img {
       display: flex;
       flex-direction: column-reverse;
       row-gap: 40px;
-      margin-top: 284px;
+      margin-top: auto;
       margin-bottom: 48px;
    }
    .contact-email {
