@@ -192,6 +192,7 @@ img {
       width: 100%;
       padding: 80px 40px 40px;
 
+      overflow-y: scroll;
       background-color: rgb(204, 172, 172);
       box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
    }
@@ -683,11 +684,12 @@ img {
    .menu-container {
       display: flex;
       align-items: center;
+      flex-grow: 1;
    }
    .menu-list {
       display: flex;
       column-gap: 40px;
-      margin-right: 120px;
+      margin-right: auto;
    }
    .menu-item-wrapper {
       padding-top: 24px;
@@ -827,6 +829,9 @@ img {
 /* PC HEADER */
    .menu-logo {
       margin-right: 76px;
+   }
+   .menu-container {
+      align-items: initial;
    }
    .menu-contacts {
       display: flex;
