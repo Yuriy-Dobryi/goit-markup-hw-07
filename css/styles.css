@@ -109,9 +109,6 @@ img {
 .header {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.header-container {
-   position: relative;
-}
 .header-nav {
    display: flex;
    align-items: center;
@@ -184,6 +181,9 @@ img {
 }
 /* MOBILE MENU CONTAINER */
 @media screen and (max-width: 767px) {
+   .header-container {
+      position: relative;
+   }
    .menu-container {
       display: none;
       position: absolute;
@@ -679,6 +679,10 @@ img {
    .menu-button {
       display: none;
    }
+   .menu-container {
+      display: flex;
+      align-items: center;
+   }
    .menu-list {
       display: flex;
       column-gap: 40px;
@@ -713,10 +717,10 @@ img {
       color: var(--secondary-brand-color);
    }
    .menu-contacts {
-      display: flex;
-      flex-direction: column;
-      row-gap: 4px;
       margin-left: auto;
+   }
+   .menu-item:not(:last-child) {
+      margin-bottom: 4px;
    }
    .contact-wrapper {
       color: var(--secondary-text-color);
@@ -729,6 +733,11 @@ img {
    .contact-wrapper:focus {
       color: var(--secondary-brand-color);
    }
+   /* hide icons-list */
+   .menu-icons-list {
+      display: none;
+   }
+
 /* LAPTOP-HERO */
    .hero-title {
       max-width: 494px;
