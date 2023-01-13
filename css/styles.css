@@ -814,7 +814,7 @@ img {
    }
 }
 
-         /* <PC VERSION> */
+/* <PC VERSION> */
 @media screen and (min-width: 1200px) {
    .container {
       width: 1160px;
@@ -882,10 +882,6 @@ img {
    .works-list {
       display: flex;
       column-gap: 24px;
-   }
-/* PC-TEAM */
-   .team-cards {
-      row-gap: 64px;
    }
 /* PC CUSTOMERS */
    .customers-container {
