@@ -559,7 +559,6 @@ img {
       margin-bottom: 48px;
    }
 }
-
 .portfolio-card-wrapper {
    display: block;
    width: 100%;
@@ -692,11 +691,6 @@ img {
 @media screen and (min-width: 428px) {
    .container {
       width: 428px;
-   }
-}
-@media screen and (max-width: 767px) {
-   .portfolio-card:not(:last-child) {
-      margin-bottom: 48px;
    }
 }
 
@@ -953,6 +947,6 @@ img {
       margin-bottom: 72px;
    }
    .portfolio-cards {
-      row-gap: 40px;
+      row-gap: 48px;
    }
 }
