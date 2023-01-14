@@ -234,30 +234,17 @@ img {
       display: flex;
       column-gap: 56px;
    }
+   @media screen and (max-width: 427px) {
+      .contact-number {
+         font-size: 26px;
+   }
+      .menu-icons-list {
+         column-gap: 30px;
+      }
+   }
    .menu-social-icon {
       width: 24px;
       height: 24px;
-   }
-}
-@media screen and (max-width: 427px) {
-   .menu-container {
-      padding: 50px 20px 20px;
-   }
-   .menu-item-wrapper {
-      font-size: 26px;
-   }
-   .contact-number {
-      font-size: 26px;
-   }
-   .contact-email {
-      font-size: 14px;
-   }
-   .menu-icons-list {
-      column-gap: 30px;
-   }
-   .menu-social-icon {
-      width: 20px;
-      height: 20px;
    }
 }
 
