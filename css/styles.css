@@ -239,7 +239,7 @@ img {
       height: 24px;
    }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 427px) {
    .menu-container {
       padding: 50px 20px 20px;
    }
