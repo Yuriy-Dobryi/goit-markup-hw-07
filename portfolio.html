@@ -6,8 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfolio</title>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
    <link rel="stylesheet" href="./css/styles.css">
@@ -16,34 +15,80 @@
 <body>
    <header class="header">
       <div class="header-container container">
-         <!-- LOGO -->
-         <a class="header-logo logo-web link" href="./index.html">web<span class="header-logo-studio">studio</span></a>
-         <svg class="header-hamburger">
-            <use href="./images/icons.svg#icon-hamburger"></use>
-         </svg>
-         <!-- NAVIGATION -->
-         <nav>
-            <ul class="header-nav list">
-               <li>
-                  <a class="nav-wrapper link" href="./index.html">Studio</a>
-               </li>
-               <li class="current-page">
-                  <a class="nav-wrapper link" href="./portfolio.html">Portfolio</a>
-               </li>
-               <li>
-                  <a class="nav-wrapper link" href="./test/test.html">Contacts</a>
-               </li>
-            </ul>
+         <nav class="header-nav">
+            <!-- Logo -->
+            <a class="nav-logo logo-web link" href="./index.html">
+               web<span class="nav-logo-studio">studio</span>
+            </a>
+            <!-- Menu Button -->
+            <button class="menu-button flex-icon-wrapper" type="button" aria-expanded="false"
+               aria-controls="menu-container" data-menu-button>
+               <svg class="menu-icon-wrapper" aria-label="mobile menu switch">
+                  <use class="menu-hamburger-icon" href="./images/icons.svg#icon-hamburger"></use>
+                  <use class="menu-close-icon" href="./images/icons.svg#icon-close"></use>
+               </svg>
+            </button>
+            <!-- Menu Container -->
+            <div class="menu-container" id="menu-container" data-menu>
+               <!-- menu-list -->
+               <ul class="menu-list list">
+                  <li class="menu-item">
+                     <a class="menu-item-wrapper link" href="./index.html">Studio</a>
+                  </li>
+                  <li class="menu-item">
+                     <a class="menu-item-wrapper current-page link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="menu-item">
+                     <a class="menu-item-wrapper current-mobile-page link" href="./test/test.html">Contacts</a>
+                  </li>
+               </ul>
+               <!-- contacts -->
+               <ul class="menu-contacts list">
+                  <li class="contact-item">
+                     <a class="contact-email contact-wrapper link"
+                        href="mailto:info@devstudio com">info@devstudio.com</a>
+                  </li>
+                  <li class="contact-item">
+                     <a class="contact-number contact-wrapper link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                  </li>
+               </ul>
+               <!-- header social media -->
+               <ul class="menu-icons-list list">
+                  <li class="social-icon-box">
+                     <a class="brand-icon-wrapper flex-icon-wrapper link" href="https://www.instagram.com/"
+                        target="_blank">
+                        <svg class="menu-social-icon">
+                           <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-icon-box">
+                     <a class="brand-icon-wrapper flex-icon-wrapper link" href="https://www.twitter.com/"
+                        target="_blank">
+                        <svg class="menu-social-icon">
+                           <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-icon-box">
+                     <a class="brand-icon-wrapper flex-icon-wrapper link" href="https://www.facebook.com/"
+                        target="_blank">
+                        <svg class="menu-social-icon">
+                           <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-icon-box">
+                     <a class="brand-icon-wrapper flex-icon-wrapper link" href="https://www.linkedin.com/"
+                        target="_blank">
+                        <svg class="menu-social-icon">
+                           <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
          </nav>
-         <!-- CONTACTS -->
-         <ul class="header-contacts list">
-            <li>
-               <a class="contact-wrapper link" href="mailto:info@devstudio com">info@devstudio.com</a>
-            </li>
-            <li>
-               <a class="contact-wrapper link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-         </ul>
       </div>
    </header>
 
@@ -177,7 +222,7 @@
    </main>
 
    <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer-container repeated-flex container">
          <!-- (Logo + Slogan) box -->
          <div>
             <a class="footer-logo logo-web link" href="./index.html">Web<span
@@ -190,29 +235,32 @@
          <div class="social-media-box">
             <h3 class="footer-titles">Social media</h3>
             <ul class="footer-icons-list list">
-               <li class="footer-icon-item">
-                  <a class="footer-icon-wrapper icon-wrapper link" href="https://www.instagram.com/" target="_blank">
+               <li class="social-icon-box">
+                  <a class="footer-icon-wrapper flex-icon-wrapper link" href="https://www.instagram.com/"
+                     target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                      </svg>
                   </a>
                </li>
-               <li class="footer-icon-item">
-                  <a class="footer-icon-wrapper icon-wrapper link" href="https://www.twitter.com/" target="_blank">
+               <li class="social-icon-box">
+                  <a class="footer-icon-wrapper flex-icon-wrapper link" href="https://www.twitter.com/" target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                      </svg>
                   </a>
                </li>
-               <li class="footer-icon-item">
-                  <a class="footer-icon-wrapper icon-wrapper link" href="https://www.facebook.com/" target="_blank">
+               <li class="social-icon-box">
+                  <a class="footer-icon-wrapper flex-icon-wrapper link" href="https://www.facebook.com/"
+                     target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                      </svg>
                   </a>
                </li>
-               <li class="footer-icon-item">
-                  <a class="footer-icon-wrapper icon-wrapper link" href="https://www.linkedin.com/" target="_blank">
+               <li class="social-icon-box">
+                  <a class="footer-icon-wrapper flex-icon-wrapper link" href="https://www.linkedin.com/"
+                     target="_blank">
                      <svg class="footer-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                      </svg>
@@ -225,7 +273,7 @@
             <h3 class="footer-titles">Subscribe</h3>
             <form class="footer-form" autocomplete="off">
                <input class="footer-input" type="email" placeholder="E-mail" name="email" required>
-               <button class="footer-button iris-button icon-wrapper" type="submit">
+               <button class="footer-button brand-button flex-icon-wrapper" type="submit">
                   Subscribe
                   <svg class="footer-icon">
                      <use href="./images/icons.svg#icon-send"></use>
