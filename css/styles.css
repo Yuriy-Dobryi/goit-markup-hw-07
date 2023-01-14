@@ -239,6 +239,17 @@ img {
       height: 24px;
    }
 }
+@media screen and (max-width: 427px) {
+   .menu-container {
+      padding: 50px 20px 20px;
+   }
+   .contact-number {
+      font-size: 26px;
+   }
+   .menu-icons-list {
+      column-gap: ;
+   }
+}
 
 /* <-- MOBILE MAIN --> */
 .section {
