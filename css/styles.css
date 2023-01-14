@@ -833,7 +833,9 @@ img {
    }
    .portfolio-nav {
       justify-content: center;
+      flex-wrap: initial;
       margin-bottom: 64px;
+      row-gap: 0;
    }
    .portfolio-cards {
       display: flex;
