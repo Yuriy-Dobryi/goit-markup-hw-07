@@ -218,17 +218,17 @@ img {
       margin-top: auto;
       margin-bottom: 48px;
    }
-   .contact-email {
-      color: var(--secondary-text-color);
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
-   }
    .contact-number {
       color: var(--primary-brand-color);
       font-weight: 600;
       font-size: 36px;
       line-height: 1.11;
+   }
+   .contact-email {
+      color: var(--secondary-text-color);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
    }
    .menu-icons-list {
       display: flex;
@@ -247,7 +247,11 @@ img {
       font-size: 26px;
    }
    .menu-icons-list {
-      column-gap: ;
+      column-gap: 30px;
+   }
+   .menu-social-icon {
+      width: 18px;
+      height: 18px;
    }
 }
 
