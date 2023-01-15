@@ -29,7 +29,7 @@ img {
    padding-left: 16px;
    padding-right: 16px;
 }
-/* Загальний flex для більшості списків у секціях, а також окремо футер */
+/* Загальний flex для більшості списків у секціях, а також для футера */
 .repeated-flex {
    display: flex;
 }
@@ -713,7 +713,7 @@ img {
    .repeated-flex {
       column-gap: 24px;
    }
-
+   
 /* LAPTOP-HEADER */
    .nav-logo {
       margin-right: 120px;
