@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
    padding: 0;
 }
+ul {
+   list-style: none;
+}
 img {
    display: block;
    max-width: 100%;
@@ -26,11 +29,15 @@ img {
    padding-left: 16px;
    padding-right: 16px;
 }
-.list {
-   list-style: none;
-}
 .repeated-flex {
    display: flex;
+}
+.flex-icon-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
 }
 @media screen and (max-width: 1199px) {
    .repeated-flex {
@@ -38,6 +45,13 @@ img {
       flex-wrap: wrap;
       row-gap: 72px;
    }
+}
+.link {
+   text-decoration: none;
+}
+.social-icon-box {
+   width: 40px;
+   height: 40px;
 }
 .brand-button {
    display: block;
@@ -57,23 +71,10 @@ img {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .brand-button:hover,
 .brand-button:focus {
    background-color: var(--secondary-brand-color);
-}
-.link {
-   text-decoration: none;
-}
-.social-icon-box {
-   width: 40px;
-   height: 40px;
-}
-.flex-icon-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 100%;
 }
 .brand-icon-wrapper {
    background-color: var(--primary-brand-color);
@@ -722,6 +723,7 @@ img {
       margin-right: auto;
    }
    .menu-item-wrapper {
+      display: block;
       padding-top: 24px;
       padding-bottom: 24px;
 
@@ -843,18 +845,16 @@ img {
       column-gap: 24px;
       row-gap: 72px;
    }
-   
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
    .portfolio-card {
       flex-basis: calc((100% - 24px) / 2);
    }
+   
 }
 
 /* <PC VERSION> */
 @media screen and (min-width: 1200px) {
    .container {
-      width: 1160px;
+      width: 1128px;
    }
    .section {
       padding-top: 120px;
@@ -876,6 +876,7 @@ img {
       margin-bottom: 0;
    }
    .contact-wrapper {
+      display: block;
       padding-top: 24px;
       padding-bottom: 24px;
 
@@ -950,5 +951,8 @@ img {
    }
    .portfolio-cards {
       row-gap: 48px;
+   }
+   .portfolio-card {
+      flex-basis: calc((100% - 2 * 24px) / 3);
    }
 }
