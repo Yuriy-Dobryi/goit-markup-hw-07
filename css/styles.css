@@ -241,6 +241,7 @@ img {
       height: 24px;
    }
 }
+/* щоб до відповідного перелому мобільне меню відображалось коректно */
 @media screen and (max-width: 427px) {
    .menu-container {
       padding: 50px 20px 20px;
@@ -252,7 +253,6 @@ img {
       column-gap: 30px;
    }
 }
-
 
 /* <-- MOBILE MAIN --> */
 .section {
