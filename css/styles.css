@@ -292,7 +292,6 @@ img {
       font-size: 30px;
    }
 }
-
 /* Backdrop */
 .backdrop {
    position: fixed;
@@ -331,7 +330,7 @@ img {
 .backdrop.is-hidden .modal {
    transform: translate(-50%, -50%) scale(4);
 }
-/* Close button */
+/* Close-button */
 .close-button {
    position: absolute;
    right: 24px;
@@ -386,7 +385,7 @@ img {
 .field:focus-within .input {
    outline: 1px solid var(--primary-brand-color);
 }
-/* Modal icons */
+/* Modal-icon */
 .modal-icon {
    position: absolute;
    left: 16px;
@@ -415,7 +414,7 @@ img {
    line-height: 1.3;
    letter-spacing: 0.04em
 }
-/* Checkbox: */
+/* Checkbox */
 .checkbox-field {
    position: relative;
    display: block;
@@ -457,9 +456,12 @@ img {
    font-weight: 500;
    line-height: 1.5;
 }
+
+/* WORKS */
 .works {
    display: none;
 }
+
 /* TEAM */
 .team {
    padding-bottom: 128px;
@@ -492,6 +494,7 @@ img {
    width: 16px;
    height: 16px;
 }
+
 /* CUSTOMERS */
 .customers-icons-list {
    column-gap: 16px;
@@ -523,11 +526,12 @@ img {
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* <-- PORTFOLIO MAIN --> */
+/* <-- PORTFOLIO --> */
 .portfolio {
    padding-top: 48px;
    padding-bottom: 48px;
 }
+/* Portfolio main navigation */
 .portfolio-nav {
    display: flex;
    flex-wrap: wrap;
@@ -554,6 +558,8 @@ img {
    color: #fff;
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* Portfolio card */
 @media screen and (max-width: 767px) {
    .portfolio-card:not(:last-child) {
       margin-bottom: 48px;
@@ -571,6 +577,7 @@ img {
 .portfolio-card-wrapper:focus {
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+/* Card-overlay */
 .portfolio-card-overlay {
    position: relative;
    overflow: hidden;
@@ -612,7 +619,7 @@ img {
    padding-bottom: 96px;
    background-color: var(--primary-text-color);
 }
-/* (Logo + Slogan) box */
+/* Logo-Slogan box */
 .footer-logo {
    display: block;
    margin-bottom: 16px;
@@ -627,7 +634,7 @@ img {
    color: #E7E9FC;
    line-height: 1.5;
 }
-/* Social media box*/
+/* Social-Media box*/
 .footer-titles {
    margin-bottom: 16px;
 
@@ -636,6 +643,7 @@ img {
    line-height: 1.5;
    text-align: center;
 }
+/* Icons list */
 .footer-icons-list {
    display: flex;
    column-gap: 16px;
@@ -683,6 +691,7 @@ img {
    line-height: 2;
    letter-spacing: 0.04em;
 }
+/* Subscribe button */
 .footer-button {
    width: 165px;
    height: 40px;
