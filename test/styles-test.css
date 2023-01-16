@@ -7,19 +7,21 @@ body {
    overflow: hidden;
 }
 .go-back {
-   left: 500px;
+   display: inline-block;
    width: 300px;
    height: 150px;
-   margin-top: auto;
 
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    background-color: rgb(116, 116, 145);
-   font-size: 22px;
+   font-size: 24px;
    border: 3px solid aqua;
-   border-radius: 50%;
+   border-radius: 40px;
+   cursor: crosshair;
 }
 .go-back:hover,
 .go-back:focus {
-   background-color: #fff;
+   background-color: rgb(172, 135, 135);
+   color: rgb(255, 255, 255);
 }
 .container {
    display: flex;
