@@ -290,7 +290,7 @@ img {
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
       .hero {
-   background-image: linear-gradient(rgba(46, 47, 66,0.7), rgba(46, 47, 66, 0.7)), url(../images/herohero-mobile@2x.webp);
+   background-image: linear-gradient(rgba(46, 47, 66,0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-mobile@2x.webp);
       }
    }
 }
@@ -722,7 +722,7 @@ img {
    }
 }
 
-/* <-- LAPTOP VERSION --> */
+/* <-- TABLET VERSION --> */
 @media screen and (min-width: 768px) {
    .container {
       width: 768px;
@@ -731,7 +731,7 @@ img {
       column-gap: 24px;
    }
    
-/* LAPTOP-HEADER */
+/* TABLET-HEADER */
    .nav-logo {
       margin-right: 120px;
    }
@@ -799,7 +799,7 @@ img {
       display: none;
    }
 
-/* LAPTOP-HERO */
+/* TABLET-HERO */
    .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-tablet.webp);
    }
@@ -825,7 +825,7 @@ img {
       padding-right: 24px;
    }
 
-/* LAPTOP-PRIORITIES */
+/* TABLET-PRIORITIES */
    .priorities-list {
       justify-content: initial;
    }
@@ -836,7 +836,7 @@ img {
       text-align: left;
    }
 
-/* LAPTOP-TEAM */
+/* TABLET-TEAM */
    .team {
       padding-bottom: 104px;
    }
@@ -844,12 +844,12 @@ img {
       row-gap: 64px;
    }
 
-/* LAPTOP-CUSTOMERS */
+/* TABLET-CUSTOMERS */
    .customer-item {
       width: 168px;
    }
 
-/* LAPTOP-FOOTER */
+/* TABLET-FOOTER */
    .footer-container {
       width: 584px;
       justify-content: initial;
@@ -870,7 +870,7 @@ img {
       width: 264px;
    }
 
-/* LAPTOP-PORTFOLIO */
+/* TABLET-PORTFOLIO */
    .portfolio {
       padding-top: 64px;
       padding-bottom: 96px;
@@ -892,7 +892,7 @@ img {
    }
 }
 
-/* <PC VERSION> */
+/* <DESKTOP VERSION> */
 @media screen and (min-width: 1200px) {
    .container {
       width: 1128px;
@@ -902,7 +902,7 @@ img {
       padding-bottom: 120px;
    }
 
-/* PC HEADER */
+/* DESKTOP HEADER */
    .nav-logo {
       margin-right: 76px;
    }
@@ -926,7 +926,7 @@ img {
       letter-spacing: 0.02em;
    }
 
-/* PC HERO */
+/* DESKTOP HERO */
    .hero {
       padding-top: 188px;
       padding-bottom: 188px;
@@ -942,7 +942,7 @@ img {
       margin-bottom: 48px;
    }
 
-/* PC PRIORITIES */
+/* DESKTOP PRIORITIES */
    .priorities-item {
       flex-basis: initial;
    }
@@ -966,7 +966,7 @@ img {
       font-weight: 400;
    }
 
-/* PC WORKS */
+/* DESKTOP WORKS */
    .works {
       display: block;
       padding-top: 0;
@@ -976,13 +976,13 @@ img {
       column-gap: 24px;
    }
 
-/* PC CUSTOMERS */
+/* DESKTOP CUSTOMERS */
    .customers-container {
       padding-left: 16px;
       padding-right: 16px;
    }
 
-/* PC FOOTER */
+/* DESKTOP FOOTER */
    .footer-container {
       gap: 0;
    }
@@ -994,7 +994,7 @@ img {
       flex-wrap: initial;
    }
 
-/* PC PORTFOLIO */
+/* DESKTOP PORTFOLIO */
    .portfolio {
       padding-top: 96px;
       padding-bottom: 120px;
