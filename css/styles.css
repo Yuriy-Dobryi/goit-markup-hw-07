@@ -892,7 +892,7 @@ img {
 /* <DESKTOP VERSION> */
 @media screen and (min-width: 1200px) {
    .container {
-      width: 1128px;
+      width: 1160px;
    }
    .section {
       padding-top: 120px;
