@@ -215,7 +215,7 @@ img {
       cursor: pointer;
       }
    .menu-button.is-open {
-      position: absolute;
+      position: fixed;
       z-index: 70;
       right: 40px;
       top: 40px;
