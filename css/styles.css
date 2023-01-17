@@ -228,12 +228,6 @@ img {
       cursor: pointer;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .menu-button.is-open:hover,
-   .menu-button.is-open:focus {
-      background-color: var(--secondary-brand-color);
-      fill: #fff;
-      border-color: var(--secondary-brand-color);
-   }
    /* Menu-icon-wrapper */
    .menu-icon-wrapper {
       width: 100%;
