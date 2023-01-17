@@ -985,12 +985,6 @@ img {
       column-gap: 24px;
    }
 
-/* DESKTOP CUSTOMERS */
-   .customers-container {
-      padding-left: 16px;
-      padding-right: 16px;
-   }
-
 /* DESKTOP FOOTER */
    .footer-container {
       gap: 0;
