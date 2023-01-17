@@ -136,10 +136,12 @@ img {
       padding-right: 24px;
    }
    .menu-container {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
       position: absolute;
       left: 0;
       top: 0;
+      transform: translateX(-100%);
       width: 100vw;
       height: 100vh;
       padding: 80px 40px 40px;
@@ -149,9 +151,14 @@ img {
       box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
    }
    .menu-container.is-open {
-      z-index: 1;
+      visibility: visible;
+      opacity: 1;
+      z-index: 69;
+      transform: translateX(0);
       display: flex;
       flex-direction: column;
+
+      transition: transform 800ms cubic-bezier(.5, 2.5, .71, .29), opacity 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
    }
    /* Menu list */
    .menu-item:not(:last-child) {
@@ -207,7 +214,7 @@ img {
       }
    .menu-button.is-open {
       position: absolute;
-      z-index: 2;
+      z-index: 70;
       right: 40px;
       top: 40px;
       width: 24px;
@@ -713,6 +720,10 @@ img {
    width: 165px;
    height: 40px;
    column-gap: 16px;
+}
+.footer-input:focus-within ~ .footer-button {
+   transform: rotate(360deg);
+   transition: transform 1000ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 @media screen and (min-width: 428px) {
    .container {
